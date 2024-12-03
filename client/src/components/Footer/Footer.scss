@@ -7,6 +7,10 @@
     color: $footer-primary-font-color;
     padding: 1rem;
 
+    @include tablet {
+        padding: 2.5rem;
+    }
+
     &__wrapper {
         @include flexbox(column);
         align-items: center;
@@ -15,6 +19,19 @@
 
     &__contact {
         text-align: center;
+
+        @include tablet {
+            @include flexbox(row);
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+
+        &-wrapper {
+            @include tablet {
+                width: 50%;
+            }
+        }
     }
 
     &__header {
@@ -24,11 +41,19 @@
 
     &__text {
         font-size: 0.75rem;
+
+        @include tablet {
+            font-size: 0.80rem;
+        }
     }
 
     &__nav {
         @include flexbox(column);
         gap: 0.5rem;
+
+        @include tablet {
+            @include flexbox(row);
+        }
     }
 
     &__social {
@@ -52,6 +77,10 @@
     justify-content: space-between;
     align-items: center;
 
+    @include tablet {
+        gap: 0.5rem;
+    }
+
     &__button {
         background-color: $button-primary-background;
         font-size: .75rem;
@@ -60,6 +89,10 @@
         border: .0625rem solid $button-primary-background;
         border-radius: 1.5625rem;
         padding: 0.5rem 1.5rem;
+
+        @include tablet {
+            font-size: 0.8rem;
+        }
     }
 }
 
@@ -74,6 +107,10 @@
         color: $footer-header-color;
         font-size: 0.75rem;
         margin-bottom: 0.5rem;
+
+        @include tablet {
+            font-size: 0.85rem;
+        }
     }
 
     &__list {
@@ -86,7 +123,11 @@
     }
 
     &__link {
-        font-size: 0.75rem;
+        font-size: 0.70rem;
+
+        @include tablet {
+            font-size: 0.80rem;
+        }
     }
 }
 
