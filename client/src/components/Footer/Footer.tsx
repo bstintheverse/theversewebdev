@@ -1,10 +1,137 @@
 // styling
+import { Divider } from "@mui/material";
 import "./Footer.scss";
+
+// component
+import { Link } from "react-router-dom";
+import InputField from "../FormElements/InputField/InputField";
 
 export default function Footer() {
     return (
         <footer className="footer">
-            Footer placeholder
+            <section className="footer__contact">
+                <h4 className="footer__header">
+                    Contact Us
+                </h4>
+
+                <h5 className="footer__header">
+                    Join us today!
+                </h5>
+
+                <p className="footer__text">
+                    Got passion? Got purpose? Let's take on some projects 
+                    and make an impact together.
+                </p>
+                
+                <div className="footer__contact-form">
+                    <form className="contact-form">
+                        <label className="contact-form__email">
+                            <InputField
+                                className="contact-form__input"
+                                name="email"
+                                value="" // to change
+                                placeholder="Email Address"
+                            />
+                        </label>
+                        <p className="contact-form__button">
+                            Sign Up
+                        </p>
+                    </form>
+                </div>
+            </section>
+
+            <section className="footer__nav">
+                <div className="nav__the-verse">
+                    <h4 className="nav__header">
+                        The Verse
+                    </h4>
+
+                    <ul className="nav__list">
+                        <li className="nav__item">
+                            <Link to="/" className="nav__link">
+                                WalkXR
+                            </Link>
+                        </li>
+
+                        <li className="nav__item">
+                            <Link to="/" className="nav__link">
+                                Karma
+                            </Link>
+                        </li>
+
+                        <li className="nav__item">
+                            <Link to="/" className="nav__link">
+                                Adventures in Breath (AiB)
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="nav__information">
+                    <h4 className="nav__header">
+                        Information
+                    </h4>
+
+                    <ul className="nav__list">
+                        <li className="nav__item">
+                            <Link to="/" className="nav__link">
+                                Privacy
+                            </Link>
+                        </li>
+
+                        <li className="nav__item">
+                            <Link to="/" className="nav__link">
+                                Terms
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+
+                <div className="nav__resources">
+                    <h4 className="nav__header">
+                        Resources
+                    </h4>
+
+                    <ul className="nav__list">
+                        <li className="nav__item">
+                            <Link to="/" className="nav__link">
+                                Contact
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <Divider 
+                sx={{
+                    backgroundColor: "#AEB3B7",
+                    margin: "1rem 0"
+                }}
+            />
+
+            <section className="footer__wrapper">
+                <div className="footer__social">
+                    <img 
+                        className="footer__social-icon"
+                        src="/assets/logos/x.png" 
+                        alt="X" 
+                    />
+                    <img 
+                        className="footer__social-icon"
+                        src="/assets/logos/instagram.svg" 
+                        alt="Instagram" 
+                    />
+                    <img 
+                        className="footer__social-icon"
+                        src="/assets/logos/linkedin.png"
+                        alt="LinkedIn"
+                    />
+                </div>
+
+                <p className="footer__copyright">
+                    Copyright © The Verse 2024
+                </p>
+            </section>
         </footer>
     )
 };
