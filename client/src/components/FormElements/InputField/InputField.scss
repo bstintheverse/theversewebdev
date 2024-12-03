@@ -1,0 +1,14 @@
+// partials
+@use "../../../styles/partials/variables.scss" as *;
+@use "../../../styles/partials/mixins" as *;
+
+.input-field {
+    border: none;
+    border-radius: 1.25rem;
+    outline: none;
+    padding: 0.5rem 1rem;
+
+    &::placeholder {
+        font-size: 0.75rem;
+    }
+}
