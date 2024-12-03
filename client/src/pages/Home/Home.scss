@@ -15,4 +15,94 @@
             padding: 1rem;
         }
     }
+
+    &__work {
+        @include flexbox(column);
+        align-items: center;
+        padding: 1rem;
+
+        &-header {
+            font-size: 1rem;
+        }
+    }
+
+    &__community {
+        @include flexbox(column);
+        background-color: $community-container-background;
+
+        &-content {
+            @include flexbox(column);
+            align-items: center;
+            padding: 1rem;
+            order: 2;
+        }
+
+        &-header {
+            color: $community-header-font-color;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+
+        &-text {
+            color: $global-tertiary-font-color;
+            font-size: 0.80rem;
+            text-align: center;
+
+            &--bold {
+                font-weight: bold;
+            }
+        }
+
+        &-button {
+            background-color: $button-primary-background;
+            color: $button-font-color;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: .0625rem solid $button-primary-background;
+            border-radius: 1.25rem;
+            padding: 0.50rem 1.5rem;
+        }
+
+        &-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+
+            &-container {
+                width: 100%;
+                order: 1;
+            }
+        }
+    }
+
+    &__support {
+        padding: 1rem;
+
+        &-container {
+            @include flexbox(column);
+            align-items: center;
+            border: .0625rem solid $grey-light;
+            border-radius: 10%;
+            box-shadow: 5px 5px 5px $grey-light;
+            padding: 1rem;
+        }
+
+        &-text {
+            font-size: 0.80rem;
+            text-align: center;
+        }
+
+        &-button {
+            background-color: $button-secondary-background;
+            color: $button-font-color;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: .0625rem solid $button-secondary-background;
+            border-radius: 1.25rem;
+            padding: 0.5rem 1.5rem;
+        }
+    }
 }
