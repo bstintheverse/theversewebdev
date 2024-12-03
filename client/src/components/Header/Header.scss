@@ -3,10 +3,9 @@
 @use "../../styles/partials/mixins.scss" as *;
 
 .navbar {
+    height: 6rem;
     @include flexbox(column);
     justify-content: space-between;
-    align-items: center;
-    height: 6rem;
     background-color: $navbar-background;
     padding: 1rem;
 
@@ -49,6 +48,9 @@
         }
 
         &--left {
+            @include flexbox(row);
+            justify-content: center;
+
             @include tablet {
                 width: 25%;
             }
@@ -59,6 +61,9 @@
         }
 
         &--right {
+            @include flexbox(row);
+            justify-content: space-between;
+
             @include tablet {
                 justify-content: space-between;
             }
