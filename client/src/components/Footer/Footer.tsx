@@ -10,18 +10,20 @@ export default function Footer() {
     return (
         <footer className="footer">
             <section className="footer__contact">
-                <h4 className="footer__header">
-                    Contact Us
-                </h4>
+                <div className="footer__contact-wrapper">
+                    <h4 className="footer__header">
+                        Contact Us
+                    </h4>
 
-                <h5 className="footer__header">
-                    Join us today!
-                </h5>
+                    <h5 className="footer__header">
+                        Join us today!
+                    </h5>
 
-                <p className="footer__text">
-                    Got passion? Got purpose? Let's take on some projects 
-                    and make an impact together.
-                </p>
+                    <p className="footer__text">
+                        Got passion? Got purpose? Let's take on some projects 
+                        and make an impact together.
+                    </p>
+                </div>
                 
                 <div className="footer__contact-form">
                     <form className="contact-form">
