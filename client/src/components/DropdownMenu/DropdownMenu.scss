@@ -6,6 +6,14 @@
     position: relative;
     display: inline-block;
 
+    @include tablet {
+        display: none;
+    }
+
+    @include desktop {
+        display: none;
+    }
+
     &__button {
         background-color: transparent;
         border: none;
