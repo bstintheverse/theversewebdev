@@ -9,6 +9,10 @@
     padding: 0.5rem 1rem;
 
     &::placeholder {
-        font-size: 0.75rem;
+        font-size: 0.70rem;
+
+        @include tablet {
+            font-size: 0.80rem;
+        }
     }
 }
