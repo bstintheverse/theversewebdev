@@ -8,10 +8,22 @@
     outline: none;
     padding: 0.5rem 1rem;
 
+    @include tablet {
+        width: 11rem;
+    }
+
+    @include desktop {
+        width: 13rem;
+    }
+
     &::placeholder {
         font-size: 0.70rem;
 
         @include tablet {
+            font-size: 0.80rem;
+        }
+
+        @include desktop {
             font-size: 0.80rem;
         }
     }
