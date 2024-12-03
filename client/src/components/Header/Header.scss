@@ -1,0 +1,70 @@
+// partials
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+
+.navbar {
+    @include flexbox(column);
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    background-color: $navbar-background;
+    padding: 1rem;
+
+    @include tablet {
+        height: 4rem;
+        @include flexbox(row);
+        gap: 1rem;
+    }
+
+    &__logo {
+        width: 50%;
+
+        @include tablet {
+            width: 25%;
+        }
+    }
+
+    &__container {
+        width: 100%;
+        @include flexbox(row);
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    &__list {
+        display: none;
+
+        @include tablet {
+            @include flexbox(row);
+            gap: 1rem;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            order: 1;
+        }
+    }
+
+    &__link {
+        font-size: 0.75rem;
+    }
+
+    &__button {
+        background-color: $green;
+        font-size: 0.85rem;
+        font-weight: bold;
+        border-radius: 1.25rem;
+        padding: 0.5rem 1rem;
+
+        @include tablet {
+            font-size: 0.75rem;
+            order: 2;
+        }
+    }
+}
+
+a {
+    color: $navbar-link-color;
+    text-decoration: none;
+    text-transform: uppercase;
+}
