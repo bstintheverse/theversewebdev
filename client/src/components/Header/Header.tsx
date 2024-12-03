@@ -9,13 +9,15 @@ export default function Header() {
     return (
         <header>
             <nav className="navbar">
-                <img 
-                    className="navbar__logo"
-                    src="/assets/logos/logo.png"
-                    alt="The Verse logo"
-                />
+                <div className="navbar__container navbar__container--left">
+                    <img 
+                        className="navbar__logo"
+                        src="/assets/logos/logo.png"
+                        alt="The Verse logo"
+                    />
+                </div>
 
-                <div className="navbar__container">
+                <div className="navbar__container navbar__container--right">
                     <Link to="/" className="navbar__button">
                         Donate
                     </Link>
