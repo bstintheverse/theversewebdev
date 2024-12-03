@@ -16,6 +16,9 @@ $green: #518161;
 $global-background: $white;
 $global-primary-font-color: $black;
 $global-secondary-font-color: $grey;
+$global-tertiary-font-color: $white;
+
+/* ----- COMPONENT DESCRIPTIVE VARIABLES ----- */
 
 /* nav bar descriptive variables */
 $navbar-background: $charcoal;
@@ -37,6 +40,14 @@ $footer-divider-color: $grey-medium;
 $button-primary-background: $purple;
 $button-secondary-background: $green;
 $button-tertiary-background: $blue;
+$button-font-color: $white;
 
 /* contact form descriptive varibales */
 $contact-form-background: $charcoal;
+
+/* ----- PAGE DESCRIPTIVE VARIABLES ----- */
+
+/* home page */
+$video-container-background: $blue;
+$community-container-background: $blue-dark;
+$community-header-font-color: $white;
