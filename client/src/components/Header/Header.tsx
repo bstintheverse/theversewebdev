@@ -3,47 +3,54 @@ import "./Header.scss";
 
 // components
 import { Link } from "react-router-dom"
+import DropdownMenu from "../DropdownMenu/DropdownMenu";
 
 export default function Header() {
     return (
         <header>
-            <section className="navbar__left">
-                <img className="navbar__logo" alt="The Verse logo" />
+            <nav className="navbar">
+                <img 
+                    className="navbar__logo"
+                    src="/assets/logos/logo.png"
+                    alt="The Verse logo"
+                />
 
-                <div className="navbar__link-container">
-                    <ul className="navbar__link-list">
-                        <li className="navbar__link-item">
+                <div className="navbar__container">
+                    <Link to="/" className="navbar__button">
+                        Donate
+                    </Link>
+
+                    {/* mobile navigation */}
+                    <DropdownMenu />
+
+                    {/* tablet and desktop navigation */}
+                    <ul className="navbar__list">
+                        <li className="navbar__item">
                             <Link to="/" className="navbar__link">
                                 About Us
                             </Link>
                         </li>
 
-                        <li className="navbar__link-item">
+                        <li className="navbar__item">
                             <Link to="/" className="navbar__link">
                                 Games & Digital Experiences
                             </Link>
                         </li>
 
-                        <li className="navbar__link-item">
+                        <li className="navbar__item">
                             <Link to="/" className="navbar__link">
                                 Our People
                             </Link>
                         </li>
 
-                        <li className="navbar__link-item">
+                        <li className="navbar__item">
                             <Link to="/" className="navbar__link">
                                 Contact Us
                             </Link>
                         </li>
                     </ul>
                 </div>
-            </section>
-
-            <section className="navbar__right">
-                <Link to="/" className="navbar__button">
-                    Donate
-                </Link>
-            </section>
+            </nav>
         </header>
     )
 };
