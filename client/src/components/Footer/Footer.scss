@@ -3,5 +3,93 @@
 @use "../../styles/partials/mixins.scss" as *;
 
 .footer {
-    position: absolute;
+    background-color: $footer-background;
+    color: $footer-primary-font-color;
+    padding: 1rem;
+
+    &__wrapper {
+        @include flexbox(column);
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__contact {
+        text-align: center;
+    }
+
+    &__header {
+        text-transform: uppercase;
+        margin: 0 0 1rem 0;
+    }
+
+    &__text {
+        font-size: 0.75rem;
+    }
+
+    &__nav {
+        @include flexbox(column);
+        gap: 0.5rem;
+    }
+
+    &__social {
+        @include flexbox(row);
+        gap: 1rem;
+
+        &-icon {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    &__copyright {
+        color: $footer-secondary-font-color;
+        font-size: 0.6rem;
+    }
+}
+
+.contact-form {
+    @include flexbox(row);
+    justify-content: space-between;
+    align-items: center;
+
+    &__button {
+        background-color: $button-primary-background;
+        font-size: .75rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: .0625rem solid $button-primary-background;
+        border-radius: 1.5625rem;
+        padding: 0.5rem 1.5rem;
+    }
+}
+
+.nav {
+    &__the-verse, &__information, &__resources {
+        width: 100%;
+        @include flexbox(column);
+        align-items: center;
+    }
+
+    &__header {
+        color: $footer-header-color;
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__list {
+        @include flexbox(column);
+        align-items: center;
+        gap: 0.5rem;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__link {
+        font-size: 0.75rem;
+    }
+}
+
+.footer__contact {
+    border-bottom: 1px solid $footer-divider-color;
 }
