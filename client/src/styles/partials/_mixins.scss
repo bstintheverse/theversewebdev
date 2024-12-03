@@ -18,3 +18,9 @@
         @content;
     }
 }
+
+/* flex box */
+@mixin flexbox($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
