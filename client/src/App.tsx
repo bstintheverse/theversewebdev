@@ -7,6 +7,7 @@ import Header from "./components/Header/Header";
 // library
 import { BrowserRouter } from "react-router-dom";
 import Hero from "./components/Hero/Hero";
+import Footer from "./components/Footer/Footer";
 
 export default function App() {
 
@@ -14,6 +15,7 @@ export default function App() {
     <BrowserRouter>
         <Header />
         <Hero />
+        <Footer />
     </BrowserRouter>
   )
 };
