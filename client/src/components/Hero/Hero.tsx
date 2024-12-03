@@ -13,6 +13,7 @@ export default function Hero() {
             >
                 <source src="/assets/videos/hero.mp4" type="video/mp4" />
             </video>
+            
             <h1 className="hero__header">
                 What if games and digital experiences could make you feel 
                 happier, healthier, and more hopeful?
