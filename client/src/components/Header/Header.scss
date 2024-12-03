@@ -4,8 +4,8 @@
 
 .navbar {
     @include flexbox(column);
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     height: 6rem;
     background-color: $navbar-background;
     padding: 1rem;
@@ -14,22 +14,59 @@
         height: 4rem;
         @include flexbox(row);
         gap: 1rem;
+        padding: 1rem 2rem;
+    }
+
+    @include desktop {
+        height: 4rem;
+        @include flexbox(row);
+        gap: 1rem;
+        padding: 1rem 2rem;
     }
 
     &__logo {
-        width: 50%;
+        max-width: 100%;
 
         @include tablet {
-            width: 25%;
+            max-width: 100%;
+        }
+
+        @include desktop {
+            max-width: 100%;
         }
     }
 
     &__container {
         width: 100%;
-        @include flexbox(row);
-        justify-content: space-between;
-        align-items: center;
 
+        @include tablet {
+            @include flexbox(row);
+            gap: 1rem;
+        }
+
+        @include desktop {
+            @include flexbox(row);
+        }
+
+        &--left {
+            @include tablet {
+                width: 25%;
+            }
+
+            @include desktop {
+                width: 15%;
+            }
+        }
+
+        &--right {
+            @include tablet {
+                justify-content: space-between;
+            }
+
+            @include desktop {
+                justify-content: space-between;
+            }
+        }
     }
 
     &__list {
@@ -37,27 +74,43 @@
 
         @include tablet {
             @include flexbox(row);
-            gap: 1rem;
+            align-items: center;
+            gap: 1.25rem;
             list-style-type: none;
             margin: 0;
             padding: 0;
-            order: 1;
+        }
+
+        @include desktop {
+            @include flexbox(row);
+            align-items: center;
+            gap: 1.25rem;
+            list-style-type: none;
+            margin: 0;
+            padding:0;
         }
     }
 
     &__link {
-        font-size: 0.75rem;
+        @include tablet {
+            font-size: 0.85rem;
+        }
     }
 
     &__button {
         background-color: $green;
         font-size: 0.85rem;
         font-weight: bold;
+        text-transform: uppercase;
         border-radius: 1.25rem;
         padding: 0.5rem 1rem;
 
         @include tablet {
             font-size: 0.75rem;
+            order: 2;
+        }
+
+        @include desktop {
             order: 2;
         }
     }
@@ -66,5 +119,4 @@
 a {
     color: $navbar-link-color;
     text-decoration: none;
-    text-transform: uppercase;
 }
