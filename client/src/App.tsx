@@ -11,9 +11,7 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <body>
         <Header />
-      </body>
     </BrowserRouter>
   )
 };
