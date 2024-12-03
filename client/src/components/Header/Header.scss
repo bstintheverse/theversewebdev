@@ -12,6 +12,7 @@
     @include tablet {
         height: 4rem;
         @include flexbox(row);
+        align-items: center;
         gap: 1rem;
         padding: 1rem 2rem;
     }
@@ -19,6 +20,7 @@
     @include desktop {
         height: 4rem;
         @include flexbox(row);
+        align-items: center;
         gap: 1rem;
         padding: 1rem 2rem;
     }
@@ -48,15 +50,16 @@
         }
 
         &--left {
+            width: auto;
             @include flexbox(row);
             justify-content: center;
 
             @include tablet {
-                width: 25%;
+                width: auto;
             }
 
             @include desktop {
-                width: 15%;
+                width: auto;
             }
         }
 
@@ -100,6 +103,10 @@
         @include tablet {
             font-size: 0.85rem;
         }
+
+        @include desktop {
+            font-size: 0.95rem;
+        }
     }
 
     &__button {
@@ -116,6 +123,7 @@
         }
 
         @include desktop {
+            font-size: 0.85rem;
             order: 2;
         }
     }
