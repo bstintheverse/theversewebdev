@@ -1,10 +1,19 @@
-function App() {
+// styling
+import "./styles/global.scss";
+
+// components
+import Header from "./components/Header/Header";
+
+// library
+import { BrowserRouter } from "react-router-dom";
+
+export default function App() {
 
   return (
-    <>
-      Initial commit 🙃
-    </>
+    <BrowserRouter>
+      <body>
+        <Header />
+      </body>
+    </BrowserRouter>
   )
-}
-
-export default App
+};
