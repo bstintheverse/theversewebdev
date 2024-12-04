@@ -1,7 +1,40 @@
 // styling
 import "./Hero.scss";
 
+import { useLocation } from "react-router-dom";
+
 export default function Hero() {
+    const subheaderTitles = [
+        {
+            id: 1,
+            path: "/",
+            subheader: "What if games and digital experiences could make you feel happier, healthier, and more hopeful?"
+        },
+        {
+            id: 2,
+            path: "/about-us",
+            subheader: "About Us"
+        },
+        {
+            id: 3,
+            path: "/games",
+            subheader: "Games & Digital Experiences"
+        },
+        {
+            id: 4,
+            path: "/our-people",
+            subheader: "Our People"
+        },
+        {
+            id: 5,
+            path: "/contact-us",
+            subheader: "Contact Us"
+        }
+    ];
+
+    const location = useLocation();
+    const currentSubheader = subheaderTitles.find(title => title.path === location.pathname);
+
     return (
         <section className="hero">
             <video
@@ -20,7 +53,7 @@ export default function Hero() {
                 </h1>
 
                 <h2 className="hero__subheader">
-                    What if games and digital experiences could make you feel <span className="hero__subheader--uppercase">happier, healthier,</span> and more <span className="hero__subheader--uppercase">hopeful</span>?
+                    {currentSubheader ? currentSubheader.subheader : ""}
                 </h2>
             </div>
         </section>
