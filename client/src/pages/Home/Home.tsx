@@ -1,6 +1,9 @@
 // styling
 import "./Home.scss";
 
+// component
+import CustomCarousel from "../../components/Carousel/CustomCarousel";
+
 export default function HomePage() {
     return (
         <section className="home">
@@ -15,7 +18,7 @@ export default function HomePage() {
                     What We're Building
                 </h2>
 
-                {/* carousel here */}
+                <CustomCarousel />
             </div>
 
             <div className="home__community">
