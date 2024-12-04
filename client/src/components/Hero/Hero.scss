@@ -22,13 +22,13 @@
         left: 0;
 
         @include tablet {
-            width: 40%;
-            top: 18%;
-            padding: 2.5rem;
+            top: 16%;
+            padding-inline: 2.5rem;
         }
     }
 
     &__header {
+        width: 40%;
         font-size: 1.3rem;
         text-transform: uppercase;
         opacity: 70%;
@@ -37,6 +37,7 @@
 
         @include tablet {
             font-size: 5rem;
+            margin-bottom: 5rem;
         }
 
         @include desktop {
@@ -48,16 +49,12 @@
     }
 
     &__subheader {
+        font-style: italic;
+        margin: 0;
+
         @include tablet {
-            font-size: 1rem;
-        }
-
-        &--uppercase {
-            text-transform: uppercase;
-
-            @include tablet {
-                font-size: 1.5rem;
-            }
+            width: 60%;
+            font-size: 1.25rem;
         }
     }
 }
