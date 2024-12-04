@@ -7,8 +7,6 @@ export default function AboutPage() {
             <p>
                 About Placeholder
             </p>
-
-
         </section>
     )
 };
