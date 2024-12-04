@@ -96,7 +96,7 @@ export default function Footer() {
 
                     <ul className="nav__list">
                         <li className="nav__item">
-                            <Link to="/" className="nav__link">
+                            <Link to="/contact-us" className="nav__link">
                                 Contact
                             </Link>
                         </li>
@@ -113,21 +113,30 @@ export default function Footer() {
 
             <section className="footer__wrapper">
                 <div className="footer__social">
-                    <img 
-                        className="footer__social-icon"
-                        src="/assets/logos/x.png" 
-                        alt="X" 
-                    />
-                    <img 
-                        className="footer__social-icon"
-                        src="/assets/logos/instagram.svg" 
-                        alt="Instagram" 
-                    />
-                    <img 
-                        className="footer__social-icon"
-                        src="/assets/logos/linkedin.png"
-                        alt="LinkedIn"
-                    />
+
+                    <a href="https://www.x.com/buildingverses" target="_blank">
+                        <img 
+                            className="footer__social-icon"
+                            src="/assets/logos/x.png" 
+                            alt="X" 
+                        />
+                    </a>
+                    
+                    <a href="https://www.instagram.com/buildingverses/" target="_blank">
+                        <img 
+                            className="footer__social-icon"
+                            src="/assets/logos/instagram.svg" 
+                            alt="Instagram" 
+                        />
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/building-the-verse/" target="_blank">
+                        <img 
+                            className="footer__social-icon"
+                            src="/assets/logos/linkedin.png"
+                            alt="LinkedIn"
+                        />
+                    </a>
                 </div>
 
                 <p className="footer__copyright">
