@@ -29,10 +29,16 @@
     &__work {
         @include flexbox(column);
         align-items: center;
+        position: relative;
         padding: 1rem;
+
+        @include tablet {
+            padding-block: 2.5rem;
+        }
 
         &-header {
             font-size: 1rem;
+            margin-top: 0;
         }
     }
 
