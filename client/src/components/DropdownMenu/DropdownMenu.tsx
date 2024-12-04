@@ -40,6 +40,10 @@ export default function DropdownMenu() {
                         </Link>
                     </li>
                 </ul>
+
+                <Link to="/donate" className="dropdown__button--donate">
+                    Donate
+                </Link>
             </div>
         </div>
     )
