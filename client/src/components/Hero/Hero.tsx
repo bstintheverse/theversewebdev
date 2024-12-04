@@ -1,10 +1,18 @@
 // styling
 import "./Hero.scss";
 
+// hook
 import { useLocation } from "react-router-dom";
 
+// type
+interface subheaderTitleProps {
+    id: number;
+    path: string;
+    subheader: string;
+};
+
 export default function Hero() {
-    const subheaderTitles = [
+    const subheaderTitles: subheaderTitleProps[] = [
         {
             id: 1,
             path: "/",
@@ -29,6 +37,16 @@ export default function Hero() {
             id: 5,
             path: "/contact-us",
             subheader: "Contact Us"
+        },
+        {
+            id: 6,
+            path: "/donate",
+            subheader: "Donate"
+        },
+        {
+            id: 7,
+            path: "/404",
+            subheader: "Oops! Page not found!"
         }
     ];
 
