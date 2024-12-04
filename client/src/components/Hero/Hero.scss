@@ -16,22 +16,27 @@
         z-index: -1;
     }
 
-    &__header {
+    &__content {
         position: absolute;
-        top: 47%;
+        top: 30%;
         left: 0;
+
+        @include tablet {
+            width: 40%;
+            top: 18%;
+            padding: 2.5rem;
+        }
+    }
+
+    &__header {
         font-size: 1.3rem;
         text-transform: uppercase;
         opacity: 70%;
         margin: 0;
         z-index: 1;
-        padding: 1rem;
 
         @include tablet {
-            max-width: 50%;
-            top: 35%;
-            font-size: 1.6rem;
-            padding: 2.5rem;
+            font-size: 5rem;
         }
 
         @include desktop {
@@ -39,6 +44,20 @@
             top: 35%;
             font-size: 2rem;
             padding: 2.5rem;
+        }
+    }
+
+    &__subheader {
+        @include tablet {
+            font-size: 1rem;
+        }
+
+        &--uppercase {
+            text-transform: uppercase;
+
+            @include tablet {
+                font-size: 1.5rem;
+            }
         }
     }
 }
