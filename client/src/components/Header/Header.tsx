@@ -20,7 +20,7 @@ export default function Header() {
                 </div>
 
                 <div className="navbar__container navbar__container--right">
-                    <Link to="/" className="navbar__button">
+                    <Link to="/donate" className="navbar__button">
                         Donate
                     </Link>
 
