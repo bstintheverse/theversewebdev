@@ -3,9 +3,11 @@
 @use "../../styles/partials/mixins.scss" as *;
 
 .navbar {
-    height: 6rem;
-    @include flexbox(column);
-    justify-content: space-between;
+    height: 5rem;
+    @include flexbox(row);
+    align-items: center;
+    // justify-content: space-between;
+    gap: 1rem;
     background-color: $navbar-background;
     padding: 1rem;
 
@@ -13,7 +15,7 @@
         height: 4rem;
         @include flexbox(row);
         align-items: center;
-        gap: 1rem;
+        gap: 1.5rem;
         padding: 1rem 2rem;
     }
 
@@ -21,12 +23,13 @@
         height: 4rem;
         @include flexbox(row);
         align-items: center;
-        gap: 1rem;
+        gap: 2rem;
         padding: 1rem 2rem;
     }
 
     &__logo {
-        max-width: 100%;
+        width: auto;
+        height: 100%;
 
         @include tablet {
             max-width: 100%;
@@ -41,8 +44,8 @@
         width: 100%;
 
         @include tablet {
-            @include flexbox(row);
-            gap: 1rem;
+            // @include flexbox(row);
+            // gap: 1rem;
         }
 
         @include desktop {
@@ -51,21 +54,24 @@
 
         &--left {
             width: auto;
+            height: 50%;
             @include flexbox(row);
             justify-content: center;
 
             @include tablet {
                 width: auto;
+                height: 55%;
             }
 
             @include desktop {
                 width: auto;
+                height: 55%;
             }
         }
 
         &--right {
             @include flexbox(row);
-            justify-content: space-between;
+            justify-content: flex-end;
 
             @include tablet {
                 justify-content: space-between;
@@ -101,28 +107,31 @@
 
     &__link {
         @include tablet {
-            font-size: 0.85rem;
+            font-size: 0.8rem;
         }
 
         @include desktop {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
     }
 
     &__button {
         background-color: $green;
-        font-size: 0.85rem;
+        font-size: 0.75rem;
         font-weight: bold;
         text-transform: uppercase;
         border-radius: 1.25rem;
         padding: 0.5rem 1rem;
+        visibility: hidden;
 
         @include tablet {
+            visibility: visible;
             font-size: 0.75rem;
             order: 2;
         }
 
         @include desktop {
+            visibility: visible;
             font-size: 0.85rem;
             order: 2;
         }
