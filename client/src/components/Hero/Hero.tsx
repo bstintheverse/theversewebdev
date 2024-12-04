@@ -17,7 +17,7 @@ export default function Hero() {
         },
         {
             id: 3,
-            path: "/games",
+            path: "/experiences",
             subheader: "Games & Digital Experiences"
         },
         {
