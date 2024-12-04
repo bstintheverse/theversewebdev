@@ -17,25 +17,25 @@ export default function DropdownMenu() {
             <div className="dropdown__content">
                 <ul className="dropdown__list">
                     <li className="dropdown__item">
-                        <Link to="/" className="dropdown__link">
+                        <Link to="/about-us" className="dropdown__link">
                             About Us
                         </Link>
                     </li>
 
                     <li className="dropdown__item">
-                        <Link to="/" className="dropdown__link">
+                        <Link to="/experiences" className="dropdown__link">
                             Games & Digital Experiences
                         </Link>
                     </li>
 
                     <li className="dropdown__item">
-                        <Link to="/" className="dropdown__link">
+                        <Link to="/our-people" className="dropdown__link">
                             Our People
                         </Link>
                     </li>
 
                     <li className="dropdown__item">
-                        <Link to="/" className="dropdown__link">
+                        <Link to="/contact-us" className="dropdown__link">
                             Contact Us
                         </Link>
                     </li>

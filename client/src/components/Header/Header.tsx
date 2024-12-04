@@ -10,11 +10,13 @@ export default function Header() {
         <header>
             <nav className="navbar">
                 <div className="navbar__container navbar__container--left">
-                    <img 
-                        className="navbar__logo"
-                        src="/assets/logos/logo.png"
-                        alt="The Verse logo"
-                    />
+                    <Link to="/">
+                        <img 
+                            className="navbar__logo"
+                            src="/assets/logos/logo.png"
+                            alt="The Verse logo"
+                        />
+                    </Link>
                 </div>
 
                 <div className="navbar__container navbar__container--right">
@@ -28,25 +30,25 @@ export default function Header() {
                     {/* tablet and desktop navigation */}
                     <ul className="navbar__list">
                         <li className="navbar__item">
-                            <Link to="/" className="navbar__link">
+                            <Link to="/about-us" className="navbar__link">
                                 About Us
                             </Link>
                         </li>
 
                         <li className="navbar__item">
-                            <Link to="/" className="navbar__link">
+                            <Link to="/experiences" className="navbar__link">
                                 Games & Digital Experiences
                             </Link>
                         </li>
 
                         <li className="navbar__item">
-                            <Link to="/" className="navbar__link">
+                            <Link to="/our-people" className="navbar__link">
                                 Our People
                             </Link>
                         </li>
 
                         <li className="navbar__item">
-                            <Link to="/" className="navbar__link">
+                            <Link to="/contact-us" className="navbar__link">
                                 Contact Us
                             </Link>
                         </li>
