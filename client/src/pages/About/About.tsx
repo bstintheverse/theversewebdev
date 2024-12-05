@@ -37,7 +37,7 @@ export default function AboutPage() {
                 </h3>
 
                 <p className="about__mission-text">
-                    These are the key elements of Interconnection in The Verse:
+                    The key elements of Interconnection in The Verse are:
                 </p>
 
                 <div className="about__mission-elements">
@@ -46,60 +46,60 @@ export default function AboutPage() {
                         <li className="mission-element__item">
                             <img 
                                 className="mission-element__image"
-                                src="/"
+                                src="/assets/images/placeholder-square.jpg"
                                 alt="Alt text"
                             />
                             
-                            <p className="mission-element__header">
-                                Text
+                            <p className="mission-element__label">
+                                Human-first Approach
                             </p>
                         </li>
 
                         <li className="mission-element__item">
                             <img 
                                 className="mission-element__image"
-                                src="/"
+                                src="/assets/images/placeholder-square.jpg"
                                 alt="Alt text"
                             />
                             
-                            <p className="mission-element__header">
-                                Text
+                            <p className="mission-element__label">
+                                Collaboration
                             </p>
                         </li>
 
                         <li className="mission-element__item">
                             <img 
                                 className="mission-element__image"
-                                src="/"
+                                src="/assets/images/placeholder-square.jpg"
                                 alt="Alt text"
                             />
                             
-                            <p className="mission-element__header">
-                                Text
+                            <p className="mission-element__label">
+                                Holistic Thinking
                             </p>
                         </li>
 
                         <li className="mission-element__item">
                             <img 
                                 className="mission-element__image"
-                                src="/"
+                                src="/assets/images/placeholder-square.jpg"
                                 alt="Alt text"
                             />
                             
-                            <p className="mission-element__header">
-                                Text
+                            <p className="mission-element__label">
+                                Play, Ritual, Story
                             </p>
                         </li>
 
                         <li className="mission-element__item">
                             <img 
                                 className="mission-element__image"
-                                src="/"
+                                src="/assets/images/placeholder-square.jpg"
                                 alt="Alt text"
                             />
                             
-                            <p className="mission-element__header">
-                                Text
+                            <p className="mission-element__label">
+                                Servant Leadership
                             </p>
                         </li>
                     </ul>
