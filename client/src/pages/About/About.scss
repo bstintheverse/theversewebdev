@@ -22,8 +22,26 @@
         }
     }
 
+    &__mission-text, &__history-text, &__our-way-text {
+        font-size: 0.75rem;
+    }
+
+    &__mission-header, &__history-header, &__our-way-header {
+        font-size: 1rem;
+    }
+
+    &__mission-subheader, &__history-subheader, &__our-way-subheader {
+        font-size: 0.85rem;
+    }
+
     &__mission {
         padding: 1rem;
+
+        /* styles the about mission elements container */
+        &-elements {
+            @include flexbox(column);
+            align-items: center;
+        }
     }
 
     &__history {
@@ -33,9 +51,37 @@
     &__our-way {
         background-color: #D9D9D9;
         padding: 1rem;
+
+        &-text {
+            &--small {
+                font-size: 0.7rem;
+            }
+        }
     }
 
     &__our-community {
         padding: 1rem;
+    }
+}
+
+/* styling for mission element cards */
+.mission-element {
+    &__list {
+        width: 70%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+    }
+
+    &__label {
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-align: center;
     }
 }
