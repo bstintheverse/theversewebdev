@@ -67,12 +67,8 @@ export default function Hero() {
             
             <div className="hero__content">
                 <h1 className="hero__header">
-                    The Verse
-                </h1>
-
-                <h2 className="hero__subheader">
                     {currentSubheader ? currentSubheader.subheader : ""}
-                </h2>
+                </h1>
             </div>
         </section>
     )
