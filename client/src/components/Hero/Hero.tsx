@@ -5,14 +5,14 @@ import "./Hero.scss";
 import { useLocation } from "react-router-dom";
 
 // type
-interface subheaderTitleProps {
+interface headerTitleProps {
     id: number;
     path: string;
     subheader: string;
 };
 
 export default function Hero() {
-    const subheaderTitles: subheaderTitleProps[] = [
+    const headerTitles: headerTitleProps[] = [
         {
             id: 1,
             path: "/",
@@ -51,7 +51,7 @@ export default function Hero() {
     ];
 
     const location = useLocation();
-    const currentSubheader = subheaderTitles.find(title => title.path === location.pathname);
+    const currentHeader = headerTitles.find(title => title.path === location.pathname);
 
     return (
         <section className="hero">
@@ -67,7 +67,7 @@ export default function Hero() {
             
             <div className="hero__content">
                 <h1 className="hero__header">
-                    {currentSubheader ? currentSubheader.subheader : ""}
+                    {currentHeader ? currentHeader.subheader : ""}
                 </h1>
             </div>
         </section>
