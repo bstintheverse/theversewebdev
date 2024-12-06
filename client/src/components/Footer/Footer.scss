@@ -45,14 +45,18 @@
         }
     }
 
+    &__header {
+        @include m-header-md($footer-primary-font-color);
+    }
+
     &__subheader {
-        @include m-subheader(white);
+        @include m-subheader($footer-primary-font-color);
         font-weight: 400;
         margin: 0;
     }
 
     &__text {
-        @include m-text(white);
+        @include m-text($footer-primary-font-color);
 
         @include tablet {
             font-size: 0.80rem;
