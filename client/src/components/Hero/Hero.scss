@@ -21,7 +21,7 @@
         height: 100%;
         @include flexbox(column);
         justify-content: flex-end;
-        align-items: center;
+        // align-items: center;
         gap: 7rem;
         position: absolute;
         box-sizing: border-box;
@@ -37,11 +37,13 @@
     }
 
     &__header {
-        width: 100%;
-        font-size: 1.2rem;
-        text-transform: uppercase;
-        text-align: center;
-        opacity: 70%;
+        width: 60%;
+        // font-size: 1.2rem;
+        // text-transform: uppercase;
+        // text-align: center;
+        @include m-hero-header($white);
+        text-align: left;
+        opacity: 80%;
         margin: 0;
         // margin-bottom: 5rem;
         z-index: 1;

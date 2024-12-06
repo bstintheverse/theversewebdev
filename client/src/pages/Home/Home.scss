@@ -74,18 +74,17 @@
         }
 
         &-header {
-            color: $community-header-font-color;
-            font-size: 1rem;
-            text-transform: uppercase;
-            
+            @include m-header-nanum($community-header-font-color);
+            font-weight: 400; /* review? */
+            margin-bottom: 0;
+
             @include desktop {
                 font-size: 1.5rem;
             }
         }
 
         &-text {
-            color: $global-tertiary-font-color;
-            font-size: 0.80rem;
+            @include m-text($global-tertiary-font-color);
             text-align: center;
 
             @include tablet {
@@ -184,7 +183,7 @@
         }
 
         &-text {
-            font-size: 0.80rem;
+            @include m-text($global-primary-font-color);
             text-align: center;
 
             @include tablet {

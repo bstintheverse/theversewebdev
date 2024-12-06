@@ -45,13 +45,14 @@
         }
     }
 
-    &__header {
-        text-transform: uppercase;
-        margin: 0 0 1rem 0;
+    &__subheader {
+        @include m-subheader(white);
+        font-weight: 400;
+        margin: 0;
     }
 
     &__text {
-        font-size: 0.75rem;
+        @include m-text(white);
 
         @include tablet {
             font-size: 0.80rem;
@@ -86,8 +87,7 @@
     }
 
     &__copyright {
-        color: $footer-secondary-font-color;
-        font-size: 0.6rem;
+        @include m-text-xs($footer-secondary-font-color);
     }
 }
 
@@ -139,8 +139,7 @@
     }
 
     &__header {
-        color: $footer-header-color;
-        font-size: 0.75rem;
+        @include m-header-sm($footer-header-color);
         margin-bottom: 0.5rem;
 
         @include tablet {
@@ -170,7 +169,7 @@
     }
 
     &__link {
-        font-size: 0.70rem;
+        @include m-link;
 
         @include tablet {
             font-size: 0.80rem;
