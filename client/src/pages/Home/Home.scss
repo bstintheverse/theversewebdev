@@ -84,7 +84,7 @@
         }
 
         &-text {
-            @include m-text($global-tertiary-font-color);
+            @include m-text($global-secondary-font-color);
             text-align: center;
 
             @include tablet {
