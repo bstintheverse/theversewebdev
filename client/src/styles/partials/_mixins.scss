@@ -45,7 +45,27 @@
     text-transform: uppercase;
 }
 
-@mixin m-body($color) {
+@mixin m-header-sm($color) {
+    color: $color;
+    font-size: 0.90rem;
+}
+
+@mixin m-subheader($color) {
+    font-family: "Nanum Pen", sans-serif;
+    color: $color;
+    font-size: 1.5rem;
+}
+
+@mixin m-text($color) {
     color: $color;
     font-size: 1rem;
+}
+
+@mixin m-text-xs($color) {
+    color: $color;
+    font-size: 0.7rem;
+}
+
+@mixin m-link() {
+    font-size: 0.85rem;
 }
