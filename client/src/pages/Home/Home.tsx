@@ -34,7 +34,7 @@ export default function HomePage() {
                     <p className="home__community-text">
                         The Verse is a global community of inspired gamers, developers, designers,
                         scientists, artists, visionaries, teachers, and students who join together
-                        to passionately contribute their wide-ranging expertise to invent experiences
+                        to passionately contribute their wide ranging expertise to invent experiences
                         that enhance human flourishing.
                     </p>
 
@@ -59,7 +59,7 @@ export default function HomePage() {
                     </h2>
 
                     <p className="home__support-text">
-                        Your contribution go directly towards a team of 50 people who donate ~20hrs
+                        Your contribution go directly towards a team of 50 people who donate around 20 hours
                         per week to build games and experiences that impact health and consciousness.
                     </p>
 
