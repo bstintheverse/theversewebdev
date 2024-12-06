@@ -1,3 +1,6 @@
+@use "./fonts.scss" as *;
+@use "./variables.scss" as *;
+
 /* mobile breakpoint */
 @mixin mobile {
     @media (min-width: 320px) and (max-width: 767px) {
@@ -23,4 +26,26 @@
 @mixin flexbox($direction) {
     display: flex;
     flex-direction: $direction;
+}
+
+/* mobile text styles */
+@mixin m-hero-header($color) {
+    font-family: "Nanum Pen", sans-serif;
+    color: $color;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+@mixin m-header-nanum($color) {
+    font-family: "Nanum Pen", sans-serif;
+    color: $color;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+@mixin m-body($color) {
+    color: $color;
+    font-size: 1rem;
 }
