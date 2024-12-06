@@ -43,6 +43,11 @@
     text-transform: uppercase;
 }
 
+@mixin m-header-md($color) {
+    color: $color;
+    font-size: 1rem;
+}
+
 @mixin m-header-sm($color) {
     color: $color;
     font-size: 0.90rem;
