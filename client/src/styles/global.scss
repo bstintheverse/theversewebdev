@@ -1,7 +1,9 @@
 @use "./partials/fonts.scss" as *;
+@use "./partials//variables.scss" as *;
 
 html, body {
     font-family: "TT Commons Pro", sans-serif;
+    color: $global-primary-font-color;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
