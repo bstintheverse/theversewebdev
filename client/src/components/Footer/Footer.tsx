@@ -15,7 +15,7 @@ export default function Footer() {
                         Contact Us
                     </h4>
 
-                    <h5 className="footer__header">
+                    <h5 className="footer__subheader">
                         Join us today!
                     </h5>
 
