@@ -102,6 +102,20 @@ export default function Footer() {
                         </li>
                     </ul>
                 </div>
+
+                <div className="nav__support">
+                    <h4 className="nav__header">
+                        Support
+                    </h4>
+
+                    <ul className="nav__list">
+                        <li className="nav__item">
+                            <Link to="/donate" className="nav__link">
+                                Donate
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
             </section>
 
             <Divider 
