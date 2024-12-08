@@ -28,24 +28,14 @@
 
 /* mobile text styles */
 @mixin m-hero-header($color) {
-    font-family: "Nanum Pen", sans-serif;
     color: $color;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    text-align: center;
-    line-height: 1.5rem;
-}
-
-@mixin m-header-nanum($color) {
-    font-family: "Nanum Pen", sans-serif;
-    color: $color;
-    font-size: 1.5rem;
-    text-transform: uppercase;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
 }
 
 @mixin m-header-md($color) {
     color: $color;
-    font-size: 1rem;
+    font-size: 1.15rem;
 }
 
 @mixin m-header-sm($color) {
@@ -57,11 +47,12 @@
     font-family: "Nanum Pen", sans-serif;
     color: $color;
     font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 @mixin m-text($color) {
     color: $color;
-    font-size: 1rem;
+    font-size: 0.85rem;
 }
 
 @mixin m-text-xs($color) {
@@ -86,7 +77,7 @@
 @mixin button($background-color, $border-color) {
     background-color: $background-color;
     color: $global-secondary-font-color;
-    font-size: 0.90rem;
+    font-size: 0.85rem;
     font-weight: bold;
     text-transform: uppercase;
     border: .0625rem solid $border-color;
