@@ -3,13 +3,13 @@
 @use "../../styles/partials/mixins.scss" as *;
 
 .hero {
-    height: 50vh;
+    height: 63vh;
     position: relative;
     color: $hero-font-color;
 
     &__video {
         width: 100%;
-        height: 50vh;
+        height: 63vh;
         position: absolute;
         object-fit: cover;
         overflow-x: hidden;
@@ -21,8 +21,7 @@
         height: 100%;
         @include flexbox(column);
         justify-content: flex-end;
-        // align-items: center;
-        gap: 7rem;
+        align-items: center;
         position: absolute;
         box-sizing: border-box;
         padding: 1.5rem;
@@ -37,12 +36,11 @@
     }
 
     &__header {
-        width: 60%;
+        width: 87%;
         // font-size: 1.2rem;
         // text-transform: uppercase;
-        // text-align: center;
         @include m-hero-header($white);
-        text-align: left;
+        text-align: center;
         opacity: 80%;
         margin: 0;
         // margin-bottom: 5rem;
