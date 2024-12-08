@@ -23,15 +23,15 @@
     }
 
     &__mission-text, &__history-text, &__our-way-text {
-        font-size: 0.75rem;
+        @include m-text($global-primary-font-color);
     }
 
     &__mission-header, &__history-header, &__our-way-header {
-        font-size: 1rem;
+        @include m-header-md($global-primary-font-color);
     }
 
     &__mission-subheader, &__history-subheader, &__our-way-subheader {
-        font-size: 0.85rem;
+        @include m-subheader($global-primary-font-color);
     }
 
     &__mission {
@@ -75,13 +75,12 @@
 
     &__image {
         width: 100%;
-        height: auto;
+        height: 10rem;
+        object-fit: cover;
         border-radius: 5%;
     }
 
     &__label {
-        font-size: 0.8rem;
-        font-weight: bold;
-        text-align: center;
+        @include m-label($global-primary-font-color);
     }
 }
