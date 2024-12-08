@@ -1,5 +1,7 @@
-//styling
 import "./OurPeople.scss";
+
+import { teamMembers, teamMemberProps } from "../../data/teamMembers";
+
 
 export default function OurPeoplePage() {
     return (
@@ -21,24 +23,26 @@ export default function OurPeoplePage() {
 
             <section className="our-people__team">
                 <ul className="card__list">
-                    <li className="card card--top">
+                    {teamMembers.map((teamMember: teamMemberProps) => (
+                        teamMember.id === 1 ? (
+                            <li className="card card--top">
                         <div className="card__wrapper">
                             <img 
                                 className="card__image"
-                                src="/assets/images/placeholder-square.jpg"
-                                alt="Photo of Ben Simon-Thomas"
+                                src={teamMember.image}
+                                alt={teamMember.alt}
                             />
 
                             <h3 className="card__member-name">
-                                Ben Simon-Thomas
+                                {teamMember.name}
                             </h3>
                             
-                            <p className="card__member-role">
-                                Founder and Executive Director
+                            <p className="card__member-role card__member-role--white">
+                                {teamMember.role}
                             </p>
 
-                            <p className="card__member-location">
-                                Berkeley, CA
+                            <p className="card__member-location card__member-location--white">
+                                {teamMember.location}
                             </p>
                         </div>
 
@@ -47,15 +51,32 @@ export default function OurPeoplePage() {
                         </h4>
 
                         <p className="card__text">
-                        Creating games, experiences, and rituals that uplift humanity. || 
-                        Member Catalyst 2030 & Coordinator IDG Berkeley Uplift Lab. || 
-                        World Builder - Team Builder - Connector/Collaborator - Human
+                            {teamMember.description}
                         </p>
                     </li>
+                        ) : (
 
-                    <li className="our-people__item">
+                    <li className="card">
+                    <img 
+                        className="card__image"
+                        src={teamMember.image}
+                        alt={teamMember.alt}
+                    />
 
-                    </li>
+                    <h3 className="card__member-name">
+                        {teamMember.name}
+                    </h3>
+                    
+                    <p className="card__member-role">
+                        {teamMember.role}
+                    </p>
+
+                    <p className="card__member-location">
+                        {teamMember.location}
+                    </p>
+                </li>
+                        )
+                    ))}
                 </ul>
             </section>
         </section>
