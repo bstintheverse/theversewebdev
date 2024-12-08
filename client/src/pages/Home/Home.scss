@@ -37,7 +37,7 @@
         }
 
         &-header {
-            font-size: 1rem;
+            @include m-header-md($global-primary-font-color);
             margin-top: 0;
         }
     }
@@ -74,7 +74,7 @@
         }
 
         &-header {
-            @include m-header-nanum($community-header-font-color);
+            @include m-subheader($global-secondary-font-color);
             font-weight: 400; /* review? */
             margin-bottom: 0;
 
@@ -173,6 +173,10 @@
             @include desktop {
                 padding: 5rem;
             }
+        }
+
+        &-heading {
+            @include m-header-md($global-primary-font-color);
         }
 
         &-text {
