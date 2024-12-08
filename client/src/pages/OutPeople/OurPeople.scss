@@ -1,3 +1,68 @@
 // partials
 @use "../../styles/partials/variables.scss" as *;
 @use "../../styles/partials/mixins.scss" as *;
+
+.our-people {
+    &__container {
+        height: 100%;
+        background-color: $black;
+        text-align: center;
+        @include flexbox(column);
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    &__header {
+        @include m-header-md($global-secondary-font-color);
+    }
+
+    &__text {
+        @include m-text($global-secondary-font-color);
+    }
+}
+
+.card {
+    padding: 1rem;
+    border-radius: 1.25rem;
+
+    &__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 1rem;
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+        border-radius: 5%;
+    }
+
+    &__text {
+        @include m-text(white);
+        margin-block: 0.25rem 0;
+    }
+
+    &__member {
+        &-name {
+            font-family: "Nanum Pen", sans-serif;
+            font-size: 2rem;
+            margin-block: 0;
+        }
+
+        &-role, &-location {
+            @include m-text(white);
+            margin-block: 0.25rem 0.5rem;
+        }
+
+        &-description {
+            font-family: "Nanum Pen", sans-serif;
+            font-size: 1.75rem;
+            margin-block: 1rem 0;
+        }
+    }
+
+    &--top {
+        background-color: $purple-dark;
+        color: white;
+    }
+}
