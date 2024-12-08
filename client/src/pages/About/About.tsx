@@ -46,7 +46,7 @@ export default function AboutPage() {
                         <li className="mission-element__item">
                             <img 
                                 className="mission-element__image"
-                                src="/assets/images/placeholder-square.jpg"
+                                src="/assets/images/guiding-principle-1.jpg"
                                 alt="Alt text"
                             />
                             
@@ -58,7 +58,7 @@ export default function AboutPage() {
                         <li className="mission-element__item">
                             <img 
                                 className="mission-element__image"
-                                src="/assets/images/placeholder-square.jpg"
+                                src="/assets/images/guiding-principle-2.jpg"
                                 alt="Alt text"
                             />
                             
@@ -70,7 +70,7 @@ export default function AboutPage() {
                         <li className="mission-element__item">
                             <img 
                                 className="mission-element__image"
-                                src="/assets/images/placeholder-square.jpg"
+                                src="/assets/images/guiding-principle-3.jpg"
                                 alt="Alt text"
                             />
                             
@@ -82,7 +82,7 @@ export default function AboutPage() {
                         <li className="mission-element__item">
                             <img 
                                 className="mission-element__image"
-                                src="/assets/images/placeholder-square.jpg"
+                                src="/assets/images/guiding-principle-4.jpg"
                                 alt="Alt text"
                             />
                             
@@ -94,7 +94,7 @@ export default function AboutPage() {
                         <li className="mission-element__item">
                             <img 
                                 className="mission-element__image"
-                                src="/assets/images/placeholder-square.jpg"
+                                src="/assets/images/guiding-principle-5.jpg"
                                 alt="Alt text"
                             />
                             
