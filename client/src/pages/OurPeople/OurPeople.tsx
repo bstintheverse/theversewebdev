@@ -25,35 +25,37 @@ export default function OurPeoplePage() {
                 <ul className="card__list">
                     {teamMembers.map((teamMember: teamMemberProps) => (
                         teamMember.id === 1 || teamMember.id === 2 ? (
-                            <li className="card card--top">
-                                <div className="card__wrapper">
+                            <li className="card card__top">
+                                <div className="card__top-wrapper-info">
                                     <img 
                                         className="card__image"
                                         src={teamMember.image}
                                         alt={teamMember.alt}
                                     />
 
-                                    <h3 className="card__member-name card__member-name--white card__member-name--lg">
+                                    <h3 className="card__top-member-name">
                                         {teamMember.name}
                                     </h3>
                                     
-                                    <p className="card__member-role card__member-role--white card__member-role--lg">
+                                    <p className="card__top_member-role">
                                         {teamMember.role}
                                     </p>
 
-                                    <p className="card__member-location card__member-location--white card__member-location--lg">
+                                    <p className="card__top-member-location">
                                         {teamMember.location}
                                     </p>
                                 </div>
 
-                            <h4 className="card__member-description-header">
-                                About
-                            </h4>
+                                <div className="card__top-wrapper-description">
+                                    <h4 className="card__top-member-header">
+                                        About
+                                    </h4>
 
-                            <p className="card__description">
-                                {teamMember.description}
-                            </p>
-                        </li>
+                                    <p className="card__top-member-description">
+                                        {teamMember.description}
+                                    </p>
+                                </div>
+                            </li>
                         ) : (
                         <li className="card">
                             <img 
