@@ -8,16 +8,15 @@
     @include tablet {
         padding: 1rem 2.5rem;
     }
+
+    @include desktop {
+        padding: 1rem 10rem;
+    }
 }
 
 .experience {
     &__cards {
         max-width: 100%;
-
-        @include tablet {
-            width: 100%;
-            margin: 0 auto;
-        }
     }
 
     &__card {
@@ -32,12 +31,22 @@
                 flex-wrap: wrap;
                 gap: 1.5rem;
             }
+
+            @include desktop {
+                width: auto;
+                @include flexbox(row);
+                flex-wrap: wrap;
+                gap: 2rem;
+            }
         }
 
         &-item {
             @include tablet {
                 width: 48.2%;
-                // background-color: lightgreen;
+            }
+
+            @include desktop { 
+                width: 47.9%;
             }
         }
     }
