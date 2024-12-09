@@ -23,21 +23,13 @@ export const teamMembers: teamMemberProps[] = [
     {
         id: 2,
         image: `${imagePath}/placeholder-square.jpg`,
-        alt: "Photo of Brandon Howard",
-        name: "Brandon Howard",
-        role: "Role",
-        location: "Location"
-    },
-    {
-        id: 3,
-        image: `${imagePath}/placeholder-square.jpg`,
         alt: "Photo of Anshul Pendse",
         name: "Anshul Pendse",
         role: "Role",
         location: "Location"
     },
     {
-        id: 4,
+        id: 3,
         image: `${imagePath}/placeholder-square.jpg`,
         alt: "Photo of Alistair Song-White",
         name: "Alistair Song-White",
@@ -45,7 +37,7 @@ export const teamMembers: teamMemberProps[] = [
         location: "Oakland, CA"
     },
     {
-        id: 5,
+        id: 4,
         image: `${imagePath}/placeholder-square.jpg`,
         alt: "Photo of Vaishali Ramesh",
         name: "Vaishali Ramesh",
@@ -53,7 +45,7 @@ export const teamMembers: teamMemberProps[] = [
         location: "India"
     },
     {
-        id: 6,
+        id: 5,
         image: `${imagePath}/placeholder-square.jpg`,
         alt: "Photo of Quenton Porter",
         name: "Quenton Porter",
@@ -61,7 +53,7 @@ export const teamMembers: teamMemberProps[] = [
         location: "Charles Town, WV"
     },
     {
-        id: 7,
+        id: 6,
         image: `${imagePath}/placeholder-square.jpg`,
         alt: "Photo of Daniel Tsai",
         name: "Daniel Tsai",
@@ -69,7 +61,7 @@ export const teamMembers: teamMemberProps[] = [
         location: "Los Angeles, CA"
     },
     {
-        id: 8,
+        id: 7,
         image: `${imagePath}/placeholder-square.jpg`,
         alt: "Photo of Jay Jayachandran",
         name: "Jay Jayachandran",
@@ -77,7 +69,7 @@ export const teamMembers: teamMemberProps[] = [
         location: "Reno, NV"
     },
     {
-        id: 9,
+        id: 8,
         image: `${imagePath}/placeholder-square.jpg`,
         alt: "Photo of Gargi Pawar",
         name: "Gargi Pawar",
@@ -85,7 +77,7 @@ export const teamMembers: teamMemberProps[] = [
         location: "Tampa, FL"
     },
     {
-        id: 10,
+        id: 9,
         image: `${imagePath}/placeholder-square.jpg`,
         alt: "Photo of Kyle Eason",
         name: "Kyle Eason",
@@ -93,7 +85,7 @@ export const teamMembers: teamMemberProps[] = [
         location: "Denver, CO"
     },
     {
-        id: 11,
+        id: 10,
         image: `${imagePath}/placeholder-square.jpg`,
         alt: "Photo of Lily Le",
         name: "Lily Le",
