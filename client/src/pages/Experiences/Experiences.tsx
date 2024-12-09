@@ -4,7 +4,7 @@ import "./Experiences.scss";
 export default function ExperiencesPage() {
     return (
         <section className="experiences">
-            <article className="experience_cards">
+            <article className="experience__cards">
                 <ul className="experience__card-list">
                     <li className="experience__card-item">
                         <h2 className="experience__header">
@@ -35,7 +35,7 @@ export default function ExperiencesPage() {
 
                     <li className="experience__card-item">
                         <h2 className="experience__header">
-                            Karma The Six Realms Game
+                            Karma The Six Realms
                         </h2>
 
                         <div className="experience__video-description">
