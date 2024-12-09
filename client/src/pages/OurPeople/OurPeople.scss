@@ -26,12 +26,23 @@
     border-radius: 1.25rem;
     padding: 1rem;
 
+    @include tablet {
+        width: 22.4%;
+        padding: 2rem;
+    }
+
     &__list {
         @include flexbox(column);
         gap: 1rem;
         list-style-type: none;
         margin: 0;
         padding: 1rem;
+
+        @include tablet {
+            @include flexbox(row);
+            flex-wrap: wrap;
+            padding: 1rem 2.5rem;
+        }
     }
 
     &__image {
@@ -40,29 +51,47 @@
         border-radius: 5%;
     }
 
-    &__text {
+    /* styles description for co-founder cards */
+    &__description {
         @include m-text($footer-primary-font-color);
-        margin-block: 0.25rem 0;
-        line-height: 1.5rem;
+
+        & {
+            margin-block: 0.25rem 0;
+            line-height: 1.5rem;
+        }
     }
 
     &__member {
         &-name {
-            font-family: "Nanum Pen", sans-serif;
-            font-size: 2rem;
-            margin-block: 0;
+            @include m-subheader($global-primary-font-color);
+
+            &--white {
+                color: $global-secondary-font-color;
+            }
+
+            &--lg {
+                font-size: 2rem;
+            }
         }
 
         &-role, &-location {
             @include m-text($global-primary-font-color);
-            margin-block: 0.25rem 0;
+
+            & {
+                margin-block: 0.25rem 0;
+                
+                @include tablet {
+                    font-size: 0.85rem;
+                }
+
+            }
 
             &--white {
                 color: $global-secondary-font-color;
             }
         }
 
-        &-description {
+        &-description-header {
             font-family: "Nanum Pen", sans-serif;
             font-size: 1.75rem;
             margin-block: 1rem 0;
@@ -72,5 +101,9 @@
     &--top {
         background-color: $purple-dark;
         color: white;
+
+        @include tablet {
+            width: 39.5%;
+        }
     }
 }
