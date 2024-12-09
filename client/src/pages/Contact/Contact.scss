@@ -1,3 +1,89 @@
 // partials
 @use "../../styles/partials/variables.scss" as *;
 @use "../../styles/partials/mixins.scss" as *;
+
+.contact {
+    &__container {
+        height: 100%;
+        background-color: $black;
+        text-align: center;
+        @include flexbox(column);
+        justify-content: space-between;
+        padding: 2rem;
+
+        &-info-form {
+            @include flexbox(column);
+            gap: 1rem;
+        }
+    }
+
+    &__content {
+        padding: 1rem;
+    }
+
+    &__subheader {
+        @include m-subheader($global-secondary-font-color);
+
+        &--black {
+            @include m-subheader-secondary($global-primary-font-color);
+            text-transform: none;
+        }
+    }
+
+    &__label {
+        @include m-label($global-primary-font-color);
+        text-align: left;
+        margin: 0;
+    }
+
+    &__text, &__link {
+        @include m-text($global-primary-font-color);
+        margin-top: 0;
+
+        &--white {
+            color: $global-secondary-font-color;
+        }
+    }
+
+    &__info {
+        @include flexbox(row);
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__form {
+        max-width: 100%;
+        background-color: $charcoal;
+        color: white;
+        border-radius: 1.25rem;
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+}
+
+.form {
+    max-width: 100%;
+
+    &__label {
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    &__button {
+        width: 100%;
+        background-color: $blue;
+        color: $white;
+        font-weight: bold;
+        text-transform: uppercase;
+        border: .0625rem solid $blue;
+        border-radius: 1.25rem;
+        outline: 0;
+        margin-top: 0.5rem;
+        padding-block: 0.5rem;
+    }
+}
