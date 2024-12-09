@@ -63,13 +63,6 @@
     }
 
     &__button {
-        background-color: $button-primary-background;
-        color: $button-font-color;
-        font-size: .75rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-align: center;
-        border-radius: 1.25rem;
-        padding: .5rem 1rem;
+        @include button($button-primary-background, $button-primary-background);
     }
 }
