@@ -12,11 +12,11 @@
     padding: 0.5rem 1rem;
 
     @include tablet {
-        width: 11rem;
+        width: 100%;
     }
 
     @include desktop {
-        width: 13rem;
+        width: 100%;
     }
 
     &::placeholder {
