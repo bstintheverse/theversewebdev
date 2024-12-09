@@ -61,6 +61,10 @@
 @mixin m-text($color) {
     color: $color;
     font-size: 0.85rem;
+
+    @include tablet {
+        font-size: 1rem;
+    }
 }
 
 @mixin m-text-xs($color) {
@@ -79,6 +83,10 @@
     font-weight: bold;
     text-align: center;
     margin-top: 0;
+
+    @include tablet {
+        font-size: 1.5rem;
+    }
 }
 
 /* tablet and desktop text styles */
