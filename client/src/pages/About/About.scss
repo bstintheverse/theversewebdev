@@ -24,33 +24,61 @@
 
     &__mission-text, &__history-text, &__our-way-text {
         @include m-text($global-primary-font-color);
+
+        @include tablet {
+            @include td-text($global-primary-font-color);
+        }
     }
 
     &__mission-header, &__history-header, &__our-way-header {
         @include m-header-md($global-primary-font-color);
+
+        @include tablet {
+            @include td-header-md($global-primary-font-color);
+        }
     }
 
     &__mission-subheader, &__history-subheader, &__our-way-subheader {
         @include m-subheader($global-primary-font-color);
+
+        @include tablet {
+            @include td-subheader($global-primary-font-color);
+        }
     }
 
     &__mission {
         padding: 1rem;
 
+        @include tablet {
+            padding: 1rem 2.5rem;
+        }
+
         /* styles the about mission elements container */
         &-elements {
             @include flexbox(column);
             align-items: center;
+
+            @include tablet {
+                @include flexbox(row);
+            }
         }
     }
 
     &__history {
         padding: 1rem;
+
+        @include tablet {
+            padding: 1rem 2.5rem;
+        }
     }
 
     &__our-way {
         background-color: #D9D9D9;
         padding: 1rem;
+
+        @include tablet {
+            padding: 4rem;
+        }
 
         &-text {
             &--small {
@@ -71,16 +99,32 @@
         list-style-type: none;
         margin: 0;
         padding: 0;
+
+        @include tablet {
+            width: 100%;
+            @include flexbox(row);
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
     }
 
     &__image {
-        width: 100%;
+        max-width: 100%;
+        width: 13rem;
         height: 10rem;
         object-fit: cover;
         border-radius: 5%;
+
+        @include tablet {
+        }
     }
 
     &__label {
         @include m-label($global-primary-font-color);
+
+        @include tablet {
+            @include td-label($global-primary-font-color);
+        }
     }
 }
