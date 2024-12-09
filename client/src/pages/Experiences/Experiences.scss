@@ -4,19 +4,50 @@
 
 .experiences {
     padding: 1rem;
+
+    @include tablet {
+        padding: 1rem 2.5rem;
+    }
 }
 
 .experience {
+    &__cards {
+        max-width: 100%;
+
+        @include tablet {
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+
     &__card {
         &-list {
             list-style-type: none;
             margin: 0;
             padding: 0;
+
+            @include tablet {
+                width: auto;
+                @include flexbox(row);
+                flex-wrap: wrap;
+                gap: 1.5rem;
+            }
+        }
+
+        &-item {
+            @include tablet {
+                width: 48.2%;
+                // background-color: lightgreen;
+            }
         }
     }
 
     &__header {
-        font-size: 1rem;
+        @include m-header-md($global-primary-font-color);
+
+        @include tablet {
+            @include td-header-md($global-primary-font-color);
+        }
     }
 
     &__video {
@@ -24,17 +55,21 @@
     }
 
     &__description {
-        font-size: 0.75rem;
+        @include m-text($global-primary-font-color);
+
+        @include tablet {
+            @include td-text($global-primary-font-color);
+        }
     }
 
     &__button {
         background-color: $button-primary-background;
         color: $button-font-color;
-        font-size: 0.75rem;
+        font-size: .75rem;
         font-weight: bold;
         text-transform: uppercase;
         text-align: center;
         border-radius: 1.25rem;
-        padding: 0.5rem 1rem;
+        padding: .5rem 1rem;
     }
 }
