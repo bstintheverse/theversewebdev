@@ -8,29 +8,29 @@ export interface teamMemberProps {
     description?: string;
 };
 
-const imagePath = "/assets/images"
+const imagePath = "/assets/images/team-members/team-member-"
 
 export const teamMembers: teamMemberProps[] = [
     {
         id: 1,
-        image: `${imagePath}/placeholder-square.jpg`,
+        image: `${imagePath}1.png`,
         alt: "Photo of Ben Simon-Thomas",
         name: "Ben Simon-Thomas",
-        role: "Founder and Executive Director",
+        role: "Co-Founder and Executive Director",
         location: "Berkeley, CA",
         description: "Creating games, experiences, and rituals that uplift humanity. || Member Catalyst 2030 & Coordinator IDG Berkeley Uplift Lab. || World Builder - Team Builder - Connector/Collaborator - Human"
     }, 
     {
         id: 2,
-        image: `${imagePath}/placeholder-square.jpg`,
+        image: `/assets/images/placeholder-square.jpg`,
         alt: "Photo of Anshul Pendse",
         name: "Anshul Pendse",
-        role: "Role",
+        role: "Co-Founder",
         location: "Location"
     },
     {
         id: 3,
-        image: `${imagePath}/placeholder-square.jpg`,
+        image: `${imagePath}3.png`,
         alt: "Photo of Alistair Song-White",
         name: "Alistair Song-White",
         role: "Video Game Designer, UI/UX Designer",
@@ -38,7 +38,7 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 4,
-        image: `${imagePath}/placeholder-square.jpg`,
+        image: `${imagePath}4.png`,
         alt: "Photo of Vaishali Ramesh",
         name: "Vaishali Ramesh",
         role: "Science and Well-Being Researcher",
@@ -46,7 +46,7 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 5,
-        image: `${imagePath}/placeholder-square.jpg`,
+        image: `${imagePath}5.png`,
         alt: "Photo of Quenton Porter",
         name: "Quenton Porter",
         role: "Product Manager",
@@ -54,7 +54,7 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 6,
-        image: `${imagePath}/placeholder-square.jpg`,
+        image: `${imagePath}6.png`,
         alt: "Photo of Daniel Tsai",
         name: "Daniel Tsai",
         role: "Game Developer",
@@ -62,7 +62,7 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 7,
-        image: `${imagePath}/placeholder-square.jpg`,
+        image: `${imagePath}7.png`,
         alt: "Photo of Jay Jayachandran",
         name: "Jay Jayachandran",
         role: "Product Designer, Product Manager",
@@ -70,7 +70,7 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 8,
-        image: `${imagePath}/placeholder-square.jpg`,
+        image: `${imagePath}8.png`,
         alt: "Photo of Gargi Pawar",
         name: "Gargi Pawar",
         role: "Compensation Analyst",
@@ -78,7 +78,7 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 9,
-        image: `${imagePath}/placeholder-square.jpg`,
+        image: `${imagePath}9.png`,
         alt: "Photo of Kyle Eason",
         name: "Kyle Eason",
         role: "Storytelling Consultant",
@@ -86,7 +86,7 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 10,
-        image: `${imagePath}/placeholder-square.jpg`,
+        image: `${imagePath}10.jpeg`,
         alt: "Photo of Lily Le",
         name: "Lily Le",
         role: "Web Developer",
