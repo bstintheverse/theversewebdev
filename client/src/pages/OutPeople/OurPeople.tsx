@@ -7,7 +7,7 @@ export default function OurPeoplePage() {
     return (
         <section className="our-people">
             <div className="our-people__container">
-                <h2 className="our-people__header">
+                <h2 className="our-people__subheader">
                     Meet The Team
                 </h2>
 
