@@ -12,8 +12,8 @@
         padding: 2rem;
     }
 
-    &__header {
-        @include m-header-md($global-secondary-font-color);
+    &__subheader {
+        @include m-subheader($global-secondary-font-color);
     }
 
     &__text {
