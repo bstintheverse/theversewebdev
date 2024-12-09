@@ -37,11 +37,11 @@ export default function OurPeoplePage() {
                                         {teamMember.name}
                                     </h3>
                                     
-                                    <p className="card__member-role card__member-role--white">
+                                    <p className="card__member-role card__member-role--white card__member-role--lg">
                                         {teamMember.role}
                                     </p>
 
-                                    <p className="card__member-location card__member-location--white">
+                                    <p className="card__member-location card__member-location--white card__member-location--lg">
                                         {teamMember.location}
                                     </p>
                                 </div>
