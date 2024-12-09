@@ -10,6 +10,10 @@
         @include flexbox(column);
         justify-content: space-between;
         padding: 2rem;
+
+        @include desktop {
+            padding: 3rem 15rem;
+        }
     }
 
     &__quote {
@@ -24,10 +28,6 @@
 
     &__mission-text, &__history-text, &__our-way-text {
         @include m-text($global-primary-font-color);
-
-        @include tablet {
-            @include td-text($global-primary-font-color);
-        }
     }
 
     &__mission-header, &__history-header, &__our-way-header {
@@ -53,12 +53,20 @@
             padding: 1rem 2.5rem;
         }
 
+        @include desktop {
+            padding: 1rem 15rem;
+        }
+
         /* styles the about mission elements container */
         &-elements {
             @include flexbox(column);
             align-items: center;
 
             @include tablet {
+                @include flexbox(row);
+            }
+
+            @include desktop {
                 @include flexbox(row);
             }
         }
@@ -70,6 +78,10 @@
         @include tablet {
             padding: 1rem 2.5rem;
         }
+
+        @include desktop {
+            padding: 1rem 15rem;
+        }
     }
 
     &__our-way {
@@ -78,6 +90,10 @@
 
         @include tablet {
             padding: 4rem;
+        }
+
+        @include desktop {
+            padding: 3rem 15rem;
         }
 
         &-text {
@@ -105,7 +121,15 @@
             @include flexbox(row);
             justify-content: center;
             flex-wrap: wrap;
-            gap: 1.5rem;
+            gap: 1rem;
+        }
+
+        @include desktop {
+            width: 100%;
+            @include flexbox(row);
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
         }
     }
 
@@ -116,7 +140,9 @@
         object-fit: cover;
         border-radius: 5%;
 
-        @include tablet {
+        @include desktop {
+            width: 9rem;
+            height: 10rem;
         }
     }
 
