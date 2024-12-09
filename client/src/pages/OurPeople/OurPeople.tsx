@@ -24,9 +24,38 @@ export default function OurPeoplePage() {
             <section className="our-people__team">
                 <ul className="card__list">
                     {teamMembers.map((teamMember: teamMemberProps) => (
-                        teamMember.id === 1 ? (
+                        teamMember.id === 1 || teamMember.id === 2 ? (
                             <li className="card card--top">
-                        <div className="card__wrapper">
+                                <div className="card__wrapper">
+                                    <img 
+                                        className="card__image"
+                                        src={teamMember.image}
+                                        alt={teamMember.alt}
+                                    />
+
+                                    <h3 className="card__member-name card__member-name--white card__member-name--lg">
+                                        {teamMember.name}
+                                    </h3>
+                                    
+                                    <p className="card__member-role card__member-role--white">
+                                        {teamMember.role}
+                                    </p>
+
+                                    <p className="card__member-location card__member-location--white">
+                                        {teamMember.location}
+                                    </p>
+                                </div>
+
+                            <h4 className="card__member-description-header">
+                                About
+                            </h4>
+
+                            <p className="card__description">
+                                {teamMember.description}
+                            </p>
+                        </li>
+                        ) : (
+                        <li className="card">
                             <img 
                                 className="card__image"
                                 src={teamMember.image}
@@ -37,44 +66,14 @@ export default function OurPeoplePage() {
                                 {teamMember.name}
                             </h3>
                             
-                            <p className="card__member-role card__member-role--white">
+                            <p className="card__member-role">
                                 {teamMember.role}
                             </p>
 
-                            <p className="card__member-location card__member-location--white">
+                            <p className="card__member-location">
                                 {teamMember.location}
                             </p>
-                        </div>
-
-                        <h4 className="card__member-description">
-                            About
-                        </h4>
-
-                        <p className="card__text">
-                            {teamMember.description}
-                        </p>
-                    </li>
-                        ) : (
-
-                    <li className="card">
-                    <img 
-                        className="card__image"
-                        src={teamMember.image}
-                        alt={teamMember.alt}
-                    />
-
-                    <h3 className="card__member-name">
-                        {teamMember.name}
-                    </h3>
-                    
-                    <p className="card__member-role">
-                        {teamMember.role}
-                    </p>
-
-                    <p className="card__member-location">
-                        {teamMember.location}
-                    </p>
-                </li>
+                        </li>
                         )
                     ))}
                 </ul>
