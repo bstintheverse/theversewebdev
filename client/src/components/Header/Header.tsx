@@ -10,12 +10,16 @@ export default function Header() {
         <header>
             <nav className="navbar">
                 <div className="navbar__container navbar__container--left">
-                    <Link to="/">
+                    <Link to="/" className="navbar__logo-link">
                         <img 
                             className="navbar__logo"
                             src="/assets/logos/logo.png"
                             alt="The Verse logo"
                         />
+
+                        <div className="navbar__logo-title">
+                            The Verse
+                        </div>
                     </Link>
                 </div>
 
