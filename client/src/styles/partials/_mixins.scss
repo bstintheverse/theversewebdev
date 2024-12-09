@@ -50,6 +50,10 @@
     font-size: 1.35rem;
     text-transform: uppercase;
     line-height: 1.15rem;
+
+    @include tablet {
+        font-size: 1.45rem;
+    }
 }
 
 @mixin m-subheader-secondary($color) {
