@@ -11,7 +11,7 @@ import HomePage from "./pages/Home/Home";
 import { BrowserRouter, Navigate, Route, Routes} from "react-router-dom";
 import AboutPage from "./pages/About/About";
 import ExperiencesPage from "./pages/Experiences/Experiences";
-import OurPeoplePage from "./pages/OutPeople/OurPeople";
+import OurPeoplePage from "./pages/OurPeople/OurPeople";
 import ContactPage from "./pages/Contact/Contact";
 import DonatePage from "./pages/Donate/Donate";
 import NotFoundPage from "./pages/NotFound/NotFound";
