@@ -45,8 +45,8 @@ export default function ContactPage() {
                 </p>
 
                 <section className="contact__container-info-form">
-                    <div className="contact__info">
-                        <div className="">
+                    <div className="contact__info-wrapper">
+                        <div className="contact__info">
                             <Avatar
                                 sx={{
                                     backgroundColor: "#711C71"
@@ -54,58 +54,54 @@ export default function ContactPage() {
                             >
                                 <EmailIcon />
                             </Avatar>
-                        </div>
                         
-                        <div className="">
-                            <h4 className="contact__label">
-                                Email
-                            </h4>
+                            <div className="">
+                                <h4 className="contact__label">
+                                    Email
+                                </h4>
 
-                            <p className="contact__text">
-                                info@versebuilding.com
-                            </p>
+                                <p className="contact__text">
+                                    info@versebuilding.com
+                                </p>
+                            </div>
                         </div>
-                    </div>
 
-                    <div className="contact__info">
-                        <div className="">
-                            <Avatar
-                                sx={{
-                                    backgroundColor: "#343270"
-                                }}   
-                            >
-                                <EmojiEmotionsIcon />
-                            </Avatar>
+                        <div className="contact__info">
+                                <Avatar
+                                    sx={{
+                                        backgroundColor: "#343270"
+                                    }}   
+                                >
+                                    <EmojiEmotionsIcon />
+                                </Avatar>
+                            
+                            <div className="">
+                                <h4 className="contact__label">
+                                    Socials
+                                </h4>
+
+
+                            </div>
                         </div>
-                        
-                        <div className="">
-                            <h4 className="contact__label">
-                                Socials
-                            </h4>
 
+                        <div className="contact__info">
+                                <Avatar
+                                    sx={{
+                                        backgroundColor: "#3A4A97"
+                                    }}
+                                >
+                                    <Diversity3Icon />
+                                </Avatar>
+                            
+                            <div className="">
+                                <h4 className="contact__label">
+                                    Join Us
+                                </h4>
 
-                        </div>
-                    </div>
-
-                    <div className="contact__info">
-                        <div className="">
-                            <Avatar
-                                sx={{
-                                    backgroundColor: "#3A4A97"
-                                }}
-                            >
-                                <Diversity3Icon />
-                            </Avatar>
-                        </div>
-                        
-                        <div className="">
-                            <h4 className="contact__label">
-                                Join Us
-                            </h4>
-
-                            <Link className="contact__link" to="https://wellfound.com/company/the-verse" target="_blank">
-                                wellfound.com/company/the-verse
-                            </Link>
+                                <Link className="contact__link" to="https://wellfound.com/company/the-verse" target="_blank">
+                                    wellfound.com/company/the-verse
+                                </Link>
+                            </div>
                         </div>
                     </div>
 
@@ -141,7 +137,7 @@ export default function ContactPage() {
                                 </p>
 
                                 <Textarea
-                                    className="form__input"
+                                    className="form__textarea"
                                     name="name"
                                     placeholder="Your message..."
                                 />
