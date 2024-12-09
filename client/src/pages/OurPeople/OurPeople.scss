@@ -83,11 +83,16 @@
                 @include tablet {
                     font-size: 0.85rem;
                 }
-
             }
 
             &--white {
                 color: $global-secondary-font-color;
+            }
+
+            &--lg {
+                @include tablet {
+                    font-size: 1rem;
+                }
             }
         }
 
