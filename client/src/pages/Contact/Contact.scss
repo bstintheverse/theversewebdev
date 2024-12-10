@@ -11,8 +11,12 @@
         justify-content: space-between;
         padding: 2rem;
 
+        @include tablet {
+            padding: 1rem 6rem;
+        }
+
         @include desktop {
-            padding-inline: 10rem;
+            padding: 1rem 10rem;
         }
 
         &-info-form {
