@@ -26,11 +26,11 @@
         }
     }
 
-    &__mission-text, &__history-text, &__our-way-text {
+    &__the-verse-text, &__mission-text, &__history-text, &__our-way-text {
         @include m-text($global-primary-font-color);
     }
 
-    &__mission-header, &__history-header, &__our-way-header {
+    &__the-verse-header, &__mission-header, &__history-header, &__our-way-header {
         @include m-header-md($global-primary-font-color);
 
         @include tablet {
@@ -46,7 +46,7 @@
         }
     }
 
-    &__mission {
+    &__the-verse, &__mission {
         padding: 1rem;
 
         @include tablet {
