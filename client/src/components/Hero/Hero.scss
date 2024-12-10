@@ -25,37 +25,14 @@
         position: absolute;
         box-sizing: border-box;
         padding: 1.5rem;
-
-        // top: 20%;
-        // padding-inline: 1rem;
-
-        // @include tablet {
-        //     top: 16%;
-        //     padding-inline: 2.5rem;
-        // }
     }
 
     &__header {
         width: 87%;
-        // font-size: 1.2rem;
-        // text-transform: uppercase;
         @include m-hero-header($white);
         text-align: center;
         opacity: 80%;
         margin: 0;
-        // margin-bottom: 5rem;
         z-index: 1;
-
-        // @include tablet {
-        //     font-size: 5rem;
-        //     margin-bottom: 5rem;
-        // }
-
-        // @include desktop {
-        //     max-width: 50%;
-        //     top: 35%;
-        //     font-size: 2rem;
-        //     padding: 2.5rem;
-        // }
     }
 }
