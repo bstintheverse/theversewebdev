@@ -34,18 +34,20 @@ export default function ContactPage() {
             </div>
 
             <section className="contact__content">
-                <h2 className="contact__subheader contact__subheader--black">
-                    Get in Touch
-                </h2>
+                <div className="contact__wrapper">
+                    <h2 className="contact__subheader contact__subheader--black">
+                        Get in Touch
+                    </h2>
 
-                <p className="contact__text">
-                    Got ideas? Want to build something in The Verse? Let's work together! Collaboration
-                    is key to solving today's challenges and making an impact. Join us and create
-                    something extraordinary.
-                </p>
+                    <p className="contact__text">
+                        Got ideas? Want to build something in The Verse? Let's work together! Collaboration
+                        is key to solving today's challenges and making an impact. Join us and create
+                        something extraordinary.
+                    </p>
+                </div>
 
                 <section className="contact__container-info-form">
-                    <div className="contact__info-wrapper">
+                    <div className="contact__wrapper">
                         <div className="contact__info">
                             <Avatar
                                 sx={{
