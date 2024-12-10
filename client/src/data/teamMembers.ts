@@ -17,16 +17,17 @@ export const teamMembers: teamMemberProps[] = [
         alt: "Photo of Ben Simon-Thomas",
         name: "Ben Simon-Thomas",
         role: "Co-Founder and Executive Director",
-        location: "Berkeley, CA",
-        description: "Creating games, experiences, and rituals that uplift humanity. || Member Catalyst 2030 & Coordinator IDG Berkeley Uplift Lab. || World Builder - Team Builder - Connector/Collaborator - Human"
+        location: "California, USA",
+        description: "Ben designs games, experiences, and rituals that inspire and uplift humanity. As a member of Catalyst 2030 and coordinator of the IDG Berkeley Uplift Lab, he focuses on creating positive change through collaboration. A world builder, team builder, and connector, he strives to foster meaningful connections and drive impactful innovation."
     }, 
     {
         id: 2,
-        image: `/assets/images/placeholder-square.jpg`,
+        image: `${imagePath}2.jpeg`,
         alt: "Photo of Anshul Pendse",
         name: "Anshul Pendse",
-        role: "Co-Founder",
-        location: "Location"
+        role: "Co-Founder, Creative and Technical Director",
+        location: "California, USA",
+        description: "Anshul is a media artist, game designer, and world builder with a Master of Fine Arts in Interactive Media & Game Design from USC. Currently a PhD candidate in Media Arts & Technology at UC Santa Barbara, he is passionate about merging entertainment, wellness, and spirituality through innovative media."
     },
     {
         id: 3,
@@ -34,7 +35,7 @@ export const teamMembers: teamMemberProps[] = [
         alt: "Photo of Alistair Song-White",
         name: "Alistair Song-White",
         role: "Video Game Designer, UI/UX Designer",
-        location: "Oakland, CA"
+        location: "California, USA"
     },
     {
         id: 4,
@@ -50,7 +51,7 @@ export const teamMembers: teamMemberProps[] = [
         alt: "Photo of Quenton Porter",
         name: "Quenton Porter",
         role: "Product Manager",
-        location: "Charles Town, WV"
+        location: "West Virginia, USA"
     },
     {
         id: 6,
@@ -58,7 +59,7 @@ export const teamMembers: teamMemberProps[] = [
         alt: "Photo of Daniel Tsai",
         name: "Daniel Tsai",
         role: "Game Developer",
-        location: "Los Angeles, CA"
+        location: "California, USA"
     },
     {
         id: 7,
@@ -66,7 +67,7 @@ export const teamMembers: teamMemberProps[] = [
         alt: "Photo of Jay Jayachandran",
         name: "Jay Jayachandran",
         role: "Product Designer, Product Manager",
-        location: "Reno, NV"
+        location: "Nevada, USA"
     },
     {
         id: 8,
@@ -74,7 +75,7 @@ export const teamMembers: teamMemberProps[] = [
         alt: "Photo of Gargi Pawar",
         name: "Gargi Pawar",
         role: "Compensation Analyst",
-        location: "Tampa, FL"
+        location: "Florida, USA"
     },
     {
         id: 9,
@@ -82,7 +83,7 @@ export const teamMembers: teamMemberProps[] = [
         alt: "Photo of Kyle Eason",
         name: "Kyle Eason",
         role: "Storytelling Consultant",
-        location: "Denver, CO"
+        location: "Colarado, USA"
     },
     {
         id: 10,
@@ -90,7 +91,7 @@ export const teamMembers: teamMemberProps[] = [
         alt: "Photo of Lily Le",
         name: "Lily Le",
         role: "Web Developer",
-        location: "Canada"
+        location: "Ontario, Canada"
     },
     {
         id: 11,
@@ -98,6 +99,6 @@ export const teamMembers: teamMemberProps[] = [
         alt: "Photo of Philip Sadler",
         name: "Philip Sadler",
         role: "Fellow, Yoga and Breathwork Teacher",
-        location: "Location"
+        location: "California, USA"
     }
 ]
