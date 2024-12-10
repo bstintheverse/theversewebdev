@@ -28,11 +28,19 @@
     }
 
     &__header {
-        width: 87%;
-        @include m-hero-header($white);
+        width: 100%;
+        @include header($white);
         text-align: center;
         opacity: 80%;
         margin: 0;
         z-index: 1;
+
+        @include tablet {
+            width: 70%;
+        }
+
+        @include desktop {
+            width: 60%;
+        }
     }
 }
