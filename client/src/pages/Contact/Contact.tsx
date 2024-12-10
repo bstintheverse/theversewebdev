@@ -47,7 +47,7 @@ export default function ContactPage() {
                 </div>
 
                 <section className="contact__container-info-form">
-                    <div className="contact__wrapper">
+                    <div className="contact__info-wrapper">
                         <div className="contact__info">
                             <Avatar
                                 sx={{
@@ -82,7 +82,37 @@ export default function ContactPage() {
                                     Socials
                                 </h4>
 
+                                <div className="contact__social-icons">
+                                    <a 
+                                        href="https://www.x.com/buildingverses"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            className="contact__social-icon"
+                                            src="/assets/badges/x.svg"
+                                        />
+                                    </a>
 
+                                    <a
+                                        href="https://www.instagram.com/buildingverses/"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            className="contact__social-icon"
+                                            src="/assets/badges/instagram.svg"
+                                        />
+                                    </a>
+
+                                    <a
+                                        href="https://www.linkedin.com/company/building-the-verse/"
+                                        target="_blank"
+                                    >
+                                        <img
+                                            className="contact__social-icon"
+                                            src="/assets/badges/linkedin.svg"
+                                        />
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
