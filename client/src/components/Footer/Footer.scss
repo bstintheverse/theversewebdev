@@ -46,17 +46,20 @@
     }
 
     &__header {
-        @include m-header-md($footer-primary-font-color);
+        @include header-md($footer-primary-font-color);
     }
 
     &__subheader {
-        @include m-subheader($footer-primary-font-color);
-        font-weight: 400;
-        margin: 0;
+        @include subheader-primary($footer-primary-font-color);
+
+        & {
+            font-weight: 400;
+            margin: 0;
+        }
     }
 
     &__text {
-        @include m-text($footer-primary-font-color);
+        @include text($footer-primary-font-color);
 
         @include tablet {
             font-size: 0.80rem;
@@ -85,13 +88,13 @@
         gap: 1rem;
 
         &-icon {
-            width: 35px;
-            height: 35px;
+            width: 2.1875rem;
+            height: 2.1875rem;
         }
     }
 
     &__copyright {
-        @include m-text-xs($footer-secondary-font-color);
+        @include text-xs($footer-secondary-font-color);
     }
 }
 
@@ -137,7 +140,7 @@
     }
 
     &__header {
-        @include m-header-sm($footer-header-color);
+        @include header-sm($footer-header-color);
         margin-bottom: 0.5rem;
 
         @include tablet {
@@ -167,7 +170,7 @@
     }
 
     &__link {
-        @include m-link;
+        @include link;
 
         @include tablet {
             font-size: 0.80rem;
