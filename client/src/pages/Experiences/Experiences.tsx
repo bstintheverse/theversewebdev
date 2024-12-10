@@ -34,7 +34,7 @@ export default function ExperiencesPage() {
                                 </div>
 
                                 <div className="experience__wrapper">
-                                    <Link to={game.link}>
+                                    <Link to={game.link} className="experience__link">
                                         <p className="experience__button">
                                             Learn More
                                         </p>
