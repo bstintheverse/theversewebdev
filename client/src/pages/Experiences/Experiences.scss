@@ -79,7 +79,17 @@
         }
     }
 
+    &__link {
+        text-decoration: none;
+    }
+
     &__button {
-        @include button($button-primary-background, $button-primary-background);
+            @include button($button-primary-background, $button-primary-background);
+
+        &:hover {
+            background-color: $blue;
+            border: .0625rem solid $blue;
+            transition: 0.5s ease-in-out;
+        }
     }
 }

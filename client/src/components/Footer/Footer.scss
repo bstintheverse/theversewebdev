@@ -90,6 +90,11 @@
         &-icon {
             width: 2.1875rem;
             height: 2.1875rem;
+
+            &:hover {
+                opacity: 80%;
+                transition: 0.5s ease-in-out;
+            }
         }
     }
 
@@ -156,7 +161,9 @@
     }
 
     &__link {
-        @include link;
+        color: $navbar-link-color;
+        font-size: 0.75rem;
+        text-decoration: none;
 
         @include tablet {
             font-size: 0.80rem;
@@ -164,6 +171,30 @@
 
         @include desktop {
             font-size: 0.85rem;
+        }
+
+        &:hover {
+            color: $global-link-hover-color;
+            transition: 0.3s ease-in-out;
+        }
+
+        &--donate {
+            color: $green;
+            font-size: 0.75rem;
+            text-decoration: none;
+
+            @include tablet {
+                font-size: 0.80rem;
+            }
+    
+            @include desktop {
+                font-size: 0.85rem;
+            }
+
+            &:hover {
+                color: $global-link-hover-color;
+                transition: 0.3s ease-in-out;
+            }
         }
     }
 }
