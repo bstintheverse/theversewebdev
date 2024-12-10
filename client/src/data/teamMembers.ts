@@ -91,5 +91,13 @@ export const teamMembers: teamMemberProps[] = [
         name: "Lily Le",
         role: "Web Developer",
         location: "Canada"
+    },
+    {
+        id: 11,
+        image: `${imagePath}11.jpeg`,
+        alt: "Photo of Philip Sadler",
+        name: "Philip Sadler",
+        role: "Fellow, Yoga and Breathwork Teacher",
+        location: "Location"
     }
 ]
