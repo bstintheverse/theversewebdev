@@ -63,7 +63,7 @@ export default function Footer() {
 
                         <li className="nav__item">
                             <Link to="/" className="nav__link">
-                                Adventures in Breath (AiB)
+                                Adventures in Breath
                             </Link>
                         </li>
                     </ul>
