@@ -12,12 +12,12 @@ export default function OurPeoplePage() {
                 </h2>
 
                 <p className="our-people__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                    in culpa qui officia deserunt mollit anim id est laborum.
+                    The Verse is a global community of inspired gamers, developers, designers, 
+                    scientists, artists, visionaries, teachers, and students who join together to 
+                    passionately contribute their wide-ranging expertise to invent experiences that 
+                    enhance human flourishing. We are committed to “engaging in work that creates 
+                    greater happiness, wisdom, and well-being, and relieves suffering in ourselves 
+                    and others.” We think of The Verse as a practice.
                 </p>
             </div>
 
