@@ -110,7 +110,7 @@ export default function Footer() {
 
                     <ul className="nav__list">
                         <li className="nav__item">
-                            <Link to="/donate" className="nav__link">
+                            <Link to="/donate" className="nav__link--donate">
                                 Donate
                             </Link>
                         </li>
