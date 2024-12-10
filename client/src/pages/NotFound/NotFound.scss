@@ -1,3 +1,61 @@
 // partials
 @use "../../styles/partials/variables.scss" as *;
 @use "../../styles/partials/mixins.scss" as *;
+
+.not-found {
+    &__container {
+        height: 100%;
+        background-color: $black;
+        text-align: center;
+        @include flexbox(column);
+        justify-content: space-between;
+        padding: 2rem;
+
+        @include tablet {
+            padding: 2rem 6rem;
+        }
+
+        @include desktop {
+            padding: 3rem 15rem;
+        }
+    }
+
+    &__content {
+        @include flexbox(column);
+        justify-content: center;
+        align-items: center;
+        padding-inline: 1rem;
+
+        @include tablet {
+            padding-inline: 2.5rem;
+        }
+
+        @include desktop {
+            padding-inline: 10rem;
+        }
+    }
+
+    &__header {
+        @include header-md($global-primary-font-color);
+    }
+
+    &__subheader {
+        @include subheader-primary($global-secondary-font-color);
+    }
+
+    &__list {
+        margin-top: 0;
+    }
+
+    &__text {
+        @include text($global-primary-font-color);
+
+        &--white {
+            @include text($global-secondary-font-color);
+        }
+    }
+
+    &__link {
+        @include text($global-link-font-color);
+    }
+}
