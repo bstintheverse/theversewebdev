@@ -16,6 +16,19 @@ export default function AboutPage() {
                 </p>
             </div>
 
+            <div className="about__the-verse">
+                <h2 className="about__the-verse-header">
+                    The Verse
+                </h2>
+
+                <p className="about__the-verse-text">
+                    The Verse, we create games, experiences, and rituals that uplift humanity. 
+                    We are a global community of gamers, developers, designers, scientists, 
+                    artists, visionaries, teachers, and students—each of us contributing our 
+                    expertise to invent experiences that foster human flourishing.
+                </p>
+            </div>
+
             <div className="about__mission">
                 <h2 className="about__mission-header">
                     Our Mission
