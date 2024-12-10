@@ -27,23 +27,19 @@
     }
 
     &__the-verse-text, &__mission-text, &__history-text, &__our-way-text {
-        @include m-text($global-primary-font-color);
+        @include text($global-primary-font-color);
     }
 
     &__the-verse-header, &__mission-header, &__history-header, &__our-way-header {
-        @include m-header-md($global-primary-font-color);
+        @include header-md($global-primary-font-color);
 
         @include tablet {
-            @include td-header-md($global-primary-font-color);
+            @include header-md($global-primary-font-color);
         }
     }
 
     &__mission-subheader, &__history-subheader, &__our-way-subheader {
-        @include m-subheader($global-primary-font-color);
-
-        @include tablet {
-            @include td-subheader($global-primary-font-color);
-        }
+        @include subheader-primary($global-primary-font-color);
     }
 
     &__the-verse, &__mission {
@@ -147,10 +143,10 @@
     }
 
     &__label {
-        @include m-label($global-primary-font-color);
+        @include label($global-primary-font-color);
 
         @include tablet {
-            @include td-label($global-primary-font-color);
+            @include label($global-primary-font-color);
         }
     }
 }

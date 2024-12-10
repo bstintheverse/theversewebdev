@@ -37,7 +37,7 @@
         }
 
         &-header {
-            @include m-header-md($global-primary-font-color);
+            @include header-md($global-primary-font-color);
             margin-top: 0;
         }
     }
@@ -74,7 +74,7 @@
         }
 
         &-header {
-            @include m-subheader($global-secondary-font-color);
+            @include subheader-primary($global-secondary-font-color);
             font-weight: 400; /* review? */
             margin-bottom: 0;
 
@@ -84,7 +84,7 @@
         }
 
         &-text {
-            @include m-text($global-secondary-font-color);
+            @include text($global-secondary-font-color);
             text-align: center;
 
             @include tablet {
@@ -176,11 +176,11 @@
         }
 
         &-heading {
-            @include m-header-md($global-primary-font-color);
+            @include header-md($global-primary-font-color);
         }
 
         &-text {
-            @include m-text($global-primary-font-color);
+            @include text($global-primary-font-color);
             text-align: center;
 
             @include tablet {

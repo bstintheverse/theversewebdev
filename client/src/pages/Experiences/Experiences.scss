@@ -52,10 +52,10 @@
     }
 
     &__header {
-        @include m-header-md($global-primary-font-color);
+        @include header-md($global-primary-font-color);
 
         @include tablet {
-            @include td-header-md($global-primary-font-color);
+            @include header-md($global-primary-font-color);
         }
     }
 
@@ -64,10 +64,10 @@
     }
 
     &__description {
-        @include m-text($global-primary-font-color);
+        @include text($global-primary-font-color);
 
         @include tablet {
-            @include td-text($global-primary-font-color);
+            @include text($global-primary-font-color);
         }
     }
 

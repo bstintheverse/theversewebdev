@@ -17,11 +17,11 @@
     }
 
     &__subheader {
-        @include m-subheader($global-secondary-font-color);
+        @include subheader-primary($global-secondary-font-color);
     }
 
     &__text {
-        @include m-text($global-secondary-font-color);
+        @include text($global-secondary-font-color);
     }
 }
 
@@ -91,7 +91,7 @@
 
             &-header {
                 @include desktop {
-                    @include m-subheader($global-secondary-font-color);
+                    @include subheader-primary($global-secondary-font-color);
                 }
             }
 
@@ -132,7 +132,7 @@
 
     /* styles description for co-founder cards */
     &__description {
-        @include m-text($footer-primary-font-color);
+        @include text($footer-primary-font-color);
 
         & {
             margin-block: 0.25rem 0;
@@ -142,11 +142,11 @@
 
     &__member {
         &-name {
-            @include m-subheader($global-primary-font-color);
+            @include subheader-primary($global-primary-font-color);
         }
 
         &-role, &-location {
-            @include m-text($global-primary-font-color);
+            @include text($global-primary-font-color);
 
             & {
                 margin-block: 0.25rem 0;

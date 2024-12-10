@@ -46,16 +46,16 @@
     }
 
     &__subheader {
-        @include m-subheader($global-secondary-font-color);
+        @include subheader-primary($global-secondary-font-color);
 
         &--black {
-            @include m-subheader-secondary($global-primary-font-color);
+            @include subheader-secondary($global-primary-font-color);
             text-transform: none;
         }
     }
 
     &__label {
-        @include m-label($global-primary-font-color);
+        @include label($global-primary-font-color);
 
         & {
             text-align: left;
@@ -64,7 +64,7 @@
     }
 
     &__text, &__link {
-        @include m-text($global-primary-font-color);
+        @include text($global-primary-font-color);
 
         & {
             margin-top: 0;
