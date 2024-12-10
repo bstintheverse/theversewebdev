@@ -11,15 +11,17 @@
         justify-content: space-between;
         padding: 2rem;
 
+        @include tablet {
+            padding: 2rem 6rem;
+        }
+
         @include desktop {
             padding: 3rem 15rem;
         }
     }
 
     &__quote {
-        color: $white;
-        font-size: 0.75rem;
-        margin-block: 0 1rem;
+        @include text($global-secondary-font-color);
 
         &--author{
             margin: 0;
