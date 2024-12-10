@@ -3,21 +3,18 @@
 
 /* ----- BREAKPOINTS ----- */
 
-/* mobile breakpoint */
 @mixin mobile {
     @media (min-width: 320px) and (max-width: 767px) {
         @content;
     }
 }
 
-/* tablet breakpoint */
 @mixin tablet {
     @media (min-width: 768px) and (max-width: 1279px) {
         @content;
     }
 }
 
-/* desktop breakpoint */
 @mixin desktop {
     @media (min-width: 1280px) {
         @content;
@@ -26,7 +23,6 @@
 
 /* ----- TEXT STYLES ----- */
 
-/* mobile text styles */
 @mixin header($color) {
     color: $color;
     font-size: 1.5rem;
@@ -45,7 +41,7 @@
     }
 }
 
-@mixin m-header-md($color) {
+@mixin header-md($color) {
     color: $color;
     font-size: 1.2rem;
     font-weight: 500;
@@ -63,12 +59,12 @@
     }
 }
 
-@mixin m-header-sm($color) {
+@mixin header-sm($color) {
     color: $color;
     font-size: 0.90rem;
 }
 
-@mixin m-subheader($color) {
+@mixin subheader-primary($color) {
     font-family: "Nanum Pen", sans-serif;
     color: $color;
     font-size: 1.35rem;
@@ -84,13 +80,13 @@
     }
 }
 
-@mixin m-subheader-secondary($color) {
+@mixin subheader-secondary($color) {
     font-family: "Poppins", sans-serif;
     color: $color;
     font-size: 1.25rem;
 }
 
-@mixin m-text($color) {
+@mixin text($color) {
     color: $color;
     font-size: 0.85rem;
 
@@ -103,46 +99,19 @@
     }
 }
 
-@mixin m-text-xs($color) {
+@mixin text-xs($color) {
     color: $color;
     font-size: 0.7rem;
 }
 
-@mixin m-link() {
+@mixin link() {
     font-size: 0.85rem;
 }
 
-@mixin m-label($color) {
+@mixin label($color) {
     font-family: "Nanum Pen", sans-serif;
     color: $color;
     font-size: 1.25rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 0;
-}
-
-/* tablet and desktop text styles */
-@mixin td-header-md($color) {
-    color: $color;
-    font-size: 1.5rem;
-    font-weight: 600;
-}
-
-@mixin td-subheader($color) {
-    font-family: "Nanum Pen", sans-serif;
-    color: $color;
-    font-size: 1.6rem;
-}
-
-@mixin td-text($color) {
-    color: $color;
-    font-size: 1rem;
-}
-
-@mixin td-label($color) {
-    font-family: "Nanum Pen", sans-serif;
-    color: $color;
-    font-size: 1.35rem;
     font-weight: bold;
     text-align: center;
     margin-top: 0;
@@ -159,16 +128,11 @@
 /* button */
 @mixin button($background-color, $border-color) {
     background-color: $background-color;
-    color: $global-secondary-font-color;
-    font-size: 0.85rem;
-    font-weight: 600;
+    @include text($global-secondary-font-color);
+    font-weight: 500;
     text-transform: uppercase;
     text-align: center;
     border: .0625rem solid $border-color;
     border-radius: 1.5625rem;
     padding: 0.5rem 1.25rem;
-
-    @include tablet {
-        @include td-text($global-secondary-font-color);
-    }
 }
