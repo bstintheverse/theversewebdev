@@ -4,23 +4,18 @@
 
 .navbar {
     height: 4rem;
+    background-color: $navbar-background;
     @include flexbox(row);
     align-items: center;
-    // justify-content: space-between;
     gap: 1rem;
-    background-color: $navbar-background;
     padding: 1rem;
 
     @include tablet {
-        height: 4rem;
-        @include flexbox(row);
-        align-items: center;
         gap: 1.5rem;
         padding: 1rem 2rem;
     }
 
     @include desktop {
-        height: 4rem;
         @include flexbox(row);
         align-items: center;
         gap: 2rem;
@@ -54,11 +49,6 @@
     &__container {
         width: 100%;
 
-        @include tablet {
-            // @include flexbox(row);
-            // gap: 1rem;
-        }
-
         @include desktop {
             @include flexbox(row);
         }
@@ -83,14 +73,6 @@
         &--right {
             @include flexbox(row);
             justify-content: flex-end;
-
-            @include tablet {
-                justify-content: space-between;
-            }
-
-            @include desktop {
-                justify-content: space-between;
-            }
         }
     }
 
@@ -126,27 +108,6 @@
         }
     }
 
-    &__button {
-        background-color: $green;
-        font-size: 0.75rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        border-radius: 1.25rem;
-        padding: 0.5rem 1rem;
-        visibility: hidden;
-
-        @include tablet {
-            visibility: visible;
-            font-size: 0.75rem;
-            order: 2;
-        }
-
-        @include desktop {
-            visibility: visible;
-            font-size: 0.85rem;
-            order: 2;
-        }
-    }
 }
 
 a {
