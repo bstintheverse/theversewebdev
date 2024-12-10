@@ -24,10 +24,6 @@ export default function Header() {
                 </div>
 
                 <div className="navbar__container navbar__container--right">
-                    <Link to="/donate" className="navbar__button">
-                        Donate
-                    </Link>
-
                     {/* mobile navigation */}
                     <DropdownMenu />
 
