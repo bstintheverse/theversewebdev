@@ -46,7 +46,7 @@ export default function Hero() {
         {
             id: 7,
             path: "/404",
-            subheader: "Oops! Page not found!"
+            subheader: "Page Not Found"
         }
     ];
 
