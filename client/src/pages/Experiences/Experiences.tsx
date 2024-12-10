@@ -1,91 +1,49 @@
 //styling
 import "./Experiences.scss";
 
+import { games } from "../../data/games";
+import { Link } from "react-router-dom";
+
 export default function ExperiencesPage() {
     return (
         <section className="experiences">
             <article className="experience__cards">
                 <ul className="experience__card-list">
-                    <li className="experience__card-item">
-                        <h2 className="experience__header">
-                            WalkXR
-                        </h2>
+                    {games.map((game) => {
+                        return (
+                            <li className="experience__card-item">
+                                <div className="experience__container">
+                                <h2 className="experience__header">
+                                    {game.name}
+                                </h2>
+                                    {game.video ? (
+                                        <video className="experience__video" controls>
+                                            <source src={game.video} />
+                                        </video>
+                                    ) : game.image ? (
+                                        <img 
+                                            className="experience__image"
+                                            src={game.image}
+                                            alt={game.alt}
+                                        />
+                                    ) : null}
 
-                        <div className="experience__video-description">
-                            <video className="experience__video" controls>
-                                <source src="/assets/videos/placeholder-video.mp4" />
-                            </video>
+                                    <p className="experience__description">
+                                        {game.description}
+                                    </p>
+                                </div>
 
-                            <p className="experience__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et 
-                                metus in odio condimentum eleifend at et urna. Donec sit amet nunc 
-                                nec felis tincidunt fermentum non id elit. Mauris malesuada, odio 
-                                nec facilisis ullamcorper, velit arcu consequat elit, a aliquam 
-                                libero ante vel lectus. Integer ac dolor et leo suscipit venenatis. 
-                                Integer ultricies urna non volutpat tempor. Integer scelerisque id 
-                                metus nec tincidunt. Integer malesuada dui id ante condimentum, sit 
-                                amet ultricies lorem tincidunt.
-                            </p>
-
-                            <p className="experience__button">
-                                Learn More
-                            </p>
-                        </div>
-                    </li>
-
-                    <li className="experience__card-item">
-                        <h2 className="experience__header">
-                            Karma The Six Realms
-                        </h2>
-
-                        <div className="experience__video-description">
-                            <video className="experience__video" controls>
-                                <source src="/assets/videos/placeholder-video.mp4" />
-                            </video>
-
-                            <p className="experience__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et 
-                                metus in odio condimentum eleifend at et urna. Donec sit amet nunc 
-                                nec felis tincidunt fermentum non id elit. Mauris malesuada, odio 
-                                nec facilisis ullamcorper, velit arcu consequat elit, a aliquam 
-                                libero ante vel lectus. Integer ac dolor et leo suscipit venenatis. 
-                                Integer ultricies urna non volutpat tempor. Integer scelerisque id 
-                                metus nec tincidunt. Integer malesuada dui id ante condimentum, sit 
-                                amet ultricies lorem tincidunt.
-                            </p>
-
-                            <p className="experience__button">
-                                Learn More
-                            </p>
-                        </div>
-                    </li>
-
-                    <li className="experience__card-item">
-                        <h2 className="experience__header">
-                            Adventures in Breath (AiB)
-                        </h2>
-
-                        <div className="experience__video-description">
-                            <video className="experience__video" controls>
-                                <source src="/assets/videos/placeholder-video.mp4" />
-                            </video>
-
-                            <p className="experience__description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et 
-                                metus in odio condimentum eleifend at et urna. Donec sit amet nunc 
-                                nec felis tincidunt fermentum non id elit. Mauris malesuada, odio 
-                                nec facilisis ullamcorper, velit arcu consequat elit, a aliquam 
-                                libero ante vel lectus. Integer ac dolor et leo suscipit venenatis. 
-                                Integer ultricies urna non volutpat tempor. Integer scelerisque id 
-                                metus nec tincidunt. Integer malesuada dui id ante condimentum, sit 
-                                amet ultricies lorem tincidunt.
-                            </p>
-
-                            <p className="experience__button">
-                                Learn More
-                            </p>
-                        </div>
-                    </li>
+                                <div className="experience__wrapper">
+                                    <Link to={game.link}>
+                                        <p className="experience__button">
+                                            Learn More
+                                        </p>
+                                    </Link>
+                                </div>
+                            </li>
+                        )
+                    })}
+                    
                 </ul>
             </article>
         </section>
