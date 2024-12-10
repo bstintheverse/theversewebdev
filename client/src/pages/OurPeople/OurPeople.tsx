@@ -37,7 +37,7 @@ export default function OurPeoplePage() {
                                         {teamMember.name}
                                     </h3>
                                     
-                                    <p className="card__top_member-role">
+                                    <p className="card__top-member-role">
                                         {teamMember.role}
                                     </p>
 
@@ -47,7 +47,7 @@ export default function OurPeoplePage() {
                                 </div>
 
                                 <div className="card__top-wrapper-description">
-                                    <h4 className="card__top-member-header">
+                                    <h4 className="card__top-member-subheader">
                                         About
                                     </h4>
 
