@@ -17,8 +17,10 @@ export default function Header() {
                             alt="The Verse logo"
                         />
 
-                        <div className="navbar__logo-title">
-                            The Verse
+                        <div className="navbar__wrapper">
+                            <p className="navbar__logo-title">
+                                The Verse
+                            </p>
                         </div>
                     </Link>
                 </div>
