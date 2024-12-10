@@ -2,20 +2,117 @@
 import "./Contact.scss";
 
 import { Link } from "react-router-dom";
+import { ChangeEvent, FormEvent, useState } from "react";
 
 import Avatar from '@mui/material/Avatar';
-import { Stack } from "@mui/material";
 import EmailIcon from '@mui/icons-material/Email';
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
 import InputField from "../../components/FormElements/InputField/InputField";
 import Textarea from "../../components/FormElements/Textarea/Textarea";
 
-import XIcon from '@mui/icons-material/X';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Joi from "joi";
+import emailjs from "emailjs-com";
+
+const schema = Joi.object({
+    name: Joi.string()
+        .pattern(/^[A-Za-z\s]+$/)
+        .min(3)
+        .max(30)
+        .required()
+        .messages({
+            "string.empty": "Name is required",
+            "string.min": "Your name should be at least 3 characters long",
+            "string.max": "Your name should be at most 30 characters long"
+        }),
+    email: Joi.string()
+        .email({ minDomainSegments: 2, tlds: { allow: ["com", "ca", "net"]}})
+        .required()
+        .messages({
+            "string.empty": "Email is required",
+            "string.email": "Please enter a valid email address"
+        }),
+    message: Joi.string()
+        .required()
+        .messages({
+            "string.empty": "Message is required",
+        }),
+});
+interface FormData {
+    name: string;
+    email: string;
+    message: string;
+};
+
+interface Errors {
+    name: string;
+    email: string;
+    message: string;
+};
 
 export default function ContactPage() {
+    const [formData, setFormData] = useState<FormData>({
+        name: "",
+        email: "",
+        message: ""
+    });
+
+    const [errors, setErrors] = useState<Errors>({
+        name: "",
+        email: "",
+        message: "",
+
+    });
+
+    const handleSubmit = (e: FormEvent) => {
+        e.preventDefault();
+    
+        const { error } = schema.validate(formData, { abortEarly: false });
+        const newErrors: Errors = { name: "", email: "", message: "" };
+    
+        if (error) {
+            error.details.forEach((detail) => {
+                if (detail.message) {
+                    if (detail.path[0] === "name") newErrors.name = detail.message;
+                    if (detail.path[0] === "email") newErrors.email = detail.message;
+                    if (detail.path[0] === "message") newErrors.message = detail.message;
+                }
+            });
+            setErrors(newErrors);
+        } else {
+            setErrors({ name: "", email: "", message: "" });
+    
+            const form = e.target as HTMLFormElement;
+            emailjs.sendForm(
+                "service_number",
+                "template_number",
+                form,
+                "user_number"
+            ).then((result) => {
+                console.log("Success:", result.text);
+                setFormData({ name: "", email: "", message: "" });
+                alert("Your message has been sent! We'll get back to you soon.");
+            }, (error) => {
+                console.error("Error:", error.text);
+                alert("Unable to send message. Please try again later.");
+            });
+        };
+    };
+
+    const handleInputChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+        const { name, value } = e.target;
+
+        setFormData((prev) => ({
+            ...prev,
+            [name]: value
+        }));
+    
+        setErrors((prevErrors) => ({
+            ...prevErrors,
+            [name]: "" 
+        }));
+    };
+
     return (
         <section className="contact">
             <div className="contact__container">
@@ -138,7 +235,7 @@ export default function ContactPage() {
                     </div>
 
                     <div className="contact__form">
-                        <form className="form">
+                        <form className="form" onSubmit={handleSubmit}>
                             <label className="form__name">
                                 <p className="form__label">
                                     Name
@@ -147,8 +244,14 @@ export default function ContactPage() {
                                 <InputField
                                     className="form__input"
                                     name="name"
+                                    value={formData.name}
                                     placeholder="Full name"
+                                    onChange={handleInputChange}
                                 />
+
+                                {(errors.name && 
+                                    <p className="form__errors">{errors.name}</p>
+                                )}
                             </label>
 
                             <label className="form__email">
@@ -158,9 +261,15 @@ export default function ContactPage() {
 
                                 <InputField
                                     className="form__input"
-                                    name="name"
+                                    name="email"
+                                    value={formData.email}
                                     placeholder="Email Address"
+                                    onChange={handleInputChange}
                                 />
+
+                                {(errors.email && 
+                                    <p className="form__errors">{errors.email}</p>
+                                )}
                             </label>
 
                             <label className="form__message">
@@ -170,12 +279,18 @@ export default function ContactPage() {
 
                                 <Textarea
                                     className="form__textarea"
-                                    name="name"
+                                    name="message"
+                                    value={formData.message}
                                     placeholder="Your message..."
+                                    onChange={handleInputChange}
                                 />
+
+                                {(errors.message && 
+                                    <p className="form__errors form__errors--message">{errors.message}</p>
+                                )}                                
                             </label>
 
-                            <button className="form__button">
+                            <button className="form__button" type="submit">
                                 Submit
                             </button>
                         </form>
