@@ -22,8 +22,6 @@
     }
 
     &__contact {
-        text-align: center;
-
         @include tablet {
             @include flexbox(row);
             justify-content: space-between;
@@ -76,10 +74,12 @@
 
         @include tablet {
             @include flexbox(row);
+            justify-content: space-between;
         }
 
         @include desktop {
             @include flexbox(row);
+            justify-content: space-between;
         }
     }
 
@@ -113,14 +113,6 @@
 
     &__button {
         @include button($button-primary-background, $button-primary-border);
-
-        @include tablet {
-            font-size: 0.8rem;
-        }
-
-        @include desktop {
-            font-size: 1rem;
-        }
     }
 }
 
@@ -131,10 +123,12 @@
         align-items: center;
 
         @include tablet {
+            width: auto;
             align-items: flex-start;
         }
 
         @include desktop {
+            width: auto;
             align-items: flex-start;
         }
     }
@@ -142,14 +136,6 @@
     &__header {
         @include header-sm($footer-header-color);
         margin-bottom: 0.5rem;
-
-        @include tablet {
-            font-size: 0.85rem;
-        }
-
-        @include desktop {
-            font-size: 1rem;
-        }
     }
 
     &__list {
@@ -183,5 +169,5 @@
 }
 
 .footer__contact {
-    border-bottom: 1px solid $footer-divider-color;
+    border-bottom: .0625rem solid $footer-divider-color;
 }
