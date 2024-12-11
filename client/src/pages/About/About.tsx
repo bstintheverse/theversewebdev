@@ -4,7 +4,44 @@ import "./About.scss";
 // library
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
+// component
+import ActionAreaCard from "../../components/Cards/ActionAreaCard/ActionAreaCard";
+
 export default function AboutPage() {
+    const imagePath = "/assets/images/community-cards/action-area-card-";
+    const ourCommunityContent = [
+        {
+            id: 1, 
+            image: `${imagePath}1.jpg`,
+            alt: "",
+            content: "Over 250 contributors at The Verse"
+        },
+        {
+            id: 2,
+            image: `${imagePath}2.jpg`,
+            alt: "",
+            content: "Over 47,000 hours on Verse Projects"
+        },
+        {
+            id: 3,
+            image: `${imagePath}3.jpg`,
+            alt: "",
+            content: "During summers, we have 50+ working on average 25 hours a week"
+        },
+        {
+            id: 4,
+            image: `${imagePath}4.jpg`,
+            alt: "",
+            content: "You know who you are! Multi-talented, creative, and inspired to change the world"
+        },
+        {
+            id: 5,
+            image: `${imagePath}5.jpg`,
+            alt: "",
+            content: "Versers feel empowered, enriched, connected, and productive"
+        }
+    ];
+    
     return (
         <HelmetProvider>
             <Helmet>
@@ -190,9 +227,20 @@ export default function AboutPage() {
                 </div>
 
                 <div className="about__our-community">
-                    <h2 className="about__our-comunity-header">
+                    <h2 className="about__our-community-header">
                         Our Community
                     </h2>
+                    
+                    <article className="about__our-community-cards">
+                        {ourCommunityContent.map((content) => (
+                            <ActionAreaCard
+                                className="about__our-community-card"
+                                image={content.image}
+                                alt={content.alt}
+                                content={content.content}
+                            />
+                        ))}
+                    </article>
                 </div>
             </section>
         </HelmetProvider>
