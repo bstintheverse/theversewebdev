@@ -5,6 +5,7 @@ html, body {
     font-family: "Poppins", sans-serif;
     color: $global-primary-font-color;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
 }
