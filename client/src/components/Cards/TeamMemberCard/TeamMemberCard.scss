@@ -46,29 +46,27 @@
             }
         }
 
-        &-member {
-            &-name {
-                font-family: "Nanum Pen", sans-serif;
-                font-size: 2rem;
-                line-height: 1.8rem;
+        &-name {
+            font-family: "Nanum Pen", sans-serif;
+            font-size: 2rem;
+            line-height: 1.8rem;
+            margin-bottom: 0;
+        }
+
+        &-role, &-location {
+            @include text($global-secondary-font-color);
+        }
+
+        &-subheader {
+            @include subheader-primary($global-secondary-font-color);
+            
+            & {
                 margin-bottom: 0;
             }
+        }
 
-            &-role, &-location {
-                @include text($global-secondary-font-color);
-            }
-
-            &-subheader {
-                @include subheader-primary($global-secondary-font-color);
-                
-                & {
-                    margin-bottom: 0;
-                }
-            }
-
-            &-description {
-                @include text($global-secondary-font-color);
-            }
+        &-description {
+            @include text($global-secondary-font-color);
         }
     }
 
