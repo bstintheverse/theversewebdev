@@ -1,7 +1,12 @@
+// styling
 import "./OurPeople.scss";
 
+// data
 import { teamMembers, teamMemberProps } from "../../data/teamMembers";
 
+// components
+import { TeamMemberFounderCard } from "../../components/Cards/TeamMemberCard/TeamMemberCard";
+import { TeamMemberCard } from "../../components/Cards/TeamMemberCard/TeamMemberCard";
 
 export default function OurPeoplePage() {
     return (
@@ -22,60 +27,29 @@ export default function OurPeoplePage() {
             </div>
 
             <section className="our-people__team">
-                <ul className="card__list">
+                <ul className="our-people__card-list">
                     {teamMembers.map((teamMember: teamMemberProps) => (
                         teamMember.id === 1 || teamMember.id === 2 ? (
-                            <li className="card card__top">
-                                <div className="card__top-wrapper-info">
-                                    <img 
-                                        className="card__image"
-                                        src={teamMember.image}
-                                        alt={teamMember.alt}
-                                    />
-
-                                    <h3 className="card__top-member-name">
-                                        {teamMember.name}
-                                    </h3>
-                                    
-                                    <p className="card__top-member-role">
-                                        {teamMember.role}
-                                    </p>
-
-                                    <p className="card__top-member-location">
-                                        {teamMember.location}
-                                    </p>
-                                </div>
-
-                                <div className="card__top-wrapper-description">
-                                    <h4 className="card__top-member-subheader">
-                                        About
-                                    </h4>
-
-                                    <p className="card__top-member-description">
-                                        {teamMember.description}
-                                    </p>
-                                </div>
-                            </li>
-                        ) : (
-                        <li className="card">
-                            <img 
-                                className="card__image"
-                                src={teamMember.image}
+                            <TeamMemberFounderCard
+                                key={teamMember.id}
+                                id={teamMember.id}
+                                image={teamMember.image}
                                 alt={teamMember.alt}
+                                name={teamMember.name}
+                                role={teamMember.role}
+                                location={teamMember.location}
+                                description={teamMember.description}
                             />
-
-                            <h3 className="card__member-name">
-                                {teamMember.name}
-                            </h3>
-                            
-                            <p className="card__member-role">
-                                {teamMember.role}
-                            </p>
-
-                            <p className="card__member-location">
-                                {teamMember.location}
-                            </p>
-                        </li>
+                        ) : (
+                            <TeamMemberCard
+                                key={teamMember.id}
+                                id={teamMember.id}
+                                name={teamMember.name}
+                                image={teamMember.image}
+                                alt={teamMember.alt}
+                                role={teamMember.role}
+                                location={teamMember.location}
+                            />
                         )
                     ))}
                 </ul>
