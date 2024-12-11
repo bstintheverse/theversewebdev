@@ -8,12 +8,12 @@ export interface teamMemberProps {
     description?: string;
 };
 
-const imagePath = "/assets/images/team-members/team-member-"
+const imagePath = "/assets/images/team-members/team-member"
 
 export const teamMembers: teamMemberProps[] = [
     {
         id: 1,
-        image: `${imagePath}1.png`,
+        image: `${imagePath}-1.png`,
         alt: "Photo of Ben Simon-Thomas",
         name: "Ben Simon-Thomas",
         role: "Co-Founder and Executive Director",
@@ -22,7 +22,7 @@ export const teamMembers: teamMemberProps[] = [
     }, 
     {
         id: 2,
-        image: `${imagePath}2.jpeg`,
+        image: `${imagePath}-2.jpeg`,
         alt: "Photo of Anshul Pendse",
         name: "Anshul Pendse",
         role: "Co-Founder, Creative and Technical Director",
@@ -31,7 +31,7 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 3,
-        image: `${imagePath}3.png`,
+        image: `${imagePath}-3.png`,
         alt: "Photo of Sam Wright-Edwards",
         name: "Sam Wright-Edwards",
         role: "Director, Operations",
@@ -39,7 +39,7 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 4,
-        image: `${imagePath}4.png`,
+        image: `${imagePath}-4.png`,
         alt: "Photo of Alistair Song-White",
         name: "Alistair Song-White",
         role: "Video Game Designer, UI/UX Designer",
@@ -47,7 +47,7 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 5,
-        image: `${imagePath}5.png`,
+        image: `${imagePath}-5.png`,
         alt: "Photo of Vaishali Ramesh",
         name: "Vaishali Ramesh",
         role: "Science and Well-Being Researcher",
@@ -55,7 +55,7 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 6,
-        image: `${imagePath}6.png`,
+        image: `${imagePath}-6.png`,
         alt: "Photo of Quenton Porter",
         name: "Quenton Porter",
         role: "Product Manager",
@@ -63,7 +63,7 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 7,
-        image: `${imagePath}7.png`,
+        image: `${imagePath}-7.png`,
         alt: "Photo of Daniel Tsai",
         name: "Daniel Tsai",
         role: "Game Developer",
@@ -71,7 +71,7 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 8,
-        image: `${imagePath}8.png`,
+        image: `${imagePath}-8.png`,
         alt: "Photo of Jay Jayachandran",
         name: "Jay Jayachandran",
         role: "Product Designer, Product Manager",
@@ -79,7 +79,7 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 9,
-        image: `${imagePath}9.png`,
+        image: `${imagePath}-9.png`,
         alt: "Photo of Gargi Pawar",
         name: "Gargi Pawar",
         role: "Compensation Analyst",
@@ -87,7 +87,7 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 10,
-        image: `${imagePath}10.png`,
+        image: `${imagePath}-10.png`,
         alt: "Photo of Kyle Eason",
         name: "Kyle Eason",
         role: "Storytelling Consultant",
@@ -95,7 +95,7 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 11,
-        image: `${imagePath}11.jpeg`,
+        image: `${imagePath}-11.jpeg`,
         alt: "Photo of Lily Le",
         name: "Lily Le",
         role: "Web Developer",
@@ -103,7 +103,7 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 12,
-        image: `${imagePath}12.jpeg`,
+        image: `${imagePath}-12.jpeg`,
         alt: "Photo of Philip Sadler",
         name: "Philip Sadler",
         role: "Fellow, Yoga and Breathwork Teacher",
@@ -111,10 +111,26 @@ export const teamMembers: teamMemberProps[] = [
     },
     {
         id: 13,
-        image: `${imagePath}13.png`,
-        alt: "Photo of Sonni",
-        name: "Sonni",
+        image: `${imagePath}-13.png`,
+        alt: "Photo of Sonni Daly",
+        name: "Sonni Daly",
         role: "Wellness Designer and Researcher",
+        location: "California, USA"
+    },
+    {
+        id: 14,
+        image: `${imagePath}-14.png`,
+        alt: "Photo of James Covial",
+        name: "James Covial",
+        role: "Unreal Designer, Sound Design, Music Producer",
+        location: "North Carolina, USA"
+    },
+    {
+        id: 15,
+        image: `${imagePath}-15.png`,
+        alt: "Photo of Lily Mae Pido",
+        name: "Lily Mae Pido",
+        role: "UI/UX Designer, Content Designer",
         location: "California, USA"
     }
 ]
