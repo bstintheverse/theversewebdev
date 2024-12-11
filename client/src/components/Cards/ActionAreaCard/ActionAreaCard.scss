@@ -1,0 +1,20 @@
+@use "../../../styles/partials/fonts.scss" as *;
+@use "../../../styles/partials/variables.scss" as *;
+@use "../../../styles/partials/mixins.scss" as *;
+
+.action-area-card {
+    &__font {
+        font-family: "Poppins", sans-serif !important;
+        color: $global-primary-font-color;
+        font-size: 0.85rem !important;
+        text-align: center;
+
+        @include tablet {
+            font-size: 0.90rem !important;
+        }
+    
+        @include desktop {
+            font-size: 0.95rem !important;
+        }
+    }
+}
