@@ -1,8 +1,12 @@
 // styling
 import "./Hero.scss";
 
-// hook
-import { useLocation } from "react-router-dom";
+// data
+import { games } from "../../data/games";
+
+// hooks
+import { useEffect, useState } from "react";
+import { useLocation, useParams } from "react-router-dom";
 
 // type
 interface headerTitleProps {
@@ -12,46 +16,48 @@ interface headerTitleProps {
 };
 
 export default function Hero() {
-    const headerTitles: headerTitleProps[] = [
-        {
-            id: 1,
-            path: "/",
-            subheader: "What if games and digital experiences could make you feel happier, healthier, and more hopeful?"
-        },
-        {
-            id: 2,
-            path: "/about-us",
-            subheader: "About Us"
-        },
-        {
-            id: 3,
-            path: "/experiences",
-            subheader: "Games & Digital Experiences"
-        },
-        {
-            id: 4,
-            path: "/our-people",
-            subheader: "Our People"
-        },
-        {
-            id: 5,
-            path: "/contact-us",
-            subheader: "Contact Us"
-        },
-        {
-            id: 6,
-            path: "/donate",
-            subheader: "Donate"
-        },
-        {
-            id: 7,
-            path: "/404",
-            subheader: "Page Not Found"
-        }
-    ];
-
+    const { gameId } = useParams();
     const location = useLocation();
-    const currentHeader = headerTitles.find(title => title.path === location.pathname);
+
+    const [header, setHeader] = useState<string>("");
+
+    useEffect(() => {
+        const getHeader = () => {
+            console.log("Current Path:", location.pathname);
+            console.log("Game ID:", gameId);
+
+            
+            if (location.pathname.startsWith("/experiences/game/") && gameId) {
+                const game = games.find((g) => g.id === Number(gameId));
+
+                if (game) {
+                    return game.name;
+                } else {
+                    return "Game not found."
+                };
+            };
+
+            switch (location.pathname) {
+                case "/":
+                    return "What if games and digital experiences could make you feel happier, healthier, and more hopeful?";
+                case "/about-us":
+                    return "About Us";
+                case "/experiences":
+                    return "Games & Digital Experiences";
+                case "/our-people":
+                    return "Our People";
+                case "/contact-us":
+                    return "Contact Us";
+                case "/donate":
+                    return "Donate";
+                case "/404":
+                    return "Page Not Found";
+                default:
+                    return "";
+            };
+        };
+        setHeader(getHeader());
+    }, [location.pathname, gameId]);
 
     return (
         <section className="hero">
@@ -67,7 +73,7 @@ export default function Hero() {
             
             <div className="hero__content">
                 <h1 className="hero__header">
-                    {currentHeader ? currentHeader.subheader : ""}
+                    {header}
                 </h1>
             </div>
         </section>
