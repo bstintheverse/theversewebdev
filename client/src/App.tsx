@@ -18,10 +18,18 @@ import NotFoundPage from "./pages/NotFound/NotFound";
 
 // library
 import { BrowserRouter, Navigate, Route, Routes, useLocation} from "react-router-dom";
+import { useEffect } from "react";
+
+// util
+import scrollToTop from "./utils/scrollToTop";
 
 function AppWithLocation() {
   const location = useLocation();
   const renderGlobalHero = !location.pathname.startsWith("/experiences/game/");
+
+  useEffect(() => {
+    scrollToTop();
+  }, [location]);
 
   return (
     <>
