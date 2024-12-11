@@ -9,3 +9,25 @@ html, body {
     margin: 0;
     padding: 0;
 }
+
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.full-width-bg-wrapper {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+
+    &--black {
+        background: $black; 
+    }
+
+    &--grey {
+        background: $grey-light;
+    }
+
+    &--blue {
+        background: $blue;
+    }
+}
