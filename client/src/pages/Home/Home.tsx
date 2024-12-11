@@ -8,11 +8,13 @@ import { Link } from "react-router-dom";
 export default function HomePage() {
     return (
         <section className="home">
-            <article className="home__video-container">
-                <video className="home__video" controls>
-                    <source src="/assets/videos/placeholder-video.mp4" />
-                </video>
-            </article>
+            <div className="full-width-bg-wrapper full-width-bg-wrapper--blue">
+                <article className="home__video-container">
+                    <video className="home__video" controls>
+                        <source src="/assets/videos/placeholder-video.mp4" />
+                    </video>
+                </article>
+            </div>
             
             <div className="home__work">
                 <h2 className="home__work-header">

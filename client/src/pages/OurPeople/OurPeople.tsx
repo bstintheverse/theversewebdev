@@ -21,19 +21,21 @@ export default function OurPeoplePage() {
             </Helmet>
             
             <section className="our-people">
-                <div className="our-people__container">
-                    <h2 className="our-people__subheader">
-                        Meet The Team
-                    </h2>
+                <div className="full-width-bg-wrapper full-width-bg-wrapper--black">
+                    <div className="our-people__container">
+                        <h2 className="our-people__subheader">
+                            Meet The Team
+                        </h2>
 
-                    <p className="our-people__text">
-                        The Verse is a global community of inspired gamers, developers, designers, 
-                        scientists, artists, visionaries, teachers, and students who join together to 
-                        passionately contribute their wide-ranging expertise to invent experiences that 
-                        enhance human flourishing. We are committed to “engaging in work that creates 
-                        greater happiness, wisdom, and well-being, and relieves suffering in ourselves 
-                        and others.” We think of The Verse as a practice.
-                    </p>
+                        <p className="our-people__text">
+                            The Verse is a global community of inspired gamers, developers, designers, 
+                            scientists, artists, visionaries, teachers, and students who join together to 
+                            passionately contribute their wide-ranging expertise to invent experiences that 
+                            enhance human flourishing. We are committed to “engaging in work that creates 
+                            greater happiness, wisdom, and well-being, and relieves suffering in ourselves 
+                            and others.” We think of The Verse as a practice.
+                        </p>
+                    </div>
                 </div>
 
                 <section className="our-people__team">

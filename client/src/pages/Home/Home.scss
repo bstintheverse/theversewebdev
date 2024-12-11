@@ -4,14 +4,23 @@
 
 .home {
     &__video {
-        width: 100%;
-        height: auto;
+        width: auto;
+        max-height: 10.5rem;
         object-fit: cover;
         border-radius: 2.5%;
 
+        @include tablet {
+            max-height: 20rem;
+        }
+
+        @include desktop {
+            max-height: 25rem;
+        }
+
         &-container {
             width: 100%;
-            background-color: $blue;
+            @include flexbox(row);
+            justify-content: center;
             box-sizing: border-box;
             padding: 1rem;
 
@@ -22,7 +31,6 @@
             @include desktop {
                 padding: 2.5rem 18rem;
             }
-    
         }
     }
 
@@ -170,9 +178,9 @@
         &-container {
             @include flexbox(column);
             align-items: center;
-            border: .0625rem solid $grey-light;
+            border: .0625rem solid $grey-medium-light;
             border-radius: 1rem;
-            box-shadow: 5px 5px 5px $grey-light;
+            box-shadow: 5px 5px 5px $grey-medium-light;
             padding: 1rem;
 
             @include tablet {

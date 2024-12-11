@@ -5,7 +5,6 @@
 .not-found {
     &__container {
         height: 100%;
-        background-color: $black;
         text-align: center;
         @include flexbox(column);
         justify-content: space-between;

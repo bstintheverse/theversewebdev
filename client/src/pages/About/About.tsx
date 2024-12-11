@@ -22,18 +22,20 @@ export default function AboutPage() {
             </Helmet>
 
             <section className="about">
-                <div className="about__container">
-                    <p className="about__quote">
-                        In The Verse magic happens every day. In the emergence of the
-                        uplifting experiences we conceive and build together. And for the people working in
-                        The Verse, joyful co-creation and self-discovery.
-                    </p>
+                <div className="full-width-bg-wrapper full-width-bg-wrapper--black">
+                    <div className="about__container">
+                        <p className="about__quote">
+                            In The Verse magic happens every day. In the emergence of the
+                            uplifting experiences we conceive and build together. And for the people working in
+                            The Verse, joyful co-creation and self-discovery.
+                        </p>
 
-                    <p className="about__quote about__quote--author">
-                        — Ben Simon-Thomas, Co-Founder
-                    </p>
+                        <p className="about__quote about__quote--author">
+                            — Ben Simon-Thomas, Co-Founder
+                        </p>
+                    </div>
                 </div>
-
+                
                 <div className="about__the-verse">
                     <h2 className="about__the-verse-header">
                         The Verse
@@ -126,28 +128,30 @@ export default function AboutPage() {
                         and generate measureable outcomes.
                     </p>
                 </div>
+                
+                <div className="full-width-bg-wrapper full-width-bg-wrapper--grey">
+                    <div className="about__our-way">
+                        <h2 className="about__our-way-header">
+                            The Way of The Verse
+                        </h2>
 
-                <div className="about__our-way">
-                    <h2 className="about__our-way-header">
-                        The Way of The Verse
-                    </h2>
+                        <p className="about__our-way-text">
+                            We seek unity and integrity with every collective step, enveloping our
+                            processes and our products in the spirit and practice of interconnectedness.
+                        </p>
 
-                    <p className="about__our-way-text">
-                        We seek unity and integrity with every collective step, enveloping our
-                        processes and our products in the spirit and practice of interconnectedness.
-                    </p>
+                        <p className="about__our-way-text">
+                            We think of <span className="about__our-way-text--bold">The Verse as practice</span>.
+                        </p>
 
-                    <p className="about__our-way-text">
-                        We think of <span className="about__our-way-text--bold">The Verse as practice</span>.
-                    </p>
+                        <p className="about__our-way-text">
+                            This is <span className="about__our-way-text--bold">The Way of the Verse</span>, our true north.
+                        </p>
 
-                    <p className="about__our-way-text">
-                        This is <span className="about__our-way-text--bold">The Way of the Verse</span>, our true north.
-                    </p>
-
-                    <p className="about__our-way-text--small">
-                        *From the Eightfold Path of Buddhism
-                    </p>
+                        <p className="about__our-way-text--small">
+                            *From the Eightfold Path of Buddhism
+                        </p>
+                    </div>
                 </div>
 
                 <div className="about__our-community">
