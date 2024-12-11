@@ -4,32 +4,32 @@ interface CarouselCardProps {
     alt: string;
 };
 
-const imagePath = "/assets/images"
+const imagePath = "/assets/images/cards/carousel-cards"
 
 export const carouselCards: CarouselCardProps[] = [
     {
         id: 1,
-        image: `${imagePath}/card-karma.png`,
+        image: `${imagePath}/carousel-card-karma.png`,
         alt: "Karma"
     }, 
     {
         id: 2,
-        image: `${imagePath}/card-aib.png`,
+        image: `${imagePath}/carousel-card-aib.png`,
         alt: "Adventures in Breath"
     },
     {
         id: 3,
-        image: `${imagePath}/card-walkxr.png`,
+        image: `${imagePath}/carousel-card-walkxr.png`,
         alt: "WalkXR"
     },
     {
         id: 4,
-        image: `${imagePath}/card-testimonial1.png`,
+        image: `${imagePath}/carousel-card-testimonial1.png`,
         alt: "Testimonial 1"
     },
     {
         id: 5,
-        image: `${imagePath}/card-testimonial2.png`,
+        image: `${imagePath}/carousel-card-testimonial2.png`,
         alt: "Testimonial 2"
     }
 ];
