@@ -3,6 +3,7 @@ import "./Home.scss";
 
 // component
 import CustomCarousel from "../../components/Carousel/CustomCarousel";
+import { Link } from "react-router-dom";
 
 export default function HomePage() {
     return (
@@ -38,9 +39,11 @@ export default function HomePage() {
                         that enhance human flourishing.
                     </p>
 
-                    <p className="home__community-button">
-                        Learn More
-                    </p>
+                    <Link className="home__community-button-link" to="/about-us">
+                        <p className="home__community-button">
+                            Learn More
+                        </p>
+                    </Link>
                 </div>
 
                 <div className="home__community-image-container">
