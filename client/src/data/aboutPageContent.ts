@@ -19,31 +19,31 @@ export const guidingPrinciples: guidingPrincipleProps[] = [
     {
         id: 1,
         image: `${guidingPrincipleImagePath}/guiding-principle-1.jpg`,
-        alt: "",
+        alt: "Two hands reaching out together",
         label: "Human First Approach"
     },
     {
         id: 2,
         image: `${guidingPrincipleImagePath}/guiding-principle-2.jpg`,
-        alt: "",
+        alt: "Row boat with multiple people",
         label: "Collaboration"
     },
     {
         id: 3,
         image: `${guidingPrincipleImagePath}/guiding-principle-3.jpg`,
-        alt: "",
+        alt: "Brain figurine",
         label: "Holistic Thinking"
     },
     {
         id: 4,
         image: `${guidingPrincipleImagePath}/guiding-principle-4.jpg`,
-        alt: "",
+        alt: "Puzzle pieces",
         label: "Play, Ritual, Story"
     },
     {
         id: 5,
         image: `${guidingPrincipleImagePath}/guiding-principle-5.jpg`,
-        alt: "",
+        alt: "Group of people at the peak of a mountain",
         label: "Servant Leadership"
     }
 ];
@@ -52,31 +52,31 @@ export const ourCommunity: ourCommunityProps[] = [
     {
         id: 1, 
         image: `${ourCommunityImagePath}/action-area-card-1.jpg`,
-        alt: "",
+        alt: "Team members placing their hands together in the middle of a circle",
         content: "Over 250 contributors at The Verse"
     },
     {
         id: 2,
         image: `${ourCommunityImagePath}/action-area-card-2.jpg`,
-        alt: "",
+        alt: "Wall clock",
         content: "Over 47,000 hours on Verse Projects"
     },
     {
         id: 3,
         image: `${ourCommunityImagePath}/action-area-card-3.jpg`,
-        alt: "",
+        alt: "Man working on a laptop",
         content: "During summers, we have 50+ working on average 25 hours a week"
     },
     {
         id: 4,
         image: `${ourCommunityImagePath}/action-area-card-4.jpg`,
-        alt: "",
+        alt: "Chalk thought bubble with a light bulb",
         content: "You know who you are! Multi-talented, creative, and inspired to change the world"
     },
     {
         id: 5,
         image: `${ourCommunityImagePath}/action-area-card-5.jpg`,
-        alt: "",
+        alt: "Two people high-fiving",
         content: "Versers feel empowered, enriched, connected, and productive"
     }
 ];
