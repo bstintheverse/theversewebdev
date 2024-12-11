@@ -87,8 +87,8 @@
             @include button($button-primary-background, $button-primary-background);
 
         &:hover {
-            background-color: $blue;
-            border: .0625rem solid $blue;
+            background-color: $charcoal;
+            border: .0625rem solid $charcoal;
             transition: 0.5s ease-in-out;
         }
     }
