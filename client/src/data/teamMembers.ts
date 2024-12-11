@@ -32,73 +32,89 @@ export const teamMembers: teamMemberProps[] = [
     {
         id: 3,
         image: `${imagePath}3.png`,
+        alt: "Photo of Sam Wright-Edwards",
+        name: "Sam Wright-Edwards",
+        role: "Director, Operations",
+        location: "Ontario, Canada"
+    },
+    {
+        id: 4,
+        image: `${imagePath}4.png`,
         alt: "Photo of Alistair Song-White",
         name: "Alistair Song-White",
         role: "Video Game Designer, UI/UX Designer",
         location: "California, USA"
     },
     {
-        id: 4,
-        image: `${imagePath}4.png`,
+        id: 5,
+        image: `${imagePath}5.png`,
         alt: "Photo of Vaishali Ramesh",
         name: "Vaishali Ramesh",
         role: "Science and Well-Being Researcher",
         location: "India"
     },
     {
-        id: 5,
-        image: `${imagePath}5.png`,
+        id: 6,
+        image: `${imagePath}6.png`,
         alt: "Photo of Quenton Porter",
         name: "Quenton Porter",
         role: "Product Manager",
         location: "West Virginia, USA"
     },
     {
-        id: 6,
-        image: `${imagePath}6.png`,
+        id: 7,
+        image: `${imagePath}7.png`,
         alt: "Photo of Daniel Tsai",
         name: "Daniel Tsai",
         role: "Game Developer",
         location: "California, USA"
     },
     {
-        id: 7,
-        image: `${imagePath}7.png`,
+        id: 8,
+        image: `${imagePath}8.png`,
         alt: "Photo of Jay Jayachandran",
         name: "Jay Jayachandran",
         role: "Product Designer, Product Manager",
         location: "Nevada, USA"
     },
     {
-        id: 8,
-        image: `${imagePath}8.png`,
+        id: 9,
+        image: `${imagePath}9.png`,
         alt: "Photo of Gargi Pawar",
         name: "Gargi Pawar",
         role: "Compensation Analyst",
         location: "Florida, USA"
     },
     {
-        id: 9,
-        image: `${imagePath}9.png`,
+        id: 10,
+        image: `${imagePath}10.png`,
         alt: "Photo of Kyle Eason",
         name: "Kyle Eason",
         role: "Storytelling Consultant",
         location: "Colarado, USA"
     },
     {
-        id: 10,
-        image: `${imagePath}10.jpeg`,
+        id: 11,
+        image: `${imagePath}11.jpeg`,
         alt: "Photo of Lily Le",
         name: "Lily Le",
         role: "Web Developer",
         location: "Ontario, Canada"
     },
     {
-        id: 11,
-        image: `${imagePath}11.jpeg`,
+        id: 12,
+        image: `${imagePath}12.jpeg`,
         alt: "Photo of Philip Sadler",
         name: "Philip Sadler",
         role: "Fellow, Yoga and Breathwork Teacher",
+        location: "California, USA"
+    },
+    {
+        id: 13,
+        image: `${imagePath}13.png`,
+        alt: "Photo of Sonni",
+        name: "Sonni",
+        role: "Wellness Designer and Researcher",
         location: "California, USA"
     }
 ]
