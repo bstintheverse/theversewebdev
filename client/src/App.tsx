@@ -35,19 +35,21 @@ function AppWithLocation() {
     <>
       <Header />
       {renderGlobalHero && <Hero />}
-      <Routes>
-      <Route>
-        <Route path="/" element={ <HomePage /> } />
-        <Route path="/about-us" element={ <AboutPage /> } />
-        <Route path="/experiences" element={ <ExperiencesPage /> } />
-        <Route path="/experiences/game/:gameId" element={ <> <Hero /> <GamePage /> </>} />
-        <Route path="/our-people" element={ <OurPeoplePage /> } />
-        <Route path="/contact-us" element={ <ContactPage /> } />
-        <Route path="/donate" element={ <DonatePage /> } />
-        <Route path="*" element={ <Navigate to="/404" /> } />
-        <Route path="/404" element={ <NotFoundPage /> } />
-      </Route>
-      </Routes>
+      <main>
+        <Routes>
+          <Route>
+            <Route path="/" element={ <HomePage /> } />
+            <Route path="/about-us" element={ <AboutPage /> } />
+            <Route path="/experiences" element={ <ExperiencesPage /> } />
+            <Route path="/experiences/game/:gameId" element={ <> <Hero /> <GamePage /> </>} />
+            <Route path="/our-people" element={ <OurPeoplePage /> } />
+            <Route path="/contact-us" element={ <ContactPage /> } />
+            <Route path="/donate" element={ <DonatePage /> } />
+            <Route path="*" element={ <Navigate to="/404" /> } />
+            <Route path="/404" element={ <NotFoundPage /> } />
+          </Route>
+        </Routes>
+        </main>
       <Footer />
     </>
   );
