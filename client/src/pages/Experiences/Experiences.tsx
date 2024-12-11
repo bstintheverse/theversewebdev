@@ -1,31 +1,41 @@
 // styling
 import "./Experiences.scss";
 
-// data
-import { games } from "../../data/games";
-
 // component
 import GameCard from "../../components/Cards/GameCard/GameCard";
 
+// library
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
+// data
+import { games } from "../../data/games";
+
 export default function ExperiencesPage() {
     return (
-        <section className="experiences">
-            <article className="experience__cards">
-                <ul className="experience__card-list">
-                    {games.map((game) => (
-                        <GameCard
-                            key={game.id}
-                            id={game.id}
-                            name={game.name}
-                            video={game.video}
-                            image={game.image}
-                            alt={game.alt}
-                            description={game.description}
-                            link={game.link}
-                        />
-                    ))}
-                </ul>
-            </article>
-        </section>
+        <HelmetProvider>
+            <Helmet>
+                <title>
+                    The Verse | Experiences
+                </title>
+            </Helmet>
+            <section className="experiences">
+                <article className="experience__cards">
+                    <ul className="experience__card-list">
+                        {games.map((game) => (
+                            <GameCard
+                                key={game.id}
+                                id={game.id}
+                                name={game.name}
+                                video={game.video}
+                                image={game.image}
+                                alt={game.alt}
+                                description={game.description}
+                                link={`/experiences/game/${game.id}`}
+                            />
+                        ))}
+                    </ul>
+                </article>
+            </section>
+        </HelmetProvider>
     );
 };

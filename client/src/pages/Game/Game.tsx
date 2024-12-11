@@ -1,8 +1,12 @@
 // styling
 import "./Game.scss";
 
-import { games } from "../../data/games";
+// library
 import { useParams } from "react-router-dom";
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
+// data
+import { games } from "../../data/games";
 
 export default function GamePage() {
     const { gameId } = useParams();
@@ -13,8 +17,16 @@ export default function GamePage() {
     };
 
     return (
-        <div>
-            {game.name}
-        </div>
+        <HelmetProvider>
+            <Helmet>
+                <title>
+                    The Verse | {game.name}
+                </title>
+            </Helmet>
+            
+            <section className="game">
+                {game.name}
+            </section>
+        </HelmetProvider>
     )
 }

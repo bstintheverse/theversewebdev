@@ -1,19 +1,21 @@
 //styling
 import "./Contact.scss";
 
-import { Link } from "react-router-dom";
-import { ChangeEvent, FormEvent, useState } from "react";
-
+// components
 import Avatar from '@mui/material/Avatar';
 import EmailIcon from '@mui/icons-material/Email';
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
 import InputField from "../../components/FormElements/InputField/InputField";
 import Textarea from "../../components/FormElements/Textarea/Textarea";
+import Button from "../../components/Button/Button";
 
+// libraries
+import { Link } from "react-router-dom";
+import { ChangeEvent, FormEvent, useState } from "react";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 import Joi from "joi";
 import emailjs from "emailjs-com";
-import Button from "../../components/Button/Button";
 
 const schema = Joi.object({
     name: Joi.string()
@@ -115,189 +117,196 @@ export default function ContactPage() {
     };
 
     return (
-        <section className="contact">
-            <div className="contact__container">
-                <h2 className="contact__subheader">
-                    Lorem Ipsum
-                </h2>
-
-                <p className="contact__text contact__text--white">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                    eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                    in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
-
-            <section className="contact__content">
-                <div className="contact__wrapper">
-                    <h2 className="contact__subheader contact__subheader--black">
-                        Get in Touch
+        <HelmetProvider>
+            <Helmet>
+                <title>
+                    The Verse | Contact Us
+                </title>
+            </Helmet>
+            <section className="contact">
+                <div className="contact__container">
+                    <h2 className="contact__subheader">
+                        Lorem Ipsum
                     </h2>
 
-                    <p className="contact__text">
-                        Got ideas? Want to build something in The Verse? Let's work together! Collaboration
-                        is key to solving today's challenges and making an impact. Join us and create
-                        something extraordinary.
+                    <p className="contact__text contact__text--white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                        in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
 
-                <section className="contact__container-info-form">
-                    <div className="contact__info-wrapper">
-                        <div className="contact__info">
-                            <Avatar
-                                sx={{
-                                    backgroundColor: "#711C71"
-                                }}   
-                            >
-                                <EmailIcon />
-                            </Avatar>
-                        
-                            <div className="">
-                                <h4 className="contact__label">
-                                    Email
-                                </h4>
+                <section className="contact__content">
+                    <div className="contact__wrapper">
+                        <h2 className="contact__subheader contact__subheader--black">
+                            Get in Touch
+                        </h2>
 
-                                <p className="contact__text">
-                                    info@versebuilding.com
-                                </p>
-                            </div>
-                        </div>
+                        <p className="contact__text">
+                            Got ideas? Want to build something in The Verse? Let's work together! Collaboration
+                            is key to solving today's challenges and making an impact. Join us and create
+                            something extraordinary.
+                        </p>
+                    </div>
 
-                        <div className="contact__info">
+                    <section className="contact__container-info-form">
+                        <div className="contact__info-wrapper">
+                            <div className="contact__info">
                                 <Avatar
                                     sx={{
-                                        backgroundColor: "#343270"
+                                        backgroundColor: "#711C71"
                                     }}   
                                 >
-                                    <EmojiEmotionsIcon />
+                                    <EmailIcon />
                                 </Avatar>
                             
-                            <div className="">
-                                <h4 className="contact__label">
-                                    Socials
-                                </h4>
+                                <div className="">
+                                    <h4 className="contact__label">
+                                        Email
+                                    </h4>
 
-                                <div className="contact__social-icons">
-                                    <a 
-                                        href="https://www.x.com/buildingverses"
-                                        target="_blank"
-                                    >
-                                        <img
-                                            className="contact__social-icon"
-                                            src="/assets/badges/x.svg"
-                                        />
-                                    </a>
+                                    <p className="contact__text">
+                                        info@versebuilding.com
+                                    </p>
+                                </div>
+                            </div>
 
-                                    <a
-                                        href="https://www.instagram.com/buildingverses/"
-                                        target="_blank"
+                            <div className="contact__info">
+                                    <Avatar
+                                        sx={{
+                                            backgroundColor: "#343270"
+                                        }}   
                                     >
-                                        <img
-                                            className="contact__social-icon"
-                                            src="/assets/badges/instagram.svg"
-                                        />
-                                    </a>
+                                        <EmojiEmotionsIcon />
+                                    </Avatar>
+                                
+                                <div className="">
+                                    <h4 className="contact__label">
+                                        Socials
+                                    </h4>
 
-                                    <a
-                                        href="https://www.linkedin.com/company/building-the-verse/"
-                                        target="_blank"
+                                    <div className="contact__social-icons">
+                                        <a 
+                                            href="https://www.x.com/buildingverses"
+                                            target="_blank"
+                                        >
+                                            <img
+                                                className="contact__social-icon"
+                                                src="/assets/badges/x.svg"
+                                            />
+                                        </a>
+
+                                        <a
+                                            href="https://www.instagram.com/buildingverses/"
+                                            target="_blank"
+                                        >
+                                            <img
+                                                className="contact__social-icon"
+                                                src="/assets/badges/instagram.svg"
+                                            />
+                                        </a>
+
+                                        <a
+                                            href="https://www.linkedin.com/company/building-the-verse/"
+                                            target="_blank"
+                                        >
+                                            <img
+                                                className="contact__social-icon"
+                                                src="/assets/badges/linkedin.svg"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="contact__info">
+                                    <Avatar
+                                        sx={{
+                                            backgroundColor: "#3A4A97"
+                                        }}
                                     >
-                                        <img
-                                            className="contact__social-icon"
-                                            src="/assets/badges/linkedin.svg"
-                                        />
-                                    </a>
+                                        <Diversity3Icon />
+                                    </Avatar>
+                                
+                                <div className="">
+                                    <h4 className="contact__label">
+                                        Join Us
+                                    </h4>
+
+                                    <Link className="contact__link" to="https://wellfound.com/company/the-verse" target="_blank">
+                                        wellfound.com/company/the-verse
+                                    </Link>
                                 </div>
                             </div>
                         </div>
 
-                        <div className="contact__info">
-                                <Avatar
-                                    sx={{
-                                        backgroundColor: "#3A4A97"
-                                    }}
-                                >
-                                    <Diversity3Icon />
-                                </Avatar>
-                            
-                            <div className="">
-                                <h4 className="contact__label">
-                                    Join Us
-                                </h4>
+                        <div className="contact__form">
+                            <form className="form" onSubmit={handleSubmit}>
+                                <label className="form__name">
+                                    <p className="form__label">
+                                        Name
+                                    </p>
 
-                                <Link className="contact__link" to="https://wellfound.com/company/the-verse" target="_blank">
-                                    wellfound.com/company/the-verse
-                                </Link>
-                            </div>
+                                    <InputField
+                                        className="form__input"
+                                        name="name"
+                                        value={formData.name}
+                                        placeholder="Full name"
+                                        onChange={handleInputChange}
+                                    />
+
+                                    {(errors.name && 
+                                        <p className="form__errors">{errors.name}</p>
+                                    )}
+                                </label>
+
+                                <label className="form__email">
+                                    <p className="form__label">
+                                        Email
+                                    </p>
+
+                                    <InputField
+                                        className="form__input"
+                                        name="email"
+                                        value={formData.email}
+                                        placeholder="Email Address"
+                                        onChange={handleInputChange}
+                                    />
+
+                                    {(errors.email && 
+                                        <p className="form__errors">{errors.email}</p>
+                                    )}
+                                </label>
+
+                                <label className="form__message">
+                                    <p className="form__label">
+                                        Message
+                                    </p>
+
+                                    <Textarea
+                                        className="form__textarea"
+                                        name="message"
+                                        value={formData.message}
+                                        placeholder="Your message..."
+                                        onChange={handleInputChange}
+                                    />
+
+                                    {(errors.message && 
+                                        <p className="form__errors form__errors--message">{errors.message}</p>
+                                    )}                                
+                                </label>
+
+                                <Button className="button-secondary" type="submit">
+                                    Submit
+                                </Button>
+                            </form>
                         </div>
-                    </div>
-
-                    <div className="contact__form">
-                        <form className="form" onSubmit={handleSubmit}>
-                            <label className="form__name">
-                                <p className="form__label">
-                                    Name
-                                </p>
-
-                                <InputField
-                                    className="form__input"
-                                    name="name"
-                                    value={formData.name}
-                                    placeholder="Full name"
-                                    onChange={handleInputChange}
-                                />
-
-                                {(errors.name && 
-                                    <p className="form__errors">{errors.name}</p>
-                                )}
-                            </label>
-
-                            <label className="form__email">
-                                <p className="form__label">
-                                    Email
-                                </p>
-
-                                <InputField
-                                    className="form__input"
-                                    name="email"
-                                    value={formData.email}
-                                    placeholder="Email Address"
-                                    onChange={handleInputChange}
-                                />
-
-                                {(errors.email && 
-                                    <p className="form__errors">{errors.email}</p>
-                                )}
-                            </label>
-
-                            <label className="form__message">
-                                <p className="form__label">
-                                    Message
-                                </p>
-
-                                <Textarea
-                                    className="form__textarea"
-                                    name="message"
-                                    value={formData.message}
-                                    placeholder="Your message..."
-                                    onChange={handleInputChange}
-                                />
-
-                                {(errors.message && 
-                                    <p className="form__errors form__errors--message">{errors.message}</p>
-                                )}                                
-                            </label>
-
-                            <Button className="button-secondary" type="submit">
-                                Submit
-                            </Button>
-                        </form>
-                    </div>
+                    </section>
                 </section>
             </section>
-        </section>
-    )
+        </HelmetProvider>
+    );
 };
