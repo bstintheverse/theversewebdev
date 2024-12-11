@@ -1,46 +1,17 @@
 // styling
 import "./About.scss";
 
-// library
-import { Helmet, HelmetProvider } from "react-helmet-async";
-
 // component
 import ActionAreaCard from "../../components/Cards/ActionAreaCard/ActionAreaCard";
 
+// library
+import { Helmet, HelmetProvider } from "react-helmet-async";
+
+// data 
+import { guidingPrinciples } from "../../data/aboutPageContent";
+import { ourCommunity } from "../../data/aboutPageContent";
+
 export default function AboutPage() {
-    const imagePath = "/assets/images/cards/our-community-cards/action-area-card";
-    const ourCommunityContent = [
-        {
-            id: 1, 
-            image: `${imagePath}-1.jpg`,
-            alt: "",
-            content: "Over 250 contributors at The Verse"
-        },
-        {
-            id: 2,
-            image: `${imagePath}-2.jpg`,
-            alt: "",
-            content: "Over 47,000 hours on Verse Projects"
-        },
-        {
-            id: 3,
-            image: `${imagePath}-3.jpg`,
-            alt: "",
-            content: "During summers, we have 50+ working on average 25 hours a week"
-        },
-        {
-            id: 4,
-            image: `${imagePath}-4.jpg`,
-            alt: "",
-            content: "You know who you are! Multi-talented, creative, and inspired to change the world"
-        },
-        {
-            id: 5,
-            image: `${imagePath}-5.jpg`,
-            alt: "",
-            content: "Versers feel empowered, enriched, connected, and productive"
-        }
-    ];
     
     return (
         <HelmetProvider>
@@ -101,67 +72,20 @@ export default function AboutPage() {
                     </p>
 
                     <div className="about__mission-elements">
-                        {/* make this section dynamic as opposed to being hardcoded later */}
                         <ul className="mission-element__list">
-                            <li className="mission-element__item">
+                            {guidingPrinciples.map((guidingPrinciple) => (
+                                <li className="mission-element__item">
                                 <img 
                                     className="mission-element__image"
-                                    src="/assets/images/guiding-principle-1.jpg"
-                                    alt="Alt text"
+                                    src={guidingPrinciple.image}
+                                    alt={guidingPrinciple.alt}
                                 />
                                 
                                 <p className="mission-element__label">
-                                    Human-first Approach
+                                    {guidingPrinciple.label}
                                 </p>
                             </li>
-
-                            <li className="mission-element__item">
-                                <img 
-                                    className="mission-element__image"
-                                    src="/assets/images/guiding-principle-2.jpg"
-                                    alt="Alt text"
-                                />
-                                
-                                <p className="mission-element__label">
-                                    Collaboration
-                                </p>
-                            </li>
-
-                            <li className="mission-element__item">
-                                <img 
-                                    className="mission-element__image"
-                                    src="/assets/images/guiding-principle-3.jpg"
-                                    alt="Alt text"
-                                />
-                                
-                                <p className="mission-element__label">
-                                    Holistic Thinking
-                                </p>
-                            </li>
-
-                            <li className="mission-element__item">
-                                <img 
-                                    className="mission-element__image"
-                                    src="/assets/images/guiding-principle-4.jpg"
-                                    alt="Alt text"
-                                />
-                                
-                                <p className="mission-element__label">
-                                    Play, Ritual, Story
-                                </p>
-                            </li>
-
-                            <li className="mission-element__item">
-                                <img 
-                                    className="mission-element__image"
-                                    src="/assets/images/guiding-principle-5.jpg"
-                                    alt="Alt text"
-                                />
-                                
-                                <p className="mission-element__label">
-                                    Servant Leadership
-                                </p>
-                            </li>
+                            ))}
                         </ul>
                     </div>
                 </div>
@@ -232,7 +156,7 @@ export default function AboutPage() {
                     </h2>
                     
                     <article className="about__our-community-cards">
-                        {ourCommunityContent.map((content) => (
+                        {ourCommunity.map((content) => (
                             <ActionAreaCard
                                 className="about__our-community-card"
                                 image={content.image}
