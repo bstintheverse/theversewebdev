@@ -1,2 +1,56 @@
 @use "../../../styles/partials/variables.scss" as *;
 @use "../../../styles/partials/mixins.scss" as *;
+
+.game-card {
+    &__item {
+        height: auto;
+        @include flexbox(column);
+        justify-content: space-between;
+        
+        @include tablet {
+            width: 48.2%;
+        }
+
+        @include desktop { 
+            width: 47.9%;
+        }
+    }
+
+    &__header {
+        @include header-md($global-primary-font-color);
+
+        @include tablet {
+            @include header-md($global-primary-font-color);
+        }
+    }
+
+    &__video {
+        width: 100%;
+    }
+
+    &__image {
+        width: 100%;
+    }
+
+    &__description {
+        @include text($global-primary-font-color);
+
+        @include tablet {
+            @include text($global-primary-font-color);
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+    }
+
+    &__button {
+            @include button($button-primary-background, $button-primary-background);
+
+        &:hover {
+            background-color: $charcoal;
+            border: .0625rem solid $charcoal;
+            transition: 0.5s ease-in-out;
+        }
+    }
+}
