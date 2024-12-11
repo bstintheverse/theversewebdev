@@ -7,9 +7,9 @@ import { Link } from "react-router-dom";
 interface GameCardProps {
     id: number;
     name: string;
-    video?: string;
     image?: string;
     alt?: string;
+    video?: string;
     description: string;
     link: string;
 };
@@ -40,7 +40,7 @@ export default function GameCard({ id, name, video, image, alt, description, lin
             </div>
 
             <div className="game-card__wrapper">
-                <Link to={link} className="game-card__link">
+                <Link to={`/experiences/game/${id}`} className="game-card__link">
                     <p className="game-card__button">
                         Learn More
                     </p>
