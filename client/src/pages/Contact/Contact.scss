@@ -199,16 +199,4 @@
         width: 100%;
         box-sizing: border-box;
     }
-
-    &__button {
-        width: 100%;
-        @include button($blue, $blue);
-
-        &:hover { 
-            background-color: $purple;
-            border: .0625rem solid $purple;
-            transition: 0.5s ease-in-out;
-            cursor: pointer;
-        }
-    }
 }

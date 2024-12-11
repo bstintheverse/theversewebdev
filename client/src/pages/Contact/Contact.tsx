@@ -13,6 +13,7 @@ import Textarea from "../../components/FormElements/Textarea/Textarea";
 
 import Joi from "joi";
 import emailjs from "emailjs-com";
+import Button from "../../components/Button/Button";
 
 const schema = Joi.object({
     name: Joi.string()
@@ -290,9 +291,9 @@ export default function ContactPage() {
                                 )}                                
                             </label>
 
-                            <button className="form__button" type="submit">
+                            <Button className="button-secondary" type="submit">
                                 Submit
-                            </button>
+                            </Button>
                         </form>
                     </div>
                 </section>
