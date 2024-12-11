@@ -6,6 +6,9 @@ import "./Footer.scss";
 import { Link } from "react-router-dom";
 import InputField from "../FormElements/InputField/InputField";
 
+// data
+import { games } from "../../data/games";
+
 export default function Footer() {
     return (
         <footer className="footer">
@@ -49,23 +52,11 @@ export default function Footer() {
                     </h4>
 
                     <ul className="nav__list">
-                        <li className="nav__item">
-                            <Link to="/" className="nav__link">
-                                WalkXR
+                        {games.map((game) => (
+                            <Link to={`/experiences/game/${game.id}`} className="nav__link">
+                                {game.name}
                             </Link>
-                        </li>
-
-                        <li className="nav__item">
-                            <Link to="/" className="nav__link">
-                                Karma
-                            </Link>
-                        </li>
-
-                        <li className="nav__item">
-                            <Link to="/" className="nav__link">
-                                Adventures in Breath
-                            </Link>
-                        </li>
+                        ))}
                     </ul>
                 </div>
 
