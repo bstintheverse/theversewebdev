@@ -57,7 +57,7 @@ export default function HomePage() {
                 </div>
             </div>
 
-            <div className="home__support">
+            {/* <div className="home__support">
                 <div className="home__support-container">
                     <h2 className="home__support-heading">
                         Support The Verse
@@ -72,7 +72,7 @@ export default function HomePage() {
                         Donate
                     </p>
                 </div>
-            </div>
+            </div> */}
         </section>
     )
 };
