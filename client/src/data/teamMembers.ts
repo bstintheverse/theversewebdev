@@ -64,73 +64,65 @@ export const teamMembers: teamMemberProps[] = [
     {
         id: 7,
         image: `${imagePath}-7.png`,
-        alt: "Photo of Daniel Tsai",
-        name: "Daniel Tsai",
-        role: "Game Developer",
-        location: "California, USA"
-    },
-    {
-        id: 8,
-        image: `${imagePath}-8.png`,
         alt: "Photo of Jay Jayachandran",
         name: "Jay Jayachandran",
         role: "Product Designer, Product Manager",
         location: "Nevada, USA"
     },
     {
-        id: 9,
-        image: `${imagePath}-9.png`,
+        id: 8,
+        image: `${imagePath}-8.png`,
         alt: "Photo of Gargi Pawar",
         name: "Gargi Pawar",
         role: "Compensation Analyst",
         location: "Florida, USA"
     },
     {
-        id: 10,
-        image: `${imagePath}-10.png`,
-        alt: "Photo of Kyle Eason",
-        name: "Kyle Eason",
-        role: "Storytelling Consultant",
-        location: "Colarado, USA"
-    },
-    {
-        id: 11,
-        image: `${imagePath}-11.jpeg`,
+        id: 9,
+        image: `${imagePath}-9.jpeg`,
         alt: "Photo of Lily Le",
         name: "Lily Le",
         role: "Web Developer",
         location: "Ontario, Canada"
     },
     {
-        id: 12,
-        image: `${imagePath}-12.jpeg`,
+        id: 10,
+        image: `${imagePath}-10.jpeg`,
         alt: "Photo of Philip Sadler",
         name: "Philip Sadler",
         role: "Fellow, Yoga and Breathwork Teacher",
         location: "California, USA"
     },
     {
-        id: 13,
-        image: `${imagePath}-13.png`,
+        id: 11,
+        image: `${imagePath}-11.png`,
         alt: "Photo of Sonni Daly",
         name: "Sonni Daly",
         role: "Wellness Designer and Researcher",
         location: "California, USA"
     },
     {
-        id: 14,
-        image: `${imagePath}-14.png`,
+        id: 12,
+        image: `${imagePath}-12.png`,
         alt: "Photo of James Covial",
         name: "James Covial",
         role: "Unreal Designer, Sound Design, Music Producer",
         location: "North Carolina, USA"
     },
     {
-        id: 15,
-        image: `${imagePath}-15.png`,
+        id: 13,
+        image: `${imagePath}-13.png`,
         alt: "Photo of Lily Mae Pido",
         name: "Lily Mae Pido",
         role: "UI/UX Designer, Content Designer",
         location: "California, USA"
+    },
+    {
+        id: 14,
+        image: `${imagePath}-14.png`,
+        alt: "Photo of Vidip Singh",
+        name: "Vidip Singh",
+        role: "Web Developer",
+        location: "New Delhi, India"
     }
 ]
