@@ -46,6 +46,7 @@
         &-link {
             @include flexbox(row);
             gap: 0.5rem;
+            text-decoration: none;
         }
     }
 
