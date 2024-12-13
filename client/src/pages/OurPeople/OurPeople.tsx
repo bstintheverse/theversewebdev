@@ -16,7 +16,7 @@ export default function OurPeoplePage() {
         <HelmetProvider>
             <Helmet>
                 <title>
-                    Our People
+                    The Verse | Our People
                 </title>
             </Helmet>
             
