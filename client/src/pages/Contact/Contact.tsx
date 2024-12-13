@@ -128,33 +128,18 @@ export default function ContactPage() {
                 <div className="full-width-bg-wrapper full-width-bg-wrapper--black">
                     <div className="contact__container">
                         <h2 className="contact__subheader">
-                            Lorem Ipsum
-                        </h2>
-
-                        <p className="contact__text contact__text--white">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-                            in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-                </div>
-
-                <section className="contact__content">
-                    <div className="contact__wrapper">
-                        <h2 className="contact__subheader contact__subheader--black">
                             Get in Touch
                         </h2>
 
-                        <p className="contact__text">
+                        <p className="contact__text contact__text--white">
                             Got ideas? Want to build something in The Verse? Let's work together! Collaboration
                             is key to solving today's challenges and making an impact. Join us and create
                             something extraordinary.
                         </p>
                     </div>
+                </div>
 
+                <section className="contact__content">
                     <section className="contact__container-info-form">
                         <div className="contact__info-wrapper">
                             <div className="contact__info">

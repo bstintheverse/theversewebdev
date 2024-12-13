@@ -52,11 +52,15 @@ export default function Footer() {
                     </h4>
 
                     <ul className="nav__list">
-                        {games.map((game) => (
+                        <Link className="nav__link" to="/experiences">
+                            Games & Digital Experiences
+                        </Link>
+                        
+                        {/* {games.map((game) => (
                             <Link to={`/experiences/game/${game.id}`} className="nav__link">
                                 {game.name}
                             </Link>
-                        ))}
+                        ))} */}
                     </ul>
                 </div>
 
