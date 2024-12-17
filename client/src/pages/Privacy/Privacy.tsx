@@ -55,8 +55,7 @@ export default function PrivacyPage() {
                 </h2>
 
                 <p className="privacy__text">
-                    If you have any questions about this Privacy Policy, please contact us at
-                    <a href="mailto:team@versebuilding.com">team@versebuilding.com</a>.
+                    If you have any questions about this Privacy Policy, please contact us at <a className="privacy__link" href="mailto:team@versebuilding.com">team@versebuilding.com</a>.
                 </p>
             </section>
         </HelmetProvider>

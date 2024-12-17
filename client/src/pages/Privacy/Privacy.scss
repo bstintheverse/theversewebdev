@@ -29,4 +29,18 @@
             font-weight: 500;
         }
     }
+
+
+    &__link {
+        @include text($global-link-font-color);
+
+        & {
+            margin: 0;
+        }
+
+        &:hover {
+            color: $global-link-hover-color;
+            transition: 0.5s ease-in-out;
+        }
+    }
 }
