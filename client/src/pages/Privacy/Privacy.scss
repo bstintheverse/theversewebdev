@@ -4,4 +4,29 @@
 
 .privacy {
     padding: 1rem;
+
+    &__subheader {
+        @include header-md($global-primary-font-color);
+        margin-bottom: 0;
+
+        &--small {
+            @include subheader-primary($global-primary-font-color);
+            margin-bottom: 0;
+        }
+    }
+
+    &__last-update {
+        font-size: 0.75rem;
+        font-style: italic;
+        margin-top: 0;
+    }
+
+    &__text {
+        @include text($global-primary-font-color);
+
+        &--bold {
+            @include text($global-primary-font-color);
+            font-weight: 500;
+        }
+    }
 }
