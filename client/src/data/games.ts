@@ -14,7 +14,8 @@ export const games: gamesProps[] = [
     {
         id: 1,
         name: "WalkXR",
-        video: `${videoPath}/placeholder-video.mp4`,
+        image: `${imagePath}/walkxr-preview.jpeg`,
+        alt: "Screenshot of WalkXR",
         description: "An immersive, interactive game that empowers players to learn, create, and heal through embodied experiences. Currently being built in UE as a first person game. Involves immersive storytelling, interactive gameplay with emotional regulation, rituals, and deep learning."
     },
     {
