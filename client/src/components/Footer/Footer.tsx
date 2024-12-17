@@ -27,8 +27,15 @@ export default function Footer() {
                         and make an impact together.
                     </p>
                 </div>
+
+                <div className="footer__subscribe">
+                    <iframe 
+                        className="footer__substack"
+                        src="https://versebuilding.substack.com/embed"
+                    />
+                </div>
                 
-                <div className="footer__contact-form">
+                {/* <div className="footer__contact-form">
                     <form className="contact-form">
                         <label className="contact-form__email">
                             <InputField
@@ -42,7 +49,7 @@ export default function Footer() {
                             Sign Up
                         </p>
                     </form>
-                </div>
+                </div> */}
             </section>
 
             <section className="footer__nav">
