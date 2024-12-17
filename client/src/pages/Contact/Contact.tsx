@@ -232,7 +232,7 @@ export default function ContactPage() {
                         </div>
 
                         <div className="contact__form">
-                            <form className="form" onSubmit={handleSubmit}>
+                            {/* <form className="form" onSubmit={handleSubmit}>
                                 <label className="form__name">
                                     <p className="form__label">
                                         Name
@@ -290,7 +290,13 @@ export default function ContactPage() {
                                 <Button className="button-secondary" type="submit">
                                     Submit
                                 </Button>
-                            </form>
+                            </form> */}
+
+                            <iframe
+                                className="google-form" 
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSdeaffl65AvFlyZZNAuTwVc6FPhHON6mbn2fX3ZIsgoxEUZkg/viewform?embedded=true">
+                                    Loading…
+                            </iframe>
                         </div>
                     </section>
                 </section>
