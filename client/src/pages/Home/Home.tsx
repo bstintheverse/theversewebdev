@@ -11,7 +11,7 @@ export default function HomePage() {
             <div className="full-width-bg-wrapper full-width-bg-wrapper--blue">
                 <article className="home__video-container">
                     <video className="home__video" controls>
-                        <source src="/assets/videos/placeholder-video.mp4" />
+                        <source src="/assets/videos/home-page-video.mp4" />
                     </video>
                 </article>
             </div>
