@@ -78,13 +78,13 @@ export default function Footer() {
 
                     <ul className="nav__list">
                         <li className="nav__item">
-                            <Link to="/" className="nav__link">
+                            <Link to="/privacy" className="nav__link">
                                 Privacy
                             </Link>
                         </li>
 
                         <li className="nav__item">
-                            <Link to="/" className="nav__link">
+                            <Link to="/terms" className="nav__link">
                                 Terms
                             </Link>
                         </li>
