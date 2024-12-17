@@ -26,8 +26,7 @@ export default function PrivacyPage() {
                 <p className="privacy__text">
                     Welcome to the <span className="privacy__text--bold">The Verse</span>! Your
                     privacy is important to us. This Privacy Policy outlines how we collect, use,
-                    and protect your personal information when you visit
-                    <a href="https://www.versebuilding.com">www.versebuilding.com</a>.
+                    and protect your personal information when you visit <a className="privacy__link" href="https://www.versebuilding.com">www.versebuilding.com</a>.
                 </p>
 
                 {privacyPolicies.map((policy) => (
@@ -51,7 +50,7 @@ export default function PrivacyPage() {
                 ))}
 
                 <h2 className="privacy__subheader">
-                    Contact Us
+                    Questions?
                 </h2>
 
                 <p className="privacy__text">
