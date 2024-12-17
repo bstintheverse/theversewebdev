@@ -22,6 +22,8 @@ import { useEffect } from "react";
 
 // util
 import scrollToTop from "./utils/scrollToTop";
+import PrivacyPage from "./pages/Privacy/Privacy";
+import TermsPage from "./pages/Terms/Terms";
 
 function AppWithLocation() {
   const location = useLocation();
@@ -45,6 +47,8 @@ function AppWithLocation() {
             <Route path="/our-people" element={ <OurPeoplePage /> } />
             <Route path="/contact-us" element={ <ContactPage /> } />
             <Route path="/donate" element={ <DonatePage /> } />
+            <Route path="/privacy" element={ <PrivacyPage /> } />
+            <Route path="/terms" element={ <TermsPage /> } />
             <Route path="*" element={ <Navigate to="/404" /> } />
             <Route path="/404" element={ <NotFoundPage /> } />
           </Route>
