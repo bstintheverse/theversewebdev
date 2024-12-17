@@ -5,6 +5,14 @@
 .privacy {
     padding: 1rem;
 
+    @include tablet {
+        padding: 1rem 6rem;
+    }
+
+    @include desktop {
+        padding: 1rem 10rem;
+    }
+
     &__subheader {
         @include header-md($global-primary-font-color);
         margin-bottom: 0;
