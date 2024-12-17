@@ -50,6 +50,10 @@ export default function Hero() {
                     return "Contact Us";
                 case "/donate":
                     return "Donate";
+                case "/privacy":
+                    return "Privacy";
+                case "/terms":
+                    return "Terms";
                 case "/404":
                     return "Page Not Found";
                 default:
