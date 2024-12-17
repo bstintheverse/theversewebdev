@@ -51,7 +51,7 @@ export default function HomePage() {
                 <div className="home__community-image-container">
                     <img 
                         className="home__community-image"
-                        src="/assets/images/placeholder-image.jpg"
+                        src="/assets/images/home-page-join-our-community.jpg"
                         alt="The Verse team members in a video meeting"
                     />
                 </div>
