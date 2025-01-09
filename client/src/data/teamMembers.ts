@@ -125,4 +125,4 @@ export const teamMembers: teamMemberProps[] = [
         role: "Web Developer",
         location: "New Delhi, India"
     }
-]
+];

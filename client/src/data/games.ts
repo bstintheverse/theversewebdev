@@ -8,7 +8,6 @@ interface gamesProps {
 };
 
 const imagePath = "/assets/images/games";
-const videoPath = "/assets/videos/";
 
 export const games: gamesProps[] = [
     {

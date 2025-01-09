@@ -88,4 +88,4 @@ export const termsOfService: termsOfServiceProps[] = [
             intro: "These Terms are governed by the laws of California, USA. Any disputes will be resolved in the jurisdiction of California, USA."
         }
     }
-]
+];
