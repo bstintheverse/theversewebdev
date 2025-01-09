@@ -1,4 +1,4 @@
-//styling
+// styling
 import "./Contact.scss";
 
 // components
@@ -6,9 +6,6 @@ import Avatar from '@mui/material/Avatar';
 import EmailIcon from '@mui/icons-material/Email';
 import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
-import InputField from "../../components/FormElements/InputField/InputField";
-import Textarea from "../../components/FormElements/Textarea/Textarea";
-import Button from "../../components/Button/Button";
 
 // libraries
 import { Link } from "react-router-dom";
@@ -232,66 +229,6 @@ export default function ContactPage() {
                         </div>
 
                         <div className="contact__form">
-                            {/* <form className="form" onSubmit={handleSubmit}>
-                                <label className="form__name">
-                                    <p className="form__label">
-                                        Name
-                                    </p>
-
-                                    <InputField
-                                        className="form__input"
-                                        name="name"
-                                        value={formData.name}
-                                        placeholder="Full name"
-                                        onChange={handleInputChange}
-                                    />
-
-                                    {(errors.name && 
-                                        <p className="form__errors">{errors.name}</p>
-                                    )}
-                                </label>
-
-                                <label className="form__email">
-                                    <p className="form__label">
-                                        Email
-                                    </p>
-
-                                    <InputField
-                                        className="form__input"
-                                        name="email"
-                                        value={formData.email}
-                                        placeholder="Email Address"
-                                        onChange={handleInputChange}
-                                    />
-
-                                    {(errors.email && 
-                                        <p className="form__errors">{errors.email}</p>
-                                    )}
-                                </label>
-
-                                <label className="form__message">
-                                    <p className="form__label">
-                                        Message
-                                    </p>
-
-                                    <Textarea
-                                        className="form__textarea"
-                                        name="message"
-                                        value={formData.message}
-                                        placeholder="Your message..."
-                                        onChange={handleInputChange}
-                                    />
-
-                                    {(errors.message && 
-                                        <p className="form__errors form__errors--message">{errors.message}</p>
-                                    )}                                
-                                </label>
-
-                                <Button className="button-secondary" type="submit">
-                                    Submit
-                                </Button>
-                            </form> */}
-
                             <iframe
                                 className="google-form" 
                                 src="https://docs.google.com/forms/d/e/1FAIpQLSdeaffl65AvFlyZZNAuTwVc6FPhHON6mbn2fX3ZIsgoxEUZkg/viewform?embedded=true">

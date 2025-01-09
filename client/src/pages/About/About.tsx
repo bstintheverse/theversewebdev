@@ -12,7 +12,6 @@ import { guidingPrinciples } from "../../data/aboutPageContent";
 import { ourCommunity } from "../../data/aboutPageContent";
 
 export default function AboutPage() {
-    
     return (
         <HelmetProvider>
             <Helmet>
@@ -172,5 +171,5 @@ export default function AboutPage() {
                 </div>
             </section>
         </HelmetProvider>
-    )
+    );
 };
