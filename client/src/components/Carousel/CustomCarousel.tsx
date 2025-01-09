@@ -1,6 +1,3 @@
-// styling
-import "./CustomCarousel.scss";
-
 // components
 import { Carousel } from "react-responsive-3d-carousel";
 import "react-responsive-3d-carousel/dist/styles.css";
@@ -107,5 +104,5 @@ export default function CustomCarousel() {
         defaultOption={defaultOptions}
       />
     </div>
-  )
+  );
 };

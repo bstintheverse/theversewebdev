@@ -4,10 +4,6 @@ import "./Footer.scss";
 
 // component
 import { Link } from "react-router-dom";
-import InputField from "../FormElements/InputField/InputField";
-
-// data
-import { games } from "../../data/games";
 
 export default function Footer() {
     return (
@@ -34,22 +30,6 @@ export default function Footer() {
                         src="https://versebuilding.substack.com/embed"
                     />
                 </div>
-                
-                {/* <div className="footer__contact-form">
-                    <form className="contact-form">
-                        <label className="contact-form__email">
-                            <InputField
-                                className="contact-form__input"
-                                name="email"
-                                value="" // to change
-                                placeholder="Email Address"
-                            />
-                        </label>
-                        <p className="contact-form__button">
-                            Sign Up
-                        </p>
-                    </form>
-                </div> */}
             </section>
 
             <section className="footer__nav">
@@ -62,12 +42,6 @@ export default function Footer() {
                         <Link className="nav__link" to="/experiences">
                             Games & Digital Experiences
                         </Link>
-                        
-                        {/* {games.map((game) => (
-                            <Link to={`/experiences/game/${game.id}`} className="nav__link">
-                                {game.name}
-                            </Link>
-                        ))} */}
                     </ul>
                 </div>
 
@@ -160,5 +134,5 @@ export default function Footer() {
                 </p>
             </section>
         </footer>
-    )
+    );
 };

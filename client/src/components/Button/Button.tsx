@@ -1,6 +1,7 @@
 // styling
 import "./Button.scss";
 
+// types
 interface ButtonProps {
     className: string;
     type?: "button" | "submit" | "reset";

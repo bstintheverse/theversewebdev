@@ -1,6 +1,7 @@
 // styling
 import "./GameCard.scss";
 
+// types
 interface GameCardProps {
     id: number;
     name: string;

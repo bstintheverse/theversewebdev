@@ -2,7 +2,7 @@
 import { Link } from "react-router-dom";
 import "./DropdownMenu.scss";
 
-// components
+// component
 import MenuIcon from '@mui/icons-material/Menu';
 
 export default function DropdownMenu() {
@@ -42,5 +42,5 @@ export default function DropdownMenu() {
                 </ul>
             </div>
         </div>
-    )
+    );
 };

@@ -1,6 +1,7 @@
 // styling
 import "./TeamMemberCard.scss";
 
+// types
 interface TeamMemberCardProps {
     id: number;
     image: string;
