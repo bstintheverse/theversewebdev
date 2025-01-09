@@ -1,8 +1,10 @@
 // styling
 import "./Privacy.scss";
 
+// library
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
+// data
 import { privacyPolicies } from "../../data/privacyPolicies";
 
 export default function PrivacyPage() {

@@ -56,23 +56,6 @@ export default function HomePage() {
                     />
                 </div>
             </div>
-
-            {/* <div className="home__support">
-                <div className="home__support-container">
-                    <h2 className="home__support-heading">
-                        Support The Verse
-                    </h2>
-
-                    <p className="home__support-text">
-                        Your contribution go directly towards a team of 50 people who donate around 20 hours
-                        per week to build games and experiences that impact health and consciousness.
-                    </p>
-
-                    <p className="home__support-button">
-                        Donate
-                    </p>
-                </div>
-            </div> */}
         </section>
-    )
+    );
 };

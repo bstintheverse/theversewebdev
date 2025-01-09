@@ -1,4 +1,3 @@
-// partials
 @use "../../styles/partials/variables.scss" as *;
 @use "../../styles/partials/mixins.scss" as *;
 
@@ -83,7 +82,7 @@
 
         &-header {
             @include subheader-primary($global-secondary-font-color);
-            font-weight: 400; /* review? */
+            font-weight: 400;
             margin-bottom: 0;
 
             @include desktop {

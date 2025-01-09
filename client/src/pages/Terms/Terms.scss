@@ -1,4 +1,3 @@
-// partials
 @use "../../styles/partials/variables.scss" as *;
 @use "../../styles/partials/mixins.scss" as *;
 
@@ -37,7 +36,6 @@
             font-weight: 500;
         }
     }
-
 
     &__link {
         @include text($global-link-font-color);

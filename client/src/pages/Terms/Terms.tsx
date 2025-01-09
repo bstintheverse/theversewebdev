@@ -1,10 +1,11 @@
 // styling
 import "./Terms.scss";
 
+// library
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
+// data
 import { termsOfService } from "../../data/termsOfService";
-
 
 export default function TermsPage() {
     return (

@@ -1,4 +1,4 @@
-//styling
+// styling
 import "./NotFound.scss";
 
 // library

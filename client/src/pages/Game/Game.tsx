@@ -1,7 +1,4 @@
-// styling
-import "./Game.scss";
-
-// library
+// libraries
 import { useParams } from "react-router-dom";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
@@ -28,5 +25,5 @@ export default function GamePage() {
                 {game.name}
             </section>
         </HelmetProvider>
-    )
-}
+    );
+};

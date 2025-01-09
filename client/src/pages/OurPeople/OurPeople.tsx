@@ -68,5 +68,5 @@ export default function OurPeoplePage() {
                 </section>
             </section>
         </HelmetProvider>
-    )
+    );
 };
