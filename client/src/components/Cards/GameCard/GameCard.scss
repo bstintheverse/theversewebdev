@@ -46,11 +46,5 @@
 
     &__button {
             @include button($grey, $grey);
-
-        // &:hover {
-        //     background-color: $charcoal;
-        //     border: .0625rem solid $charcoal;
-        //     transition: 0.5s ease-in-out;
-        // }
     }
 }

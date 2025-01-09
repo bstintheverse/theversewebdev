@@ -1,4 +1,4 @@
-//styling
+// styling
 import "./TeamMemberCard.scss";
 
 interface TeamMemberCardProps {

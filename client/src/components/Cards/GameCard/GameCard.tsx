@@ -1,9 +1,6 @@
 // styling
 import "./GameCard.scss";
 
-// component
-import { Link } from "react-router-dom";
-
 interface GameCardProps {
     id: number;
     name: string;
@@ -43,13 +40,7 @@ export default function GameCard({ id, name, video, image, alt, description, lin
                 <p className="game-card__button">
                     Coming Soon
                 </p>
-
-                {/* <Link to={`/experiences/game/${id}`} className="game-card__link">
-                    <p className="game-card__button">
-                        Learn More
-                    </p>
-                </Link> */}
             </div>
         </li>
-    )
+    );
 };

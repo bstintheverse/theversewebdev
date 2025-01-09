@@ -1,3 +1,4 @@
+// styling
 import "./Button.scss";
 
 interface ButtonProps {
@@ -11,5 +12,5 @@ export default function Button({ className, type = "button", children }: ButtonP
         <button className={className} type={type}>
             {children}
         </button>
-    )
+    );
 };
