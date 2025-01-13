@@ -1,0 +1,66 @@
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+
+.donate {
+    &__container {
+        height: 100%;
+        background-color: $black;
+        text-align: center;
+        @include flexbox(column);
+        justify-content: space-between;
+        padding: 2rem;
+    
+        @include tablet {
+            padding: 1rem 6rem;
+        }
+        
+        @include desktop {
+            padding: 1rem 10rem;
+        }
+    }
+
+    &__content {
+        @include flexbox(row);
+        justify-content: center;
+        padding-inline: 1rem;
+
+        @include tablet {
+            padding-inline: 2.5rem;
+        }
+
+        @include desktop {
+            padding-inline: 10rem;
+        }
+    }
+
+    &__header {
+        @include header-md($global-primary-font-color);
+    }
+
+    &__subheader {
+        @include subheader-primary($global-secondary-font-color);
+    }
+
+    &__text {
+        @include text($global-primary-font-color);
+
+        &--white {
+            @include text($global-secondary-font-color);
+        }
+    }
+
+    &__wip-gif {
+        width: auto;
+        height: 15.625rem;
+
+        @include tablet {
+            width: auto;
+            height: 25rem;
+        }
+
+        @include desktop {
+            width: auto;
+            height: 25rem;
+        }
+    }
+}

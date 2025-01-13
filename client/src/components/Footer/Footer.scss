@@ -1,0 +1,220 @@
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+
+.footer {
+    background-color: $footer-background;
+    color: $footer-primary-font-color;
+    padding: 1rem;
+
+    @include tablet {
+        padding: 2.5rem;
+    }
+
+    @include desktop {
+        padding: 2.5rem 10rem;
+    }
+
+    &__wrapper {
+        @include flexbox(column);
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__contact {
+        border-bottom: .0625rem solid $footer-divider-color;
+
+        @include tablet {
+            @include flexbox(row);
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+
+        @include desktop {
+            @include flexbox(row);
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+        }
+
+        &-wrapper {
+            @include tablet {
+                width: 40%;
+            }
+        }
+    }
+
+    &__header {
+        @include header-md($footer-primary-font-color);
+    }
+
+    &__subheader {
+        @include subheader-primary($footer-primary-font-color);
+
+        & {
+            font-weight: 400;
+            margin: 0;
+        }
+    }
+
+    &__text {
+        @include text($footer-primary-font-color);
+
+        @include tablet {
+            font-size: 0.80rem;
+        }
+
+        @include desktop {
+            font-size: 0.85rem;
+        }
+    }
+
+    &__subscribe {
+        @include flexbox(row);
+        margin-bottom: 1rem;
+
+        @include tablet {
+            margin: 0;
+        }
+
+        @include desktop {
+            margin: 0;
+        }
+    }
+
+    &__nav {
+        @include flexbox(column);
+        gap: 0.5rem;
+
+        @include tablet {
+            @include flexbox(row);
+            justify-content: space-between;
+        }
+
+        @include desktop {
+            @include flexbox(row);
+            justify-content: space-between;
+        }
+    }
+
+    &__social {
+        @include flexbox(row);
+        gap: 1rem;
+
+        &-icon {
+            width: 2.1875rem;
+            height: 2.1875rem;
+
+            &:hover {
+                opacity: 80%;
+                transition: 0.5s ease-in-out;
+            }
+        }
+    }
+
+    &__copyright {
+        @include text-xs($footer-secondary-font-color);
+    }
+
+    &__substack {
+        width: 100%;
+        height: auto;
+        border: none;
+    }
+}
+
+.contact-form {
+    @include flexbox(row);
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet {
+        gap: 1rem;
+    }
+
+    @include desktop {
+        gap: 0.5rem;
+    }
+
+    &__button {
+        @include button($button-primary-background, $button-primary-border);
+    }
+}
+
+.nav {
+    &__the-verse, &__information, &__resources, &__support {
+        width: 100%;
+        @include flexbox(column);
+        align-items: center;
+
+        @include tablet {
+            width: auto;
+            align-items: flex-start;
+        }
+
+        @include desktop {
+            width: auto;
+            align-items: flex-start;
+        }
+    }
+
+    &__header {
+        @include header-sm($footer-header-color);
+        margin-bottom: 0.5rem;
+    }
+
+    &__list {
+        @include flexbox(column);
+        align-items: center;
+        gap: 0.5rem;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        @include tablet {
+            align-items: flex-start;
+        }
+
+        @include desktop {
+            align-items: flex-start;
+        }
+    }
+
+    &__link {
+        color: $navbar-link-color;
+        font-size: 0.75rem;
+        text-decoration: none;
+
+        @include tablet {
+            font-size: 0.80rem;
+        }
+
+        @include desktop {
+            font-size: 0.85rem;
+        }
+
+        &:hover {
+            color: $global-link-hover-color;
+            transition: 0.3s ease-in-out;
+        }
+
+        &--donate {
+            color: $green;
+            font-size: 0.75rem;
+            text-decoration: none;
+
+            @include tablet {
+                font-size: 0.80rem;
+            }
+    
+            @include desktop {
+                font-size: 0.85rem;
+            }
+
+            &:hover {
+                color: $global-link-hover-color;
+                transition: 0.3s ease-in-out;
+            }
+        }
+    }
+}

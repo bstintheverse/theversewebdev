@@ -1,0 +1,144 @@
+@use "./fonts.scss" as *;
+@use "./variables.scss" as *;
+
+/* ----- BREAKPOINTS ----- */
+
+@mixin mobile {
+    @media (min-width: 320px) and (max-width: 767px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 768px) and (max-width: 1279px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1280px) {
+        @content;
+    }
+}
+
+/* ----- TEXT STYLES ----- */
+
+@mixin header($color) {
+    color: $color;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.5rem;
+
+    @include tablet {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    @include desktop {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+    }
+}
+
+@mixin header-md($color) {
+    color: $color;
+    font-size: 1.2rem;
+    font-weight: 500;
+
+    @include tablet {
+        color: $color;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    @include desktop {
+        color: $color;
+        font-size: 1.8rem;
+        font-weight: 500;
+    }
+}
+
+@mixin header-sm($color) {
+    color: $color;
+    font-size: 0.90rem;
+    font-weight: 500;
+
+    @include tablet {
+        font-size: 0.85rem;
+    }
+
+    @include desktop {
+        font-size: 1rem;
+    }
+}
+
+@mixin subheader-primary($color) {
+    font-family: "Nanum Pen", sans-serif;
+    color: $color;
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    line-height: 1.15rem;
+
+    @include tablet {
+        font-size: 1.45rem;
+    }
+
+    @include desktop {
+        font-size: 1.55rem;
+    }
+}
+
+@mixin subheader-secondary($color) {
+    font-family: "Poppins", sans-serif;
+    color: $color;
+    font-size: 1.25rem;
+}
+
+@mixin text($color) {
+    color: $color;
+    font-size: 0.85rem;
+
+    @include tablet {
+        font-size: 0.95rem;
+    }
+
+    @include desktop {
+        font-size: 1rem;
+    }
+}
+
+@mixin text-xs($color) {
+    color: $color;
+    font-size: 0.7rem;
+}
+
+@mixin label($color) {
+    font-family: "Nanum Pen", sans-serif;
+    color: $color;
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+}
+
+/* ----- MISC ----- */
+
+/* flexbox */
+@mixin flexbox($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
+
+/* button */
+@mixin button($background-color, $border-color) {
+    background-color: $background-color;
+    @include text($global-secondary-font-color);
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    border: .0625rem solid $border-color;
+    border-radius: 1.5625rem;
+    padding: 0.5rem 1.25rem;
+}

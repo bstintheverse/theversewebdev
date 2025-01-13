@@ -1,0 +1,61 @@
+/* ----- COLOR VARIABLES ----- */
+
+$black: #000000;
+$charcoal: #262626;
+$charcoal-dark: #050607;
+$grey: #6E6E6E;
+$grey-medium: #AEB3B7;
+$grey-medium-light: #BABABA;
+$grey-light: #D9D9D9;
+$white: #FFFFFF;
+$purple: #711C71;
+$purple-dark: #343270;
+$purple-light: #AF47D2;
+$blue: #3E68AE;
+$blue-dark: #3A4A97;
+$green: #518161;
+
+/* ----- GLOBAL DESCRIPTIVE VARIABLES ----- */
+
+$global-background: $white;
+$global-primary-font-color: $black;
+$global-secondary-font-color: $white;
+$global-link-font-color: $blue;
+$global-link-hover-color: $purple-light;
+
+/* ----- COMPONENT DESCRIPTIVE VARIABLES ----- */
+
+/* nav bar descriptive variables */
+$navbar-background: $charcoal;
+$navbar-font-color: $white;
+$navbar-link-color: $white;
+
+/* hero descriptive variables */
+$hero-background: $black;
+$hero-font-color: $white;
+
+/* footer descriptive variables */
+$footer-background: $charcoal;
+$footer-header-color: $white;
+$footer-primary-font-color: $white;
+$footer-secondary-font-color: $grey-medium-light;
+$footer-divider-color: $grey-medium;
+
+/* button descriptive variables */
+$button-primary-background: $purple;
+$button-secondary-background: $green;
+$button-tertiary-background: $blue;
+$button-primary-border: $purple;
+$button-secondary-border: $green;
+$button-tertiary-border: $blue;
+$button-font-color: $white;
+
+/* contact form descriptive varibales */
+$contact-form-background: $charcoal;
+
+/* ----- PAGE DESCRIPTIVE VARIABLES ----- */
+
+/* home page */
+$video-container-background: $blue;
+$community-container-background: $blue-dark;
+$community-header-font-color: $white;

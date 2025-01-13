@@ -1,0 +1,22 @@
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+
+.button-primary {
+    @include button($button-primary-background, $button-primary-background);
+
+    &:hover {
+        @include button($charcoal, $charcoal);
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+    }
+}
+
+.button-secondary {
+    @include button($button-tertiary-background, $button-tertiary-background);
+
+    &:hover {
+        @include button($button-primary-background, $button-primary-background);
+        transition: 0.5s ease-in-out;
+        cursor: pointer;
+    }
+}

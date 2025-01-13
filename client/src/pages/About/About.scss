@@ -1,0 +1,182 @@
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+
+.about {
+    &__container {
+        height: 100%;
+        text-align: center;
+        @include flexbox(column);
+        justify-content: space-between;
+        padding: 2rem;
+
+        @include tablet {
+            padding: 2rem 6rem;
+        }
+
+        @include desktop {
+            padding: 3rem 15rem;
+        }
+    }
+
+    &__quote {
+        @include text($global-secondary-font-color);
+
+        &--author{
+            margin: 0;
+        }
+    }
+
+    &__the-verse-text, &__mission-text, &__history-text, &__our-way-text {
+        @include text($global-primary-font-color);
+    }
+
+    &__the-verse-header, &__mission-header, &__history-header, &__our-way-header, &__our-community-header {
+        @include header-md($global-primary-font-color);
+
+        @include tablet {
+            @include header-md($global-primary-font-color);
+        }
+    }
+
+    &__mission-subheader, &__history-subheader, &__our-way-subheader {
+        @include subheader-primary($global-primary-font-color);
+    }
+
+    &__the-verse, &__mission {
+        padding: 1rem;
+
+        @include tablet {
+            padding: 1rem 2.5rem;
+        }
+
+        @include desktop {
+            padding: 1rem 15rem;
+        }
+
+        /* styles the about mission elements container */
+        &-elements {
+            @include flexbox(column);
+            align-items: center;
+
+            @include tablet {
+                @include flexbox(row);
+            }
+
+            @include desktop {
+                @include flexbox(row);
+            }
+        }
+    }
+
+    &__history {
+        padding: 1rem;
+
+        @include tablet {
+            padding: 1rem 2.5rem;
+        }
+
+        @include desktop {
+            padding: 1rem 15rem;
+        }
+    }
+
+    &__our-way {
+        padding: 1rem;
+
+        @include tablet {
+            padding: 4rem;
+        }
+
+        @include desktop {
+            padding: 3rem 15rem;
+        }
+
+        &-text {
+            &--small {
+                font-size: 0.7rem;
+            }
+        }
+    }
+
+    &__our-community {
+        padding: 1rem;
+
+        @include tablet {
+            padding: 1rem 2.5rem;
+        }
+
+        @include desktop {
+            padding: 1rem 10rem;
+        }
+
+        &-cards {
+            @include flexbox(column);
+            gap: 1rem;
+
+            @include tablet {
+                @include flexbox(row);
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            @include desktop {
+                @include flexbox(row);
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+/* styling for mission element cards */
+.mission-element {
+    &__list {
+        width: 70%;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        @include tablet {
+            width: 100%;
+            @include flexbox(row);
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        @include desktop {
+            width: 100%;
+            @include flexbox(row);
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+        width: 13rem;
+        height: 10rem;
+        object-fit: cover;
+        filter: grayscale(100%);
+        border-radius: 5%;
+
+        &:hover {
+            filter: grayscale(0);
+            transition: 0.3s ease-in-out;
+        }
+
+        @include desktop {
+            width: 9rem;
+            height: 10rem;
+        }
+    }
+
+    &__label {
+        @include label($global-primary-font-color);
+
+        @include tablet {
+            @include label($global-primary-font-color);
+        }
+    }
+}
