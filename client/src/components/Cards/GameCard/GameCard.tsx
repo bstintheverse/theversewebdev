@@ -9,12 +9,11 @@ interface GameCardProps {
     alt?: string;
     video?: string;
     description: string;
-    link: string;
 };
 
-export default function GameCard({ id, name, video, image, alt, description, link }: GameCardProps): JSX.Element {
+export default function GameCard({ id, name, video, image, alt, description }: GameCardProps): JSX.Element {
     return (
-        <li className="game-card__item">
+        <li className="game-card__item" key={id}>
             <div className="game-card__container">
                 <h2 className="game-card__header">
                     {name}

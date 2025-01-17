@@ -14,7 +14,7 @@ interface TeamMemberCardProps {
 
 export function TeamMemberFounderCard({ id, image, alt, name, role, location, description }: TeamMemberCardProps): JSX.Element {
     return (
-        <li className="member-card member-card__founder">
+        <li className="member-card member-card__founder" key={id}>
             <div className="member-card__founder-wrapper-info">
                 <img 
                     className="member-card__image"
@@ -50,7 +50,7 @@ export function TeamMemberFounderCard({ id, image, alt, name, role, location, de
 
 export function TeamMemberCard({ id, image, alt, name, role, location }: TeamMemberCardProps): JSX.Element {
     return (
-        <li className="member-card">
+        <li className="member-card" key={id}>
             <img 
                 className="member-card__image"
                 src={image}
