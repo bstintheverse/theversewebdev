@@ -24,7 +24,7 @@ export default function CustomCarousel() {
     return () => {
       window.removeEventListener("resize", handleResize);
     };
-  });
+  }, []);
 
   const cardData = carouselCards;
   const items = cardData.map((card) => {
@@ -83,7 +83,8 @@ export default function CustomCarousel() {
   const defaultOptions: CarouselOption = {
     widthFactor: widthFactor,
     depthFactor: depthFactor,
-    angleFactor: angleFactor
+    angleFactor: angleFactor,
+    perspective: perspective
   };
   
   return (
