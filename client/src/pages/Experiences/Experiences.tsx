@@ -30,7 +30,6 @@ export default function ExperiencesPage() {
                                 image={game.image}
                                 alt={game.alt}
                                 description={game.description}
-                                link={`/experiences/game/${game.id}`}
                             />
                         ))}
                     </ul>
