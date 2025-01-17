@@ -8,13 +8,6 @@ import { games } from "../../data/games";
 import { useEffect, useState } from "react";
 import { useLocation, useParams } from "react-router-dom";
 
-// type
-interface headerTitleProps {
-    id: number;
-    path: string;
-    subheader: string;
-};
-
 export default function Hero() {
     const { gameId } = useParams();
     const location = useLocation();
