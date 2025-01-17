@@ -57,6 +57,13 @@
 
     &__link {
         font-size: 0.75rem;
+        color: $navbar-link-color;
+        text-decoration: none;
+
+        &:hover {
+            color: $global-link-hover-color;
+            transition: 0.5s ease-in-out;
+        }
     }
 }
 
