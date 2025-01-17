@@ -146,10 +146,6 @@ export default function AboutPage() {
                         <p className="about__our-way-text">
                             This is <span className="about__our-way-text--bold">The Way of the Verse</span>, our true north.
                         </p>
-
-                        <p className="about__our-way-text--small">
-                            *From the Eightfold Path of Buddhism
-                        </p>
                     </div>
                 </div>
 
