@@ -65,7 +65,7 @@ export const ourCommunity: ourCommunityProps[] = [
         id: 3,
         image: `${ourCommunityImagePath}/action-area-card-3.jpg`,
         alt: "Man working on a laptop",
-        content: "During summers, we have 50+ working on average 25 hours a week"
+        content: "50+ working on average 25 hours a week"
     },
     {
         id: 4,
