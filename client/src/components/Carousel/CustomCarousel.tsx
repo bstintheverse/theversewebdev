@@ -11,6 +11,7 @@ interface CarouselOption {
   widthFactor: number;
   depthFactor: number;
   angleFactor: number;
+  perspective: number;
 };
 
 export default function CustomCarousel() {
