@@ -22,7 +22,7 @@ export const games: gamesProps[] = [
         name: "Karma The Six Realms",
         image: `${imagePath}/karma-preview.png`,
         alt: "Screenshot of Karma The Six Realms Gameplay",
-        description: "A prosocial exploration thru the Buddhist 6 Realms where you are rewarded for being empathetic, altruistic, cooperative and collaborative. It is a prosocial game that primes prosocial behaviour."
+        description: "A prosocial exploration through the Buddhist 6 Realms where you are rewarded for being empathetic, altruistic, cooperative and collaborative. It is a prosocial game that primes prosocial behaviour."
     },
     {
         id: 3,
