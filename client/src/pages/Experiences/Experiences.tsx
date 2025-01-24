@@ -30,6 +30,7 @@ export default function ExperiencesPage() {
                                 image={game.image}
                                 alt={game.alt}
                                 description={game.description}
+                                link={game.link}
                             />
                         ))}
                     </ul>
