@@ -45,6 +45,12 @@
     }
 
     &__button {
-        width: 100%;
+        @include button($button-primary-background, $button-primary-border);
+
+        &:hover {
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+            @include button($button-hover-background, $button-hover-background);
+        }
     }
 }
