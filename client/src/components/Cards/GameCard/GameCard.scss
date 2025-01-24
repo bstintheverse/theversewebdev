@@ -45,6 +45,6 @@
     }
 
     &__button {
-            @include button($grey, $grey);
+        width: 100%;
     }
 }
