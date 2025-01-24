@@ -13,12 +13,12 @@
     }
 
     &__subheader {
-        @include header-md($global-primary-font-color);
         margin-bottom: 0;
+        @include header-md($global-primary-font-color);
 
         &--small {
-            @include subheader-primary($global-primary-font-color);
             margin-bottom: 0;
+            @include subheader-primary($global-primary-font-color);
         }
     }
 
@@ -32,17 +32,14 @@
         @include text($global-primary-font-color);
 
         &--bold {
-            @include text($global-primary-font-color);
             font-weight: 500;
+            @include text($global-primary-font-color);
         }
     }
 
     &__link {
+        margin: 0;
         @include text($global-link-font-color);
-
-        & {
-            margin: 0;
-        }
 
         &:hover {
             color: $global-link-hover-color;

@@ -49,12 +49,9 @@
     }
 
     &__subheader {
+        font-weight: 400;
+        margin: 0;
         @include subheader-primary($footer-primary-font-color);
-
-        & {
-            font-weight: 400;
-            margin: 0;
-        }
     }
 
     &__text {
@@ -159,8 +156,8 @@
     }
 
     &__header {
-        @include header-sm($footer-header-color);
         margin-bottom: 0.5rem;
+        @include header-sm($footer-header-color);
     }
 
     &__list {

@@ -58,20 +58,14 @@
     }
 
     &__label {
+        text-align: left;
+        margin: 0;   
         @include label($global-primary-font-color);
-
-        & {
-            text-align: left;
-            margin: 0;    
-        }
     }
 
     &__text {
+        margin-top: 0;
         @include text($global-primary-font-color);
-
-        & {
-            margin-top: 0;
-        }
 
         &--white {
             color: $global-secondary-font-color;
@@ -79,11 +73,8 @@
     }
 
     &__link {
+        margin: 0;
         @include text($global-link-font-color);
-
-        & {
-            margin: 0;
-        }
 
         &:hover {
             color: $global-link-hover-color;
