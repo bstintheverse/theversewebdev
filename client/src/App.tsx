@@ -24,6 +24,7 @@ import { useEffect } from "react";
 import scrollToTop from "./utils/scrollToTop";
 import PrivacyPage from "./pages/Privacy/Privacy";
 import TermsPage from "./pages/Terms/Terms";
+import WalkXRPage from "./pages/WalkXR/WalkXR";
 
 function AppWithLocation() {
   const location = useLocation();
@@ -36,14 +37,16 @@ function AppWithLocation() {
   return (
     <>
       <Header />
-      {renderGlobalHero && <Hero />}
+      {/* {renderGlobalHero && <Hero />} */}
+      <Hero />
       <main>
         <Routes>
           <Route>
             <Route path="/" element={ <HomePage /> } />
             <Route path="/about-us" element={ <AboutPage /> } />
             <Route path="/experiences" element={ <ExperiencesPage /> } />
-            <Route path="/experiences/game/:gameId" element={ <> <Hero /> <GamePage /> </>} />
+            <Route path="/experiences/game/walk-xr" element={ <WalkXRPage /> } />
+            {/* <Route path="/experiences/game/:gameId" element={ <> <Hero /> <GamePage /> </>} /> */}
             <Route path="/our-people" element={ <OurPeoplePage /> } />
             <Route path="/contact-us" element={ <ContactPage /> } />
             <Route path="/donate" element={ <DonatePage /> } />
