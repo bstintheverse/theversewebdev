@@ -24,7 +24,7 @@ export default function WalkXRPage() {
                     {header.items && header.items.length > 0 && (
                         <ul className="walkxr__list">
                             {header.items.map((item) => (
-                                <li className="walkxr__list-item" key={item.id}>
+                                <li className="walkxr__list-item walkxr__text" key={item.id}>
                                     {item.content}
                                 </li>
                             ))}
