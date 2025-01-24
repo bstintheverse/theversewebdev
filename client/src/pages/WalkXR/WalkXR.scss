@@ -1,2 +1,34 @@
 @use "../../styles/partials/variables.scss" as *;
 @use "../../styles/partials/mixins.scss" as *;
+
+.walkxr {
+    padding: 2rem;
+
+    @include tablet {
+        padding: 1rem 6rem;
+    }
+    
+    @include desktop {
+        padding: 1rem 10rem;
+    }
+
+    &__header {
+        @include header-md($global-primary-font-color);
+    }
+
+    &__subheader {
+        @include subheader-primary($global-primary-font-color);
+    }
+
+    &__text {
+        @include text($global-primary-font-color);
+    }
+
+    &__list-item {
+        margin-bottom: 0.5rem;
+    }
+
+    &__video {
+        width: 100%;
+    }
+}
