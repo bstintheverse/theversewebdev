@@ -37,6 +37,8 @@ export default function Hero() {
                     return "About Us";
                 case "/experiences":
                     return "Games & Digital Experiences";
+                case "/experiences/game/walk-xr":
+                    return "WalkXR";
                 case "/our-people":
                     return "Our People";
                 case "/contact-us":
