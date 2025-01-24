@@ -45,6 +45,7 @@
     }
 
     &__button {
+        text-decoration: none;
         @include button($button-primary-background, $button-primary-border);
 
         &:hover {
