@@ -27,4 +27,66 @@
     &__list-item {
         margin-bottom: 0.5rem;
     }
+
+    &__button {
+        width: 10%;
+        @include button($button-primary-background, $button-primary-background);
+
+        &:hover {
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+            @include button($button-hover-background, $button-hover-background);
+        }
+    }
+
+    &__assets-container {
+        /* styles image container in the last section */
+        &--3 {
+            width: auto;
+            @include flexbox(row);
+            justify-content: flex-end;
+
+        }
+    }
+
+    &__image-list-container {
+        /* styles container with image and list items */
+        &--1 {
+            @include flexbox(row);
+        }
+    }
+
+    &__image-wrapper {
+        /* styles wrapper for karma game screenshot and play button */
+        &--2 {
+            @include flexbox(column);
+            align-items: center;
+        }
+
+        /* styles wrapper for images in the last section */
+        &--3 {
+            @include flexbox(row);
+            justify-content: center;
+        }
+    }
+
+    &__image {
+        /* image in first section */
+        &--1 {
+            max-width: 50%;
+            height: auto;
+        }
+
+        /* image in section section */
+        &--2 {
+            max-width: 50%;
+            height: auto;
+        }
+
+        /* images in last section */
+        &--3 {
+            max-width: 50%;
+            height: auto;
+        }
+    }
 }
