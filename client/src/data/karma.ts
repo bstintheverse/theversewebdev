@@ -30,7 +30,7 @@ interface KarmaInfoProp {
     headers: Header[];
 };
 
-export const KarmaInfo: KarmaInfoProp = {
+export const karmaInfo: KarmaInfoProp = {
     headers: [
         {
             id: 1,
