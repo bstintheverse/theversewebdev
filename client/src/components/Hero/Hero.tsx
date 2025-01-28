@@ -19,7 +19,7 @@ export default function Hero() {
             console.log("Current Path:", location.pathname);
             console.log("Game ID:", gameId);
 
-            
+            // refactor this later to be DRY
             if (location.pathname.startsWith("/experiences/game/") && gameId) {
                 const game = games.find((g) => g.id === Number(gameId));
 
@@ -39,6 +39,8 @@ export default function Hero() {
                     return "Games & Digital Experiences";
                 case "/experiences/game/walk-xr":
                     return "WalkXR";
+                case "/experiences/game/karma":
+                    return "Karma";
                 case "/our-people":
                     return "Our People";
                 case "/contact-us":
