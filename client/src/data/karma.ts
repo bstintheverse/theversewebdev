@@ -74,7 +74,7 @@ export const karmaInfo: KarmaInfoProp = {
                         {
                             id: 1,
                             type: "image",
-                            src: "/",
+                            src: "/assets/images/placeholder-square.jpg",
                             alt: "image placeholder"
                         }
                     ]
@@ -89,7 +89,7 @@ export const karmaInfo: KarmaInfoProp = {
                 {
                     id: 1,
                     type: "image",
-                    src: "/",
+                    src: "/assets/images/placeholder-square.jpg",
                     alt: "image placeholder"
                 }
             ]
@@ -105,13 +105,13 @@ export const karmaInfo: KarmaInfoProp = {
                 {
                     id: 1,
                     type: "image",
-                    src: "/",
+                    src: "/assets/images/placeholder-square.jpg",
                     alt: "image placeholder"
                 },
                 {
                     id: 2,
                     type: "image",
-                    src: "/",
+                    src: "/assets/images/placeholder-square.jpg",
                     alt: "image placeholder"
                 }
             ]
