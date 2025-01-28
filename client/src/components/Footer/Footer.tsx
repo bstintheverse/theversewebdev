@@ -39,12 +39,26 @@ export default function Footer() {
                     </h4>
 
                     <ul className="nav__list">
-                        <Link className="nav__link" to="/experiences">
-                            Games & Digital Experiences
-                        </Link>
+                        <li className="nav__item">
+                            <Link className="nav__link" to="/about-us">
+                                About Us
+                            </Link>
+                        </li>
+
+                        <li className="nav__item">
+                            <Link className="nav__link" to="/experiences">
+                                Games & Digital Experiences
+                            </Link>
+                        </li>
+
+                        <li className="nav__item">
+                            <Link className="nav__link" to="/our-people">
+                                Our People
+                            </Link>
+                        </li>
                     </ul>
                 </div>
-
+                
                 <div className="nav__information">
                     <h4 className="nav__header">
                         Information
