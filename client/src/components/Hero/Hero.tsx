@@ -40,7 +40,7 @@ export default function Hero() {
                 case "/experiences/game/walk-xr":
                     return "WalkXR";
                 case "/experiences/game/karma":
-                    return "Karma";
+                    return "Karma The Six Realms";
                 case "/our-people":
                     return "Our People";
                 case "/contact-us":
