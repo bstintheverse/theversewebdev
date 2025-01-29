@@ -65,12 +65,12 @@
             transition: 0.5s ease-in-out;
         }
     }
-}
 
-.dropdown:hover .dropdown__content {
-    max-height: 100vh;
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-    transition-delay: 0s;
+    &__content.open {
+        max-height: 100vh;
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+        transition-delay: 0s;
+    }
 }
