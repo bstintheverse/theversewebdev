@@ -10,7 +10,11 @@ export default function HomePage() {
         <section className="home">
             <div className="full-width-bg-wrapper full-width-bg-wrapper--blue">
                 <article className="home__video-container">
-                    <video className="home__video" controls>
+                    <video 
+                        className="home__video"
+                        poster="/assets/images/landing-page-video-poster.png" 
+                        controls
+                    >
                         <source src="/assets/videos/home-page-video.mp4" />
                     </video>
                 </article>
