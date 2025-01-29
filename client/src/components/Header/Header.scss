@@ -6,6 +6,7 @@
     background-color: $navbar-background;
     @include flexbox(row);
     align-items: center;
+    justify-content: space-between;
     gap: 1rem;
     padding: 1rem;
     overflow: visible;
@@ -23,8 +24,11 @@
     }
 
     &__logo {
+        max-width: 100%;
         max-height: 3rem;
+        width: auto;
         height: auto;
+        object-fit: contain;
 
         &-title {
             width: 20%;
