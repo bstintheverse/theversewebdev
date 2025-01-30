@@ -4,8 +4,30 @@ import "./GameTrailerCard.scss";
 
 // data
 import { AdventuresInBreathGames } from "../../../data/adventuresInBreath";
+import { useState } from "react";
+import Modal from "../../Modal/Modal";
 
 export default function GameTrailerCard() {
+    const [open, setOpen] = useState<boolean>(false);
+    const [videoUrl, setVideoUrl] = useState<string>("");
+
+    const handleOpen = (url: string) => {
+        setVideoUrl(url);
+        setOpen(true);
+    };
+
+    const handleClose = () => setOpen(false);
+
+    const handleLearnMore = (game: any) => {
+        const videoAsset = game.assets.find((asset) => asset.type === "video");
+
+        if (videoAsset && videoAsset.video) {
+            handleOpen(videoAsset.video);
+        } else if (game.misc) {
+            window.open(game.misc, "_blank");
+        };
+    };
+
     return (
         <article className="game-card__trailer">
             <ul className="game-card__list">
@@ -31,13 +53,18 @@ export default function GameTrailerCard() {
                                 {game.content}
                             </p>
 
-                            <p className="game-card__button">
+                            <p 
+                                className="game-card__button"
+                                onClick={() => handleLearnMore(game)}
+                            >
                                 Learn More
                             </p>
                         </div>
                     </li>
                 ))}
             </ul>
+
+            <Modal isOpen={open} onClose={handleClose} videoUrl={videoUrl} />
         </article>
     );
 };
