@@ -32,7 +32,7 @@ export default function GameTrailerCard() {
                             </p>
 
                             <p className="game-card__button">
-                                Watch Trailer
+                                Learn More
                             </p>
                         </div>
                     </li>
