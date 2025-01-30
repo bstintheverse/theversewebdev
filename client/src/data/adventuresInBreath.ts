@@ -118,7 +118,7 @@ export const AdventuresInBreathGames: CardProp = {
                 {
                     id: 1,
                     type: "image",
-                    image: `${cardImagePath}/worlds/worlds-1.png`,
+                    image: `${cardImagePath}/worlds/worlds-0.png`,
                     alt: "Concept art of Eddy, the Beaver and main character of the game Worlds."
                 },
                 {
