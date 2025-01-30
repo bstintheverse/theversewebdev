@@ -23,22 +23,25 @@
     }
 
     &__image {
-        width: auto;
+        width: 220px;
         height: 125px;
         border-radius: 1rem;
 
         @include tablet {
+            width: 350px;
             height: 150px;
         }
 
         @include desktop {
+            width: 400px;
             height: 200px;
         }
 
         &-container {
             @include flexbox(column);
+            align-items: center;
             gap: 1rem;
-            padding: 1rem; /* fix later */
+            padding: 1rem;
 
             @include tablet {
                 padding-block: 2rem;
