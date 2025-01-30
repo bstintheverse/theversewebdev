@@ -68,7 +68,7 @@ interface CardGame {
 interface CardAsset {
     id: number;
     type: "image" | "video";
-    image: string;
+    image?: string;
     video?: string;
     alt?: string;
 };
@@ -78,6 +78,7 @@ interface CardProp {
 };
 
 const cardImagePath: string = "/assets/images/games/adventures-in-breath"
+const cardVideoPath: string = "/assets/videos"
 
 export const AdventuresInBreathGames: CardProp = {
     games: [
@@ -133,6 +134,11 @@ export const AdventuresInBreathGames: CardProp = {
                     id: 3,
                     type: "image",
                     image: `${cardImagePath}/worlds/worlds-bg.jpg`
+                },
+                {
+                    id: 4,
+                    type: "video",
+                    video: `${cardVideoPath}/worlds-trailer.mp4`
                 }
             ]
         },
@@ -157,6 +163,11 @@ export const AdventuresInBreathGames: CardProp = {
                     type: "image",
                     image: `${cardImagePath}/island-tour/island-tour-bg.jpg`,
                 },
+                {
+                    id: 4,
+                    type: "video",
+                    video: `${cardVideoPath}/island-tour-trailer.mp4`
+                }
             ]
         }
     ]
