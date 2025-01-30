@@ -76,7 +76,7 @@ interface CardProp {
     headers: CardHeader[];
 };
 
-const cardImagePath: string = "../assets/images/games/adventures-in-breath/sail-break/"
+const cardImagePath: string = "../assets/images/games/adventures-in-breath"
 
 export const AdventuresInBreathGames: CardProp = {
     headers: [
@@ -91,19 +91,19 @@ export const AdventuresInBreathGames: CardProp = {
                 {
                     id: 1,
                     type: "image",
-                    image: `${cardImagePath}sail-breath-1.png`,
+                    image: `${cardImagePath}/sail-breath/sail-breath-1.png`,
                     alt: "Screenshot of the game Sailbreath, depicting a river with a stone wall on each side."
                 },
                 {
                     id: 2,
                     type: "image",
-                    image: `${cardImagePath}sail-breath-2.png`,
+                    image: `${cardImagePath}/sail-breath/sail-breath-2.png`,
                     alt: "Screenshot of the game Sailbreath, depicting a river with yellow stone columns rising out of the water on the side."
                 },
                 {
                     id: 3,
                     type: "image",
-                    image: `${cardImagePath}sail-breath-bg.jpg`
+                    image: `${cardImagePath}/sail-breath/sail-breath-bg.jpg`
                 }
             ]
         },
@@ -118,20 +118,43 @@ export const AdventuresInBreathGames: CardProp = {
                 {
                     id: 1,
                     type: "image",
-                    image: `${cardImagePath}worlds-1.png`,
+                    image: `${cardImagePath}/worlds/worlds-1.png`,
                     alt: "Concept art of Eddy, the Beaver and main character of the game Worlds."
                 },
                 {
                     id: 2,
                     type: "image",
-                    image: `${cardImagePath}worlds-2.png`,
+                    image: `${cardImagePath}/worlds/worlds-2.png`,
                     alt: "Image of the world Eddy mysteriously landed into."
                 },
                 {
                     id: 3,
                     type: "image",
-                    image: `${cardImagePath}worlds-bg.jpg`
+                    image: `${cardImagePath}/worlds/worlds-bg.jpg`
                 }
+            ]
+        },
+        {
+            id: 3,
+            title: "Island Tour",
+            content: "Island Tour is a first person immersive breath based game where the player has the ability to explore a variety of oceanic locales while using breathing mechanics in order to traverse these areas. Take control of your character as you try to achieve stars in these different locales offering different wildlife, sounds, and changes in breathing mechanics.",
+            assets: [
+                {
+                    id: 1,
+                    type: "image",
+                    image: `${cardImagePath}/island-tour/island-tour-1.png`,
+                    alt: "Screenshot of an island in Island Tour"
+                },
+                {
+                    id: 2,
+                    type: "image",
+                    image: `${cardImagePath}/island-tour/island-tour-2.png`,
+                    alt: "Screenshot of a coral ravine in Island Tour"
+                },                {
+                    id: 3,
+                    type: "image",
+                    image: `${cardImagePath}/island-tour/island-tour-bg.jpg`,
+                },
             ]
         }
     ]
