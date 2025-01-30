@@ -62,6 +62,7 @@ interface CardGame {
     title: string;
     content: string | string[];
     assets: CardAsset[];
+    misc?: string;
 };
 
 interface CardAsset {
@@ -105,7 +106,8 @@ export const AdventuresInBreathGames: CardProp = {
                     type: "image",
                     image: `${cardImagePath}/sail-breath/sail-breath-bg.jpg`
                 }
-            ]
+            ],
+            misc: "https://mwgame.itch.io/sailbreath"
         },
         {
             id: 1,
