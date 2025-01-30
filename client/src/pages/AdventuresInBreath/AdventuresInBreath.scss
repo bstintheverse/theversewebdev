@@ -35,8 +35,9 @@
     &__image {
         /* styles image in the first section */
         &--1 {
-            width: 50%;
+            width: 100%;
             height: auto;
+            border-radius: 1.25rem;
         }
     }
 }
