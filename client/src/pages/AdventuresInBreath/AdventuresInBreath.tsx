@@ -24,7 +24,7 @@ export default function AdventuresInBreathPage() {
                     <div className={`aib__assets-container--${header.id}`}>
                         {header.assets?.map((asset) => (
                             <img
-                                className={`aib__image--${asset.id}`}
+                                className={`aib__image--${header.id}`}
                                 src={asset.src}
                                 alt={asset.alt}
                             />
