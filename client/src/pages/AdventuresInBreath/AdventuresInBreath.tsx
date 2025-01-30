@@ -34,6 +34,13 @@ export default function AdventuresInBreathPage() {
                     {header.id === 2 ? (
                         <GameTrailerCard />
                     ): null}
+                    
+
+                    {header.id === 3 ? (
+                        <div className="aib__play-island-tour">
+                            <iframe src="https://itch.io/embed/3175754" />
+                        </div>
+                    ) : null }
                 </div>
             ))}
         </section>
