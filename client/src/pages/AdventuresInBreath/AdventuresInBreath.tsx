@@ -3,6 +3,7 @@ import "./AdventuresInBreath.scss";
 
 // data
 import { AdventuresInBreathInfo } from "../../data/adventuresInBreath";
+import GameTrailerCard from "../../components/Cards/GameTrailerCard/GameTrailerCard";
 
 export default function AdventuresInBreathPage() {
     return (
@@ -29,6 +30,10 @@ export default function AdventuresInBreathPage() {
                             />
                         ))}
                     </div>
+
+                    {header.id === 2 ? (
+                        <GameTrailerCard />
+                    ): null}
                 </div>
             ))}
         </section>
