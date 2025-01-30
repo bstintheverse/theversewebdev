@@ -1,2 +1,68 @@
 @use "../../../styles/partials/variables.scss" as *;
 @use "../../../styles/partials/mixins.scss" as *;
+
+.game-card {
+    &__list {
+        width: 100%;
+        @include flexbox(column);
+        gap: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+        width: auto;
+        @include flexbox(column);
+        gap: 1rem;
+        border: .1875rem solid $grey;
+        border-radius: 1.25rem;
+    }
+
+    &__image {
+        width: auto;
+        height: 7.8125rem;
+        border-radius: 1rem;
+
+        @include tablet {
+            width: auto;
+            height: 12.5rem;
+        }
+
+        &-container {
+            @include flexbox(column);
+            gap: 1rem;
+            padding: 1rem; /* fix later */
+            
+            /* sailbreath card */
+            &--1 {
+                background-image: url("/assets/images/games/adventures-in-breath/sail-breath/sail-breath-bg.jpg");
+            }
+
+            /* worlds card */
+            &--2 {
+                background-image: url("/assets/images/games/adventures-in-breath/worlds/worlds-bg.jpg");
+            }
+
+            /* island tour card */
+            &--3 {
+                background-image: url("/assets/images/games/adventures-in-breath/island-tour/island-tour-bg.jpg");
+            }
+
+            &--1, --2, --3 {
+                border-radius: 1rem 1rem 0 0;
+            }
+        }
+    }
+
+    &__info {
+        padding: 1rem;
+    }
+
+    &__header {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    &__description {
+        @include text($global-primary-font-color)
+    }
+}
