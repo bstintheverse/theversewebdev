@@ -1,4 +1,4 @@
-// type interfaces for aib game page
+// for aib game page
 interface Header {
     id: number;
     title: string;
@@ -27,7 +27,6 @@ interface AdventuresInBreathInfoProp {
 
 const imagePath: string = "/assets/images/games/adventures-in-breath/";
 
-// meta data for aib game page
 export const AdventuresInBreathInfo: AdventuresInBreathInfoProp = {
     headers: [
         {
@@ -57,7 +56,7 @@ export const AdventuresInBreathInfo: AdventuresInBreathInfoProp = {
     ]
 }
 
-// type interfaces for aib game trailer cards
+// ----- for aib game trailer cards ----- 
 interface CardHeader {
     id: number;
     title: string;
@@ -68,7 +67,8 @@ interface CardHeader {
 interface CardAsset {
     id: number;
     type: "image" | "video";
-    src: string[];
+    image: string | string[];
+    video?: string;
     alt?: string;
 };
 
@@ -76,7 +76,63 @@ interface CardProp {
     headers: CardHeader[];
 };
 
-// metadata for aib games for trailer cards
-export const AdventuresInBreathGames = {
+const cardImagePath: string = "../assets/images/games/adventures-in-breath/sail-break/"
 
+export const AdventuresInBreathGames: CardProp = {
+    headers: [
+        {
+            id: 1,
+            title: "Sailbreath",
+            content: [
+                "Sail through captivating seas, as the guiding force behind a small boat with every breath. Overcome challenges like storms, rogue waves, and maelstroms by mastering the art of breath control.",
+                "Experience the thrill of navigating diverse environments in this unique adventure."
+            ],
+            assets: [
+                {
+                    id: 1,
+                    type: "image",
+                    image: `${cardImagePath}sail-breath-1.png`,
+                    alt: "Screenshot of the game Sailbreath, depicting a river with a stone wall on each side."
+                },
+                {
+                    id: 2,
+                    type: "image",
+                    image: `${cardImagePath}sail-breath-2.png`,
+                    alt: "Screenshot of the game Sailbreath, depicting a river with yellow stone columns rising out of the water on the side."
+                },
+                {
+                    id: 3,
+                    type: "image",
+                    image: `${cardImagePath}sail-breath-bg.jpg`
+                }
+            ]
+        },
+        {
+            id: 1,
+            title: "Worlds",
+            content: [
+                "Eddy’s adventure in WORLDS is just getting started!",
+                "After crash-landing in a mysterious, scorching land, Eddy the Beaver has to rely on his instincts and courage to survive. From his first steps out of the parachute box to building his lodge and restoring the environment, you’ll be right there to guide him through every challenge!"
+            ],
+            assets: [
+                {
+                    id: 1,
+                    type: "image",
+                    image: `${cardImagePath}worlds-1.png`,
+                    alt: "Concept art of Eddy, the Beaver and main character of the game Worlds."
+                },
+                {
+                    id: 2,
+                    type: "image",
+                    image: `${cardImagePath}worlds-2.png`,
+                    alt: "Image of the world Eddy mysteriously landed into."
+                },
+                {
+                    id: 3,
+                    type: "image",
+                    image: `${cardImagePath}worlds-bg.jpg`
+                }
+            ]
+        }
+    ]
 };
