@@ -57,7 +57,7 @@ export const AdventuresInBreathInfo: AdventuresInBreathInfoProp = {
 }
 
 // ----- for aib game trailer cards ----- 
-interface CardHeader {
+interface CardGame {
     id: number;
     title: string;
     content: string | string[];
@@ -67,19 +67,19 @@ interface CardHeader {
 interface CardAsset {
     id: number;
     type: "image" | "video";
-    image: string | string[];
+    image: string;
     video?: string;
     alt?: string;
 };
 
 interface CardProp {
-    headers: CardHeader[];
+    games: CardGame[];
 };
 
-const cardImagePath: string = "../assets/images/games/adventures-in-breath"
+const cardImagePath: string = "/assets/images/games/adventures-in-breath"
 
 export const AdventuresInBreathGames: CardProp = {
-    headers: [
+    games: [
         {
             id: 1,
             title: "Sailbreath",
