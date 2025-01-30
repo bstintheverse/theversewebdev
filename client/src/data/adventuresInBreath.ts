@@ -24,6 +24,8 @@ interface AdventuresInBreathInfoProp {
     headers: Header[];
 };
 
+const imagePath: string = "/assets/images/games/adventures-in-breath/";
+
 export const AdventuresInBreathInfo: AdventuresInBreathInfoProp = {
     headers: [
         {
@@ -34,7 +36,7 @@ export const AdventuresInBreathInfo: AdventuresInBreathInfoProp = {
                 {
                     id: 1,
                     type: "image",
-                    src: "/assets/images/placeholder-square.jpg",
+                    src: `${imagePath}aib-map.png`,
                     alt: "image placeholder"
                 }
             ]
@@ -43,6 +45,7 @@ export const AdventuresInBreathInfo: AdventuresInBreathInfoProp = {
             id: 2,
             title: "Ready. Set. Breathe.",
             content: "Our games are built on scientifically validated breath techniques, and use the player's breathing as the means of interaction within the game.  Through our games, digital experiences, and innovative concepts, we gamify therapeutic breath practices, creating engaging and immersive experiences that promote mindfulness and well-being."
+            
         },
         {
             id: 3,
