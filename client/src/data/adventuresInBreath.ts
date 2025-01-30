@@ -1,3 +1,4 @@
+// type interfaces for aib game page
 interface Header {
     id: number;
     title: string;
@@ -26,6 +27,7 @@ interface AdventuresInBreathInfoProp {
 
 const imagePath: string = "/assets/images/games/adventures-in-breath/";
 
+// meta data for aib game page
 export const AdventuresInBreathInfo: AdventuresInBreathInfoProp = {
     headers: [
         {
@@ -45,7 +47,7 @@ export const AdventuresInBreathInfo: AdventuresInBreathInfoProp = {
             id: 2,
             title: "Ready. Set. Breathe.",
             content: "Our games are built on scientifically validated breath techniques, and use the player's breathing as the means of interaction within the game.  Through our games, digital experiences, and innovative concepts, we gamify therapeutic breath practices, creating engaging and immersive experiences that promote mindfulness and well-being."
-            
+
         },
         {
             id: 3,
@@ -53,4 +55,28 @@ export const AdventuresInBreathInfo: AdventuresInBreathInfoProp = {
             content: "Discover games where your breath guides the journey. Explore unique worlds, unlock mysteries, and experience the power of mindful interaction."
         }
     ]
+}
+
+// type interfaces for aib game trailer cards
+interface CardHeader {
+    id: number;
+    title: string;
+    content: string | string[];
+    assets: CardAsset[];
+};
+
+interface CardAsset {
+    id: number;
+    type: "image" | "video";
+    src: string[];
+    alt?: string;
+};
+
+interface CardProp {
+    headers: CardHeader[];
+};
+
+// metadata for aib games for trailer cards
+export const AdventuresInBreathGames = {
+
 };
