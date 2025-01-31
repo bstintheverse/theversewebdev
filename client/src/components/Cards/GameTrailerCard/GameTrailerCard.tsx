@@ -4,7 +4,11 @@ import "./GameTrailerCard.scss";
 
 // data
 import { AdventuresInBreathGames } from "../../../data/adventuresInBreath";
+
+// hook
 import { useState } from "react";
+
+// component
 import Modal from "../../Modal/Modal";
 
 export default function GameTrailerCard() {
@@ -45,7 +49,7 @@ export default function GameTrailerCard() {
                         </div>
 
                         <div className="game-card__info">
-                            <h2 className="game-card__header">
+                            <h2 className={`game-card__header game-card__header--${game.id}`}>
                                 {game.title}
                             </h2>
 
