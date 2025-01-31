@@ -1,5 +1,6 @@
 @use "../../../styles/partials/variables.scss" as *;
 @use "../../../styles/partials/mixins.scss" as *;
+@use "../../../styles/partials/fonts.scss" as *;
 
 .game-card {
     &__list {
@@ -71,6 +72,10 @@
             
             &--1, &--2, &--3 {
                 border-radius: 1rem 1rem 0 0;
+
+                @include desktop {
+                    border-radius: 1rem 0 0 1rem;
+                }
             }
         }
     }
@@ -79,6 +84,8 @@
         padding: 1rem;
 
         @include tablet {
+            @include flexbox(column);
+            align-items: center;
             padding: 2rem;
         }
 
@@ -86,16 +93,73 @@
             width: 100%;
             @include flexbox(column);
             justify-content: center;
+            align-items: center;
             padding: 2.5rem;
         }
     }
 
     &__header {
-        margin-top: 0;
+        margin-block: 0 1rem;
         text-align: center;
+
+        &--1 {
+            font-family: "Press Start 2P", sans-serif;
+            font-size: 1rem;
+            text-transform: uppercase;
+
+            @include tablet {
+                font-size: 1.5rem;
+            }
+
+            @include desktop {
+                font-size: 2rem;
+            }
+        }
+
+        &--2 {
+            letter-spacing: 0.25rem;
+            text-transform: uppercase;
+
+            @include tablet {
+                font-size: 2rem;
+            }
+
+            @include desktop {
+                font-size: 3rem;
+            }
+        }
+
+        &--3 {
+            font-family: "Finger Paint", sans-serif;
+            letter-spacing: 0.25rem;
+
+            @include tablet {
+                font-size: 2rem;
+            }
+
+            @include desktop {
+                font-size: 3rem;
+            }
+        }
     }
 
     &__description {
-        @include text($global-primary-font-color)
+        @include text($global-primary-font-color);
+        text-align: center;
+        margin: 0;
+    }
+
+    &__button {
+        width: auto;
+        margin-block: 1rem;
+
+        @include tablet {
+            width: 50%;
+            margin-block: 1.25rem;
+        }
+
+        @include desktop {
+            width: 50%;
+        }
     }
 }
