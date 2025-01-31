@@ -125,8 +125,8 @@ export const walkInfo: WalkInfoProp = {
                 {
                     id: 1,
                     type: "image",
-                    src: "/",
-                    alt: "image placeholder"
+                    src: "/assets/images/climate-change-comic.png",
+                    alt: "The Verse's Climate Change Comic"
                 }
             ]
         }
