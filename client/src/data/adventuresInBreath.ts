@@ -60,7 +60,7 @@ export const AdventuresInBreathInfo: AdventuresInBreathInfoProp = {
 interface CardGame {
     id: number;
     title: string;
-    content: string | string[];
+    content: string;
     assets: CardAsset[];
     misc?: string;
 };
@@ -85,10 +85,7 @@ export const AdventuresInBreathGames: CardProp = {
         {
             id: 1,
             title: "Sailbreath",
-            content: [
-                "Sail through captivating seas, as the guiding force behind a small boat with every breath. Overcome challenges like storms, rogue waves, and maelstroms by mastering the art of breath control.",
-                "Experience the thrill of navigating diverse environments in this unique adventure."
-            ],
+            content: "Sail through captivating seas, as the guiding force behind a small boat with every breath. Overcome challenges like storms, rogue waves, and maelstroms by mastering the art of breath control. Experience the thrill of navigating diverse environments in this unique adventure.",
             assets: [
                 {
                     id: 1,
@@ -111,12 +108,9 @@ export const AdventuresInBreathGames: CardProp = {
             misc: "https://mwgame.itch.io/sailbreath"
         },
         {
-            id: 1,
+            id: 2,
             title: "Worlds",
-            content: [
-                "Eddy’s adventure in WORLDS is just getting started!",
-                "After crash-landing in a mysterious, scorching land, Eddy the Beaver has to rely on his instincts and courage to survive. From his first steps out of the parachute box to building his lodge and restoring the environment, you’ll be right there to guide him through every challenge!"
-            ],
+            content: "Eddy’s adventure in WORLDS is just getting started! After crash-landing in a mysterious, scorching land, Eddy the Beaver has to rely on his instincts and courage to survive. From his first steps out of the parachute box to building his lodge and restoring the environment, you’ll be right there to guide him through every challenge!",
             assets: [
                 {
                     id: 1,
