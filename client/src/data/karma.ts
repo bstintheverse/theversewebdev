@@ -74,8 +74,8 @@ export const karmaInfo: KarmaInfoProp = {
                         {
                             id: 1,
                             type: "image",
-                            src: "/assets/images/placeholder-square.jpg",
-                            alt: "image placeholder"
+                            src: "/assets/images/games/karma/karma-six-realms.jpg",
+                            alt: "A wheel depicting the six realms of existence"
                         }
                     ]
                 }
@@ -89,8 +89,8 @@ export const karmaInfo: KarmaInfoProp = {
                 {
                     id: 1,
                     type: "image",
-                    src: "/assets/images/placeholder-square.jpg",
-                    alt: "image placeholder"
+                    src: "/assets/images/games/karma/karma-screenshot.png",
+                    alt: "Screenshot of the Karma The Six Realms "
                 }
             ]
         },
@@ -105,14 +105,14 @@ export const karmaInfo: KarmaInfoProp = {
                 {
                     id: 1,
                     type: "image",
-                    src: "/assets/images/placeholder-square.jpg",
-                    alt: "image placeholder"
+                    src: "/assets/images/games/karma/karma-women-of-marvel.jpg",
+                    alt: "A wheel featuring different female Marvel characters and which of the six realms they are associated with"
                 },
                 {
                     id: 2,
                     type: "image",
-                    src: "/assets/images/placeholder-square.jpg",
-                    alt: "image placeholder"
+                    src: "/assets/images/games/karma/karma-starwars.jpg",
+                    alt: "A wheel featuring different Starwars characters and which of the six realms they are associated with"
                 }
             ]
         }
