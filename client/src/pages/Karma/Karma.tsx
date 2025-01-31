@@ -20,25 +20,26 @@ export default function KarmaPage() {
                     
                     {/* renders subheaders if applicable */}
                     {header.subheaders?.map((subheader) => (
-                        <div className="karma__container">
+                        <div className="karma__container" key={subheader.id}>
                             <h3 className="karma__subheader">
                                 {subheader.title}
                             </h3>
 
                             <div 
                                 className={`karma__image-list-container--${subheader.id}`}
-                                key={subheader.id}
                             >
-                                {/* renders assets if applicable */ }
-                                {subheader.assets && subheader.assets.length > 0 && (
-                                    subheader.assets.map((asset) => (
-                                        <img
-                                            className={`karma__image--${subheader.id}`}
-                                            key={asset.id}
-                                            src={asset.src}
-                                            alt={asset.alt}
-                                        />
-                                    ))
+                                {/* Grouping images together if there are multiple */}
+                                {subheader.assets && subheader.assets.length > 0 && subheader.assets.some(asset => asset.type === "image") && (
+                                    <div className={`karma__image-group karma__image-group--${subheader.id}`}>
+                                        {subheader.assets.filter(asset => asset.type === "image").map((asset) => (
+                                            <img
+                                                className={`karma__image--${subheader.id}`}
+                                                key={asset.id}
+                                                src={asset.src}
+                                                alt={asset.alt}
+                                            />
+                                        ))}
+                                    </div>
                                 )}
 
                                 {/* renders list items if applicable */}
