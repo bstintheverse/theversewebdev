@@ -33,27 +33,27 @@ export default function GameTrailerCard() {
     };
 
     return (
-        <article className="game-card__trailer">
-            <ul className="game-card__list">
+        <article className="game-trailer-card__trailer">
+            <ul className="game-trailer-card__list">
                 {AdventuresInBreathGames.games.map((game) => (
-                    <li className="game-card__item" key={game.id}>
-                        <div className={`game-card__image-container game-card__image-container--${game.id}`}>
+                    <li className="game-trailer-card__item" key={game.id}>
+                        <div className={`game-trailer-card__image-container game-trailer-card__image-container--${game.id}`}>
                             {game.assets.slice(0, 2).map((asset, index) => (
                                 <img
                                     key={index}
-                                    className="game-card__image"
+                                    className="game-trailer-card__image"
                                     src={asset.image}
                                     alt={asset.alt}
                                 />
                             ))}
                         </div>
 
-                        <div className="game-card__info">
-                            <h2 className={`game-card__header game-card__header--${game.id}`}>
+                        <div className="game-trailer-card__info">
+                            <h2 className={`game-trailer-card__header game-trailer-card__header--${game.id}`}>
                                 {game.title}
                             </h2>
 
-                            <p className="game-card__description">
+                            <p className="game-trailer-card__description">
                                 {game.content}
                             </p>
 
