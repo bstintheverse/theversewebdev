@@ -53,7 +53,7 @@ export default function WalkXRPage() {
                     {header.assets && header.assets.length > 0 && (
                         <div className="walkxr__container">
                             {header.assets.map((asset) => {
-                                if (asset.type === "image") {
+                                if (asset.type === "image" && header.id != 2 ) {
                                     return (
                                         <img
                                             key={asset.id}
@@ -68,6 +68,7 @@ export default function WalkXRPage() {
                                             key={asset.id}
                                             controls
                                             className="walkxr__video"
+                                            poster={header.assets?.[1]?.src} 
                                         >
                                             <source src={asset.src} type="video/mp4" />
                                         </video>
