@@ -58,6 +58,32 @@ export default function Footer() {
                         </li>
                     </ul>
                 </div>
+
+                <div className="nav__information">
+                    <h4 className="nav__header">
+                        Games
+                    </h4>
+
+                    <ul className="nav__list">
+                        <li className="nav__item">
+                            <Link to="/experiences/game/walk-xr" className="nav__link">
+                                WalkXR
+                            </Link>
+                        </li>
+
+                        <li className="nav__item">
+                            <Link to="/experiences/game/karma" className="nav__link">
+                                Karma The Six Realms
+                            </Link>
+                        </li>
+
+                        <li className="nav__item">
+                            <Link to="/experiences/game/adventures-in-breath" className="nav__link">
+                                Adventures in Breath
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
                 
                 <div className="nav__information">
                     <h4 className="nav__header">
