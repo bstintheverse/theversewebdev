@@ -1,10 +1,28 @@
 @font-face {
     font-family: "Nanum Pen";
     src: url("/assets/fonts/nanum-pen-regular.woff2") format("woff2"),
-        url("nanum-pen-regular.woff") format("woff");
+        url("/assets/fonts/nanum-pen-regular.woff") format("woff");
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+
+@font-face {
+    font-family: "Finger Paint";
+    src: url("/assets/fonts/finger-paint-regular.woff2") format("woff2"),
+        url("/assets/fonts/finger-paint-regular.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+}
+
+@font-face {
+    font-family: "Press Start 2P";
+    src: url("/assets/fonts/press-start-2p-regular.woff2") format("woff2"),
+        url("/assets/fonts/press-start-2p-regular.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
 }
 
 @font-face {

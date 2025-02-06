@@ -1,0 +1,48 @@
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+
+.modal {
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.7);
+        @include flexbox(row);
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    &__content {
+        background: white;
+        width: 80%;
+        padding: 1rem;
+    }
+
+    &__icon {
+        &:hover {
+            opacity: 50%;
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+        }
+
+        &-container {
+            @include flexbox(row);
+            justify-content: flex-end;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__video {
+        width: 100%;
+        height: auto;
+
+        &-container {
+            @include flexbox(row);
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

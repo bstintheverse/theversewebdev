@@ -1,0 +1,49 @@
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+
+.aib {
+    padding: 2rem;
+
+    @include tablet {
+        padding: 1rem 6rem;
+    }
+    
+    @include desktop {
+        padding: 1rem 10rem;
+    }
+
+    &__header {
+        @include header-md($global-primary-font-color);
+    }
+
+    &__subheader {
+        @include subheader-primary($global-primary-font-color);
+    }
+
+    &__text {
+        @include text($global-primary-font-color);
+    }
+
+    &__assets-container {
+        /* styles assets container in the first section */
+        &--1 {
+            @include flexbox(row);
+            justify-content: center;
+        }
+    }
+
+    &__image {
+        /* styles image in the first section */
+        &--1 {
+            width: 100%;
+            height: auto;
+            border-radius: 1.25rem;
+        }
+    }
+}
+
+iframe {
+    width: 100%;
+    height: auto;
+    border: none;
+}
