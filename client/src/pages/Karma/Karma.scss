@@ -1,0 +1,138 @@
+@use "../../styles/partials/variables.scss" as *;
+@use "../../styles/partials/mixins.scss" as *;
+
+.karma {
+    padding: 2rem;
+
+    @include tablet {
+        padding: 1rem 6rem;
+    }
+    
+    @include desktop {
+        padding: 1rem 10rem;
+    }
+
+    &__header {
+        @include header-md($global-primary-font-color);
+    }
+
+    &__subheader {
+        @include subheader-primary($global-primary-font-color);
+    }
+
+    &__text {
+        @include text($global-primary-font-color);
+    }
+
+    &__list-item {
+        margin-bottom: 0.5rem;
+    }
+
+    &__button {
+        width: 12%;
+        @include button($button-primary-background, $button-primary-background);
+
+        &:hover {
+            transition: 0.5s ease-in-out;
+            cursor: pointer;
+            @include button($button-hover-background, $button-hover-background);
+        }
+    }
+
+    &__assets-container {
+        /* styles image container in the second section */
+        &--2 {
+            @include flexbox(column);
+            align-items: center;
+        }
+
+        /* styles image container in the last section */
+        &--3 {
+            width: 100%;
+            @include flexbox(column);
+            align-items: center;
+
+            @include desktop {
+                @include flexbox(row);
+                gap: 1rem;
+            }
+        }
+    }
+
+    &__image-list-container {
+        /* styles container with image and list items */
+        &--1 {
+            @include tablet {
+                @include flexbox(row);
+
+            }
+            @include desktop {
+                @include flexbox(row);
+            }
+        }
+    }
+
+    &__image-wrapper {
+        /* styles wrapper for karma game screenshot and play button */
+        &--2 {
+            @include flexbox(column);
+            align-items: center;
+            
+            @include desktop {
+                width: 60%;
+            }
+        }
+
+        /* styles wrapper for images in the last section */
+        &--3 {
+            @include desktop {
+                height: 250px;
+                @include flexbox(row);
+                justify-content: center;
+            }
+        }
+    }
+
+    &__image {
+        /* image in first section */
+        &--1 {
+            max-width: 250px;
+            height: auto;
+            border-radius: 1.25rem;
+
+            @include tablet {
+                width: auto;
+            }
+        }
+
+        /* image in section section */
+        &--2 {
+            width: 250px;
+            height: auto;
+            border-radius: 1.25rem;
+
+            @include tablet {
+                width: 450px;
+            }
+
+            @include desktop {
+                width: 600px;
+            }
+        }
+
+        /* images in last section */
+        &--3 {
+            width: 250px;
+            height: auto;
+            border-radius: 1.25rem;
+
+            @include tablet {
+                width: 450px;
+            }
+
+            @include desktop {
+                width: 465px;
+            }
+        }
+    }
+}
