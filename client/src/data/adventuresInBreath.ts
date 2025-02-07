@@ -42,7 +42,7 @@ export const AdventuresInBreathInfo: AdventuresInBreathInfoProp = {
                 }
             ]
         },
-        {   // add additional metadata once design is finalized
+        {
             id: 2,
             title: "Ready. Set. Breathe.",
             content: "Our games are built on scientifically validated breath techniques, and use the player's breathing as the means of interaction within the game.  Through our games, digital experiences, and innovative concepts, we gamify therapeutic breath practices, creating engaging and immersive experiences that promote mindfulness and well-being."
