@@ -85,7 +85,12 @@ export const walkInfo: WalkInfoProp = {
                 {
                     id: 1,
                     type: "video",
-                    src: "/"
+                    src: "/assets/videos/walk-xr-trailer.mp4"
+                },
+                {
+                    id: 2,
+                    type: "image",
+                    src: "/assets/images/walk-xr-trailer-poster.png"
                 }
             ]
         },
@@ -125,8 +130,8 @@ export const walkInfo: WalkInfoProp = {
                 {
                     id: 1,
                     type: "image",
-                    src: "/",
-                    alt: "image placeholder"
+                    src: "/assets/images/climate-change-comic.png",
+                    alt: "The Verse's Climate Change Comic"
                 }
             ]
         }
