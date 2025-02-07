@@ -69,13 +69,6 @@ export default function KarmaPage() {
                                                 alt={asset.alt}
                                                 className={`karma__image karma__image--${header.id}`}
                                             />
-                                        
-                                            {/* renders play button */}
-                                            {header.id === 2 && (
-                                                <p className="karma__button">
-                                                    Play
-                                                </p>
-                                            )}
                                         </div>
                                     );
                                 } else if (asset.type === "video") {
