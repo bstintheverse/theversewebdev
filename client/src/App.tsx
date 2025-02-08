@@ -48,9 +48,8 @@ function AppWithLocation() {
             <Route path="/about-us" element={ <AboutPage /> } />
             <Route path="/experiences" element={ <ExperiencesPage /> } />
             <Route path="/experiences/game/walk-xr" element={ <WalkXRPage /> } />
-            <Route path="/experiences/game/karma" element={ <KarmaPage /> } />
+            <Route path="/experiences/game/karma-the-six-realms" element={ <KarmaPage /> } />
             <Route path="/experiences/game/adventures-in-breath" element={ <AdventuresInBreathPage /> } />
-            {/* <Route path="/experiences/game/:gameId" element={ <> <Hero /> <GamePage /> </>} /> */}
             <Route path="/our-people" element={ <OurPeoplePage /> } />
             <Route path="/contact-us" element={ <ContactPage /> } />
             <Route path="/donate" element={ <DonatePage /> } />
