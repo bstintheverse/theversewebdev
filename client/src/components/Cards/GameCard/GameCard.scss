@@ -46,6 +46,12 @@
 
     &__button {
         text-decoration: none;
-        @include button($grey, $grey);
+        @include button($button-primary-background, $button-primary-background);
+
+        &:hover {
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+            @include button($button-hover-background, $button-hover-border);
+        }
     }
 }
