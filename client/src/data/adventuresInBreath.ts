@@ -57,7 +57,7 @@ export const AdventuresInBreathInfo: AdventuresInBreathInfoProp = {
 }
 
 // ----- for aib game trailer cards ----- 
-interface CardGame {
+export interface CardGame {
     id: number;
     title: string;
     content: string;
@@ -65,7 +65,7 @@ interface CardGame {
     misc?: string;
 };
 
-interface CardAsset {
+export interface CardAsset {
     id: number;
     type: "image" | "video";
     image?: string;
