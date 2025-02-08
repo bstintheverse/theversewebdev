@@ -42,7 +42,7 @@ export default function GameCard({ id, name, video, image, alt, description, lin
 
             <div className="game-card__wrapper">
                 <p className="game-card__button">
-                    Coming Soon
+                    Learn More
                 </p>
             </div>
         </li>
