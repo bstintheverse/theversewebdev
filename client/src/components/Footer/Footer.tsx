@@ -72,7 +72,7 @@ export default function Footer() {
                         </li>
 
                         <li className="nav__item">
-                            <Link to="/experiences/game/karma" className="nav__link">
+                            <Link to="/experiences/game/karma-the-six-realms" className="nav__link">
                                 Karma The Six Realms
                             </Link>
                         </li>
