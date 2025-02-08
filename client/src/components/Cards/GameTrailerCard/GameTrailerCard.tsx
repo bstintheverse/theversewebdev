@@ -3,7 +3,7 @@ import "./GameTrailerCard.scss";
 
 
 // data
-import { AdventuresInBreathGames } from "../../../data/adventuresInBreath";
+import { AdventuresInBreathGames, CardGame, CardAsset } from "../../../data/adventuresInBreath";
 
 // hook
 import { useState } from "react";
@@ -23,7 +23,7 @@ export default function GameTrailerCard() {
     const handleClose = () => setOpen(false);
 
     const handleLearnMore = (game: any) => {
-        const videoAsset = game.assets.find((asset) => asset.type === "video");
+        const videoAsset = game.assets.find((asset: CardAsset) => asset.type === "video");
 
         if (videoAsset && videoAsset.video) {
             handleOpen(videoAsset.video);
@@ -35,7 +35,7 @@ export default function GameTrailerCard() {
     return (
         <article className="game-trailer-card__trailer">
             <ul className="game-trailer-card__list">
-                {AdventuresInBreathGames.games.map((game) => (
+                {AdventuresInBreathGames.games.map((game: CardGame) => (
                     <li className="game-trailer-card__item" key={game.id}>
                         <div className={`game-trailer-card__image-container game-trailer-card__image-container--${game.id}`}>
                             {game.assets.slice(0, 2).map((asset, index) => (
