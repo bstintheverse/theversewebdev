@@ -124,5 +124,13 @@ export const teamMembers: teamMemberProps[] = [
         name: "Vidip Singh",
         role: "Web Developer",
         location: "New Delhi, India"
-    }
+    },
+      {
+        id: 15,
+        image: `${imagePath}-15.jpeg`,
+        alt: "Photo of Xiao Liu",
+        name: "Xiao Liu",
+        role: "USC Doctor of Psychology PhD , Mixed Methods Researcher",
+        location: "California, USA"
+    },
 ];
